@@ -1,0 +1,33 @@
+input:
+  paths:
+    - EO4SIBS-black-sea-altimetry/*.nc
+    
+  sort_by: "name"
+
+  variables:
+    - sla
+    - ugos
+    - ugosa
+    - vgos
+    - vgosa
+    - latitude
+    - longitude
+    - time
+
+process:
+  rename:
+    latitude: lat
+    longitude: lon
+  rechunk:
+    '*':
+      lon: 64
+      lat: 64
+      time: null
+
+output:
+  path: deep-esdl-input/EO4SIBS-black-sea-altimetry.zarr
+  overwrite: true
+  consolidated: true
+  
+  s3:
+    anon: false

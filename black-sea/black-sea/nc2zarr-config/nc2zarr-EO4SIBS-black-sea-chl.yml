@@ -1,0 +1,30 @@
+input:
+  paths:
+    - EO4SIBS-black-sea-chl/*.nc
+    
+  sort_by: "name"
+
+  variables:
+    - Chlorophyll
+    - latitude
+    - longitude
+    - time
+
+process:
+  rename:
+    latitude: lat
+    longitude: lon
+    Chlorophyll: chl
+  rechunk:
+    '*':
+      lon: 128
+      lat: 128
+      time: null
+
+output:
+  path: deep-esdl-input/EO4SIBS-black-sea-chl.zarr
+  overwrite: true
+  consolidated: true
+  
+  s3:
+    anon: false

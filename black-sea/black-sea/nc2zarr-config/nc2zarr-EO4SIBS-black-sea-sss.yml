@@ -1,0 +1,26 @@
+input:
+  paths:
+    - EO4SIBS-black-sea-sss/*.nc
+
+  sort_by: "name"
+
+  variables:
+    - sss
+    - lat
+    - lon
+    - time
+
+process:
+  rechunk:
+    '*':
+      lon: null
+      lat: null
+      time: null
+
+output:
+  path: deep-esdl-input/EO4SIBS-black-sea-sss.zarr
+  overwrite: true
+  consolidated: true
+  
+  s3:
+    anon: false

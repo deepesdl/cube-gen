@@ -1,0 +1,26 @@
+input:
+  paths:
+    - CMEMS-black-sea-sst/*.nc
+
+  variables:
+    - sea_surface_temperature
+    - lat
+    - lon
+    - time
+
+process:
+  rename:
+    sea_surface_temperature: sst
+  rechunk:
+    '*':
+      lon: 128
+      lat: 128
+      time: 64
+
+output:
+  path: deep-esdl-input/CMEMS-black-sea-sst.zarr
+  overwrite: true
+  consolidated: true
+  
+  s3:
+    anon: false

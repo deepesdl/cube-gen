@@ -1,0 +1,9 @@
+nc2zarr
+numpy
+python=3.9
+requests
+rioxarray
+tqdm
+xarray
+xcube
+yaml

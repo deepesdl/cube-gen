@@ -1,0 +1,26 @@
+input:
+  paths:
+    - CMEMS-black-sea-wave-height/*.nc
+    
+  sort_by: "name"
+
+  variables:
+    - VHM0
+    - lat
+    - lon
+    - time
+
+process:
+  rechunk:
+    '*':
+      lon: 128
+      lat: 128
+      time: 1024
+
+output:
+  path: deep-esdl-input/CMEMS-black-sea-wave-height.zarr
+  overwrite: true
+  consolidated: true
+  
+  s3:
+    anon: false
