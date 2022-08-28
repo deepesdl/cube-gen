@@ -113,10 +113,7 @@ BBox_coords = [
 ]
 
 BBox = shapely.geometry.box(
-    BBox_coords[0],
-    BBox_coords[1],
-    BBox_coords[2],
-    BBox_coords[3],
+    BBox_coords[0], BBox_coords[1], BBox_coords[2], BBox_coords[3]
 )
 
 polygon = [[[x[0], x[1]] for x in list(BBox.exterior.coords)]]
@@ -128,4 +125,5 @@ with open("black-sea.geojson", "w") as f:
             properties={**cube_json["attrs"], "variables": variables},
         ),
         f,
+        indent=4,
     )

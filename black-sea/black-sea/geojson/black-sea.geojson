@@ -4,13 +4,28 @@
         "type": "Polygon",
         "coordinates": [
             [
-                [41.9975, 39.0015],
-                [41.9975, 47.9985],
-                [26.0015, 47.9985],
-                [26.0015, 39.0015],
-                [41.9975, 39.0015],
+                [
+                    41.9975,
+                    39.0015
+                ],
+                [
+                    41.9975,
+                    47.9985
+                ],
+                [
+                    26.0015,
+                    47.9985
+                ],
+                [
+                    26.0015,
+                    39.0015
+                ],
+                [
+                    41.9975,
+                    39.0015
+                ]
             ]
-        ],
+        ]
     },
     "properties": {
         "Conventions": "CF-1.9",
@@ -56,8 +71,8 @@
                 "original_time_period": "1H",
                 "processing_steps": [
                     "Temporal daily mean aggregation",
-                    "Spatial nearest neighbor interpolation",
-                ],
+                    "Spatial nearest neighbor interpolation"
+                ]
             },
             {
                 "name": "chl",
@@ -74,7 +89,9 @@
                 "original_scale_factor": 0.01,
                 "original_add_offset": 0.0,
                 "original_time_period": "1D",
-                "processing_steps": ["Multiplying original scale factor"],
+                "processing_steps": [
+                    "Multiplying original scale factor"
+                ]
             },
             {
                 "name": "sla",
@@ -91,7 +108,9 @@
                 "original_scale_factor": 1.0,
                 "original_add_offset": 0.0,
                 "original_time_period": "1D",
-                "processing_steps": ["Spatial nearest neighbor interpolation"],
+                "processing_steps": [
+                    "Spatial nearest neighbor interpolation"
+                ]
             },
             {
                 "name": "sss",
@@ -108,7 +127,9 @@
                 "original_scale_factor": 1.0,
                 "original_add_offset": 0.0,
                 "original_time_period": "1D",
-                "processing_steps": ["Spatial nearest neighbor interpolation"],
+                "processing_steps": [
+                    "Spatial nearest neighbor interpolation"
+                ]
             },
             {
                 "name": "sst",
@@ -125,7 +146,9 @@
                 "original_scale_factor": 1.0,
                 "original_add_offset": 0.0,
                 "original_time_period": "1D",
-                "processing_steps": ["Spatial nearest neighbor interpolation"],
+                "processing_steps": [
+                    "Spatial nearest neighbor interpolation"
+                ]
             },
             {
                 "name": "ugos",
@@ -142,7 +165,9 @@
                 "original_scale_factor": 1.0,
                 "original_add_offset": 0.0,
                 "original_time_period": "1D",
-                "processing_steps": ["Spatial nearest neighbor interpolation"],
+                "processing_steps": [
+                    "Spatial nearest neighbor interpolation"
+                ]
             },
             {
                 "name": "ugosa",
@@ -159,7 +184,9 @@
                 "original_scale_factor": 1.0,
                 "original_add_offset": 0.0,
                 "original_time_period": "1D",
-                "processing_steps": ["Spatial nearest neighbor interpolation"],
+                "processing_steps": [
+                    "Spatial nearest neighbor interpolation"
+                ]
             },
             {
                 "name": "vgos",
@@ -176,7 +203,9 @@
                 "original_scale_factor": 1.0,
                 "original_add_offset": 0.0,
                 "original_time_period": "1D",
-                "processing_steps": ["Spatial nearest neighbor interpolation"],
+                "processing_steps": [
+                    "Spatial nearest neighbor interpolation"
+                ]
             },
             {
                 "name": "vgosa",
@@ -193,8 +222,10 @@
                 "original_scale_factor": 1.0,
                 "original_add_offset": 0.0,
                 "original_time_period": "1D",
-                "processing_steps": ["Spatial nearest neighbor interpolation"],
-            },
-        ],
-    },
+                "processing_steps": [
+                    "Spatial nearest neighbor interpolation"
+                ]
+            }
+        ]
+    }
 }
