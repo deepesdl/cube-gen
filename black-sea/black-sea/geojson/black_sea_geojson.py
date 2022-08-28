@@ -119,7 +119,7 @@ BBox = shapely.geometry.box(
     BBox_coords[3],
 )
 
-polygon = [[x[0], x[1]] for x in list(BBox.exterior.coords)]
+polygon = [[[x[0], x[1]] for x in list(BBox.exterior.coords)]]
 
 with open("black-sea.geojson", "w") as f:
     dump(
