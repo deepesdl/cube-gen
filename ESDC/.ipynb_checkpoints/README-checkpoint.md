@@ -15,8 +15,11 @@ Package dedicated to the new ESDC configuraton.
 *10 Variables*
 
 Data source: [https://www.gleam.eu/](https://www.gleam.eu/)
+
 Time period: 1980-2021
+
 Temporal resolution: 1D
+
 Spatial resolution: 0.25 degrees
 
 - Actual Evaporation (E)
@@ -35,8 +38,11 @@ Spatial resolution: 0.25 degrees
 *6 Variables*
 
 Data source: [https://www.fluxcom.org/](https://www.fluxcom.org/)
+
 Time period: 2000-2021
+
 Temporal resolution: 8D
+
 Spatial resolution: 0.0833 degrees
 
 - Gross Primary Production
@@ -53,8 +59,11 @@ Spatial resolution: 0.0833 degrees
 *2 Variables*
 
 Data source: [https://data.jrc.ec.europa.eu/dataset/21935ffc-b797-4bee-94da-8fec85b3f9e1](https://data.jrc.ec.europa.eu/dataset/21935ffc-b797-4bee-94da-8fec85b3f9e1)
+
 Time period: 2007-2018
+
 Temporal resolution: 8D
+
 Spatial resolution: 0.05 degrees
 
 - Downscaled SIF 740 nm JJ Method
@@ -65,8 +74,11 @@ Spatial resolution: 0.05 degrees
 *2 Variables*
 
 Data source: [https://globalecology.unh.edu/data/GOSIF.html](https://globalecology.unh.edu/data/GOSIF.html)
+
 Time period: 2000-2021
+
 Temporal resolution: 8D
+
 Spatial resolution: 0.05 degrees
 
 - SIF 757 nm
@@ -77,8 +89,11 @@ Spatial resolution: 0.05 degrees
 *1 Variable*
 
 Data source: [https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018GL079031](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018GL079031)
+
 Time period: 2018-2021
+
 Temporal resolution: 8D
+
 Spatial resolution: 0.0833 degrees
 
 - SIF 740 nm
@@ -88,8 +103,11 @@ Spatial resolution: 0.0833 degrees
 *1 Variable*
 
 Data source: [https://www.nature.com/articles/s41597-022-01520-1](https://www.nature.com/articles/s41597-022-01520-1)
+
 Time period: 2000-2021
+
 Temporal resolution: 8D
+
 Spatial resolution: 0.05 degrees
 
 - Reconstructed SIF
@@ -99,8 +117,11 @@ Spatial resolution: 0.05 degrees
 *7 Variables*
 
 Data source: [https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels)
+
 Time period: 1950-2021
+
 Temporal resolution: 1D
+
 Spatial resolution: 0.25 degrees
 
 - Air Temperature 2 m mean
@@ -131,8 +152,11 @@ Data source: [https://climate.esa.int/en/odp/#/dashboard](https://climate.esa.in
 *9 Variables*
 
 Data source: [https://lpdaac.usgs.gov/products/mcd43a4v006/](https://lpdaac.usgs.gov/products/mcd43a4v006/)
+
 Time period: 2000-2021
+
 Temporal resolution: 1D
+
 Spatial resolution: 0.005 degrees
 
 - Nadir BRDF Adjusted Reflectance Blue
