@@ -1,11 +1,15 @@
 # ESDC Configuration (Draft) (To be revised)
 
-Package dedicated to the new ESDC configuraton.
+Package dedicated to the new ESDC configuraton. 
 
 ## Spatio-temporal grid specification
 
-- **Temporal resolution**: 1D
-- **Spatial resolution**: 0.0833 degrees
+As a continuation of the previous ESDC, the new configuration will follow the same spatio-tempotal
+grid (at two spatial resolutions). The included variables will be extended to the end of 2021,
+subject to each variable availability.
+
+- **Temporal resolution**: 8D
+- **Spatial resolution**: 0.25 and 0.0833 degrees
 - **Extended time period to**: 2021-12-31
 
 ## Variables specification
@@ -52,7 +56,7 @@ Spatial resolution: 0.0833 degrees
 - Sensible Heat
 - Terrestrial Ecosystem Respiration
 
-### SIF Collections
+### SIF Collection
 
 #### GOME-2
 
@@ -71,7 +75,7 @@ Spatial resolution: 0.05 degrees
 
 #### GOSIF
 
-*2 Variables*
+*1 Variable*
 
 Data source: [https://globalecology.unh.edu/data/GOSIF.html](https://globalecology.unh.edu/data/GOSIF.html)
 
@@ -82,7 +86,6 @@ Temporal resolution: 8D
 Spatial resolution: 0.05 degrees
 
 - SIF 757 nm
-- SIF Derived GPP
 
 #### TROPOMI
 
@@ -120,7 +123,7 @@ Data source: [https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5
 
 Time period: 1950-2021
 
-Temporal resolution: 1D
+Temporal resolution: 1H
 
 Spatial resolution: 0.25 degrees
 
@@ -132,32 +135,17 @@ Spatial resolution: 0.25 degrees
 - Potential Evaporation
 - Evaporation
 
-### ESA CCI
+### MCD43C4 MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG
 
-*8 Variables*
+*7 Variables*
 
-Data source: [https://climate.esa.int/en/odp/#/dashboard](https://climate.esa.int/en/odp/#/dashboard)
-
-- Soil Moisture Combined: 1978-2020, 1D, 0.25
-- Multisensor LST Day: 1995-2020, 1D, 0.01
-- Multisensor LST Night: 1995-2020, 1D, 0.01
-- Total Column Water Vapour: 2002-2017, 1D, 0.05
-- Sea Surface Temperature: 1981-2016, 1D, 0.05
-- Sea Surface Salinity: 2010-2020, 1D, 0.25
-- Sea Ice Concentration: 2002-2017, 1D, 0.25
-- Oceacn Chl-a: 1997-2020, 1D, 0.04
-
-### MODIS MCD43A4 Nadir BRDF Adjusted Reflectance
-
-*9 Variables*
-
-Data source: [https://lpdaac.usgs.gov/products/mcd43a4v006/](https://lpdaac.usgs.gov/products/mcd43a4v006/)
+Data source: [https://lpdaac.usgs.gov/products/mcd43c4v061/](https://lpdaac.usgs.gov/products/mcd43c4v061/)
 
 Time period: 2000-2021
 
 Temporal resolution: 1D
 
-Spatial resolution: 0.005 degrees
+Spatial resolution: 0.05 degrees
 
 - Nadir BRDF Adjusted Reflectance Blue
 - Nadir BRDF Adjusted Reflectance Green
@@ -165,3 +153,4 @@ Spatial resolution: 0.005 degrees
 - Nadir BRDF Adjusted Reflectance NIR
 - Nadir BRDF Adjusted Reflectance SWIR 1
 - Nadir BRDF Adjusted Reflectance SWIR 2
+- Nadir BRDF Adjusted Reflectance SWIR 3
