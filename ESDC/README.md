@@ -14,6 +14,10 @@ subject to each variable availability.
 
 ## Variables specification
 
+Variables are specified according to their original specifications. This configuration
+will be preprocessed to match the spatio-temporal grid specification for the extension
+of the new ESDC.
+
 ### Global Land Evaporation Amsterdam Model (GLEAM)
 
 *10 Variables*
@@ -123,7 +127,7 @@ Spatial resolution: 0.25 degrees
 
 ### MCD43C4 MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG
 
-*7 Variables*
+*9 Variables*
 
 Data source: [https://lpdaac.usgs.gov/products/mcd43c4v061/](https://lpdaac.usgs.gov/products/mcd43c4v061/)
 
@@ -140,3 +144,9 @@ Spatial resolution: 0.05 degrees
 - Nadir BRDF Adjusted Reflectance SWIR 1
 - Nadir BRDF Adjusted Reflectance SWIR 2
 - Nadir BRDF Adjusted Reflectance SWIR 3
+
+Additional variables:
+
+- NDVI (Produced from NBAR bands)
+- NIRv (Produced from NBAR bands)
+- kNDVI (Produced from NBAR bands)
