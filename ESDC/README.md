@@ -87,20 +87,6 @@ Spatial resolution: 0.05 degrees
 
 - SIF 757 nm
 
-#### TROPOMI
-
-*1 Variable*
-
-Data source: [https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018GL079031](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018GL079031)
-
-Time period: 2018-2021
-
-Temporal resolution: 8D
-
-Spatial resolution: 0.0833 degrees
-
-- SIF 740 nm
-
 #### Reconstructed TROPOMI (RTSIF)
 
 *1 Variable*
