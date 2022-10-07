@@ -1,7 +1,6 @@
 name: deepesdl
 channels:
   - conda-forge
-  - defaults
 dependencies:
   - _libgcc_mutex=0.1=conda_forge
   - _openmp_mutex=4.5=2_kmp_llvm
@@ -240,4 +239,9 @@ dependencies:
   - zict=2.2.0=pyhd8ed1ab_0
   - zlib=1.2.12=h5eee18b_3
   - zstd=1.5.2=ha4553b6_0
-prefix: /home/dmontero/anaconda3/envs/deepesdl
+  - xcube
+  - xcube-cds
+  - xcube-sh
+  - xcube-cmems
+  - xcube-cci
+  - xcube_geodb
