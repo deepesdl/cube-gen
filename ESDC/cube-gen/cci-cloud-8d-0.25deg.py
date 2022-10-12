@@ -29,7 +29,7 @@ dates = np.concatenate([get_dates_8d(year) for year in np.arange(2000,2015)])
 dates = dates[(dates >= np.datetime64("2000-02-15")) & (dates <= np.datetime64("2014-12-16"))]
 
 print("Resampling in time")
-dataset = dataset.interp(coords=dict(time=dates),method="nearest")
+dataset_8d = dataset.interp(coords=dict(time=dates),method="nearest")
 
 new_lats = np.arange(-89.875,90,0.25)
 new_lons = np.arange(-179.875,180,0.25)
