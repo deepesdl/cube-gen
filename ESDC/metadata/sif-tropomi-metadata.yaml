@@ -1,0 +1,94 @@
+global:
+    Conventions: CF-1.9
+    acknowledgment: "https://doi.org/10.1029/2018GL079031"
+    contributor_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    contributor_url: rsc4earth.de
+    creator_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    creator_url: rsc4earth.de
+    id: sif-tropomi-256x128x128
+    institution: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    license: Terms and conditions of the DeepESDL data distribution
+    project: DeepESDL
+    publisher_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    publisher_url: rsc4earth.de
+    references: "https://doi.org/10.1029/2018GL079031"
+    source: "ftp://fluo.gps.caltech.edu/data/tropomi/"
+    title: TROPOMI Solar-Induced Chlorophyll Fluorescence
+    time_period: "8D"
+    temporal_resolution: "8D"
+    reported_day: 1.0
+    scale_factor: 1.0
+    original_scale_factor: 1.0
+    add_offset: 0.0
+    original_add_offset: 0.0
+    processing_steps:
+        - "Merging nc files"
+    
+local:
+    time:
+        long_name: time
+        standard_name: time
+    lat:
+        long_name: latitude
+        standard_name: latitude
+        units: degrees_north        
+    lon:
+        long_name: longitude
+        standard_name: longitude
+        units: degrees_east        
+    cloud_fraction:
+        long_name: Relative cloud fraction
+        standard_name: relative_cloud_fraction
+        units: "1"
+        source: VIIRS-NPP
+        references: "https://doi.org/10.1029/2018GL079031"
+        grid_mapping: crs
+    dcCorr:
+        long_name: Length-of-day correction factor
+        standard_name: length_of_day_correction_factor
+        units: "1"
+        source: "ftp://fluo.gps.caltech.edu/data/tropomi/"
+        references: "https://doi.org/10.1029/2018GL079031"
+        grid_mapping: crs
+    n:
+        long_name: n
+        standard_name: n
+        units: "1"
+        source: "ftp://fluo.gps.caltech.edu/data/tropomi/"
+        references: "https://doi.org/10.1029/2018GL079031"
+        grid_mapping: crs
+    phase_angle:
+        long_name: Phase angle
+        standard_name: phase_angle
+        units: degrees
+        source: "ftp://fluo.gps.caltech.edu/data/tropomi/"
+        references: "https://doi.org/10.1029/2018GL079031"
+        grid_mapping: crs
+    sif:
+        long_name: Sun-Induced Chlorophyll Fluorescence at 740 nm
+        standard_name: sif
+        units: m W m^-2 sr^-1 nm^-1
+        source: "ftp://fluo.gps.caltech.edu/data/tropomi/"
+        references: "https://doi.org/10.1029/2018GL079031"
+        grid_mapping: crs
+    sif_dc:
+        long_name: Length-of-day corrected Sun-Induced Chlorophyll Fluorescence at 740 nm
+        standard_name: sif_dc
+        units: m W m^-2 sr^-1 nm^-1
+        source: "ftp://fluo.gps.caltech.edu/data/tropomi/"
+        references: "https://doi.org/10.1029/2018GL079031"
+        grid_mapping: crs
+    sif_relative:
+        long_name: Relative Sun-Induced Chlorophyll Fluorescence at 740 nm wrt to continuum level  
+        standard_name: sif_relative
+        units: "%"
+        source: "ftp://fluo.gps.caltech.edu/data/tropomi/"
+        references: "https://doi.org/10.1029/2018GL079031"
+        grid_mapping: crs
+    sif_sigma:
+        long_name: Estimated Sun-Induced Chlorophyll Fluorescence error at 740 nm
+        standard_name: sif_sigma
+        units: m W m^-2 sr^-1 nm^-1
+        source: "ftp://fluo.gps.caltech.edu/data/tropomi/"
+        references: "https://doi.org/10.1029/2018GL079031"
+        grid_mapping: crs

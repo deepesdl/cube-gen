@@ -1,0 +1,130 @@
+global:
+    Conventions: CF-1.9
+    acknowledgment: "https://www.gleam.eu/"
+    contributor_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    contributor_url: rsc4earth.de
+    creator_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    creator_url: rsc4earth.de
+    id: 512x128x128
+    institution: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    license: Terms and conditions of the DeepESDL data distribution
+    project: DeepESDL
+    publisher_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    publisher_url: rsc4earth.de
+    references: 
+        - "https://doi.org/10.5194/gmd-10-1903-2017"
+        - "https://doi.org/10.5194/hess-15-453-2011"
+    source: "https://www.gleam.eu/"
+    title: Global Land Evaporation Amsterdam Model (GLEAM) v3.6a
+    time_period: "1D"
+    temporal_resolution: "1D"
+    reported_day: 1.0
+    scale_factor: 1.0
+    original_scale_factor: 1.0
+    add_offset: 0.0
+    original_add_offset: 0.0
+    processing_steps:
+        - "Merging nc files"
+    
+local:
+    time:
+        long_name: time
+        standard_name: time
+    lat:
+        long_name: latitude
+        standard_name: latitude
+        units: degrees_north        
+    lon:
+        long_name: longitude
+        standard_name: longitude
+        units: degrees_east        
+    E:
+        long_name: Actual evaporation
+        standard_name: actual_evaporation
+        units: mm d^-1
+        source: GLEAM v3.6a
+        references: 
+            - "https://doi.org/10.5194/gmd-10-1903-2017"
+            - "https://doi.org/10.5194/hess-15-453-2011"
+        grid_mapping: crs
+    Eb:
+        long_name: Bare soil evaporation
+        standard_name: bare_soil_evaporation
+        units: mm d^-1
+        source: GLEAM v3.6a
+        references: 
+            - "https://doi.org/10.5194/gmd-10-1903-2017"
+            - "https://doi.org/10.5194/hess-15-453-2011"
+        grid_mapping: crs
+    Ei:
+        long_name: Interception loss
+        standard_name: interception_loss
+        units: mm d^-1
+        source: GLEAM v3.6a
+        references: 
+            - "https://doi.org/10.5194/gmd-10-1903-2017"
+            - "https://doi.org/10.5194/hess-15-453-2011"
+        grid_mapping: crs
+    Ep:
+        long_name: Potential evaporation
+        standard_name: potential_evaporation
+        units: mm d^-1
+        source: GLEAM v3.6a
+        references: 
+            - "https://doi.org/10.5194/gmd-10-1903-2017"
+            - "https://doi.org/10.5194/hess-15-453-2011"
+        grid_mapping: crs
+    Es:
+        long_name: Snow sublimation
+        standard_name: snow_sublimation
+        units: mm d^-1
+        source: GLEAM v3.6a
+        references: 
+            - "https://doi.org/10.5194/gmd-10-1903-2017"
+            - "https://doi.org/10.5194/hess-15-453-2011"
+        grid_mapping: crs
+    Et:
+        long_name: Transpiration
+        standard_name: transpiration
+        units: mm d^-1
+        source: GLEAM v3.6a
+        references: 
+            - "https://doi.org/10.5194/gmd-10-1903-2017"
+            - "https://doi.org/10.5194/hess-15-453-2011"
+        grid_mapping: crs
+    Ew:
+        long_name: Open-water evaporation
+        standard_name: open_water_evaporation
+        units: mm d^-1
+        source: GLEAM v3.6a
+        references: 
+            - "https://doi.org/10.5194/gmd-10-1903-2017"
+            - "https://doi.org/10.5194/hess-15-453-2011"
+        grid_mapping: crs
+    SMroot:
+        long_name: Root-zone soil moisture
+        standard_name: root_zone_soil_moisture
+        units: mm d^-1
+        source: GLEAM v3.6a
+        references: 
+            - "https://doi.org/10.5194/gmd-10-1903-2017"
+            - "https://doi.org/10.5194/hess-15-453-2011"
+        grid_mapping: crs
+    SMsurf:
+        long_name: Surface soil moisture
+        standard_name: surface_soil_moisture
+        units: mm d^-1
+        source: GLEAM v3.6a
+        references: 
+            - "https://doi.org/10.5194/gmd-10-1903-2017"
+            - "https://doi.org/10.5194/hess-15-453-2011"
+        grid_mapping: crs
+    S:
+        long_name: Evaporative stress
+        standard_name: evaporative_stress
+        units: "1"
+        source: GLEAM v3.6a
+        references: 
+            - "https://doi.org/10.5194/gmd-10-1903-2017"
+            - "https://doi.org/10.5194/hess-15-453-2011"
+        grid_mapping: crs

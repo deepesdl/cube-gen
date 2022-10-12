@@ -1,0 +1,218 @@
+global:
+    Conventions: CF-1.9
+    acknowledgment: "https://lpdaac.usgs.gov/products/mcd43c4v061/"
+    contributor_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    contributor_url: rsc4earth.de
+    creator_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    creator_url: rsc4earth.de
+    id: modis-mcd43c4-vis-256x256x256
+    institution: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    license: Terms and conditions of the DeepESDL data distribution
+    project: DeepESDL
+    publisher_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    publisher_url: rsc4earth.de
+    references: 
+        - "https://doi.org/10.5067/MODIS/MCD43C4.061"
+        - "https://www.umb.edu/spectralmass/terra_aqua_modis/v006"
+    source: "https://lpdaac.usgs.gov/products/mcd43c4v061/"
+    title: "MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices"
+    time_period: "1D"
+    temporal_resolution: "1D"
+    reported_day: 1.0
+    scale_factor: 1.0
+    original_scale_factor: 1.0
+    add_offset: 0.0
+    original_add_offset: 0.0
+    processing_steps:
+        - "Merging hdf files"
+        - "Computing NDVI, NIRv, and kNDVI"
+    
+local:
+    time:
+        long_name: time
+        standard_name: time
+    lat:
+        long_name: latitude
+        standard_name: latitude
+        units: degrees_north        
+    lon:
+        long_name: longitude
+        standard_name: longitude
+        units: degrees_east        
+    Albedo_Quality:
+        long_name: Global albedo quality
+        standard_name: albedo_quality
+        units: "1"
+        source: "https://lpdaac.usgs.gov/products/mcd43c4v061/"
+        references: 
+            - "https://doi.org/10.5067/MODIS/MCD43C4.061"
+            - "https://www.umb.edu/spectralmass/terra_aqua_modis/v006"
+        grid_mapping: crs
+        flag_values: 
+            - 0
+            - 1
+            - 2
+            - 3
+            - 4
+            - 5
+        flag_meanings: 
+            - "Best quality, 100% with full inversions"
+            - "Good quality, 75% or more with best full inversions and 90% or more with full inversions"
+            - "Relative good quality, 75% or more with full inversions"
+            - "Mixed, 75% or less full inversions and 25% or less fill values"
+            - "All magnitude inversions or 50% or less fill values"
+            - "50% or more fill values"
+    BRDF_Albedo_Uncertainty:
+        long_name: BRDF inversion information
+        standard_name: BRDF_albedo_uncertainty
+        units: "1"
+        source: "https://lpdaac.usgs.gov/products/mcd43c4v061/"
+        references: 
+            - "https://doi.org/10.5067/MODIS/MCD43C4.061"
+            - "https://www.umb.edu/spectralmass/terra_aqua_modis/v006"
+        grid_mapping: crs
+    Local_Solar_Noon:
+        long_name: Local solar noon zenith angle
+        standard_name: local_solar_noon
+        units: degrees
+        source: "https://lpdaac.usgs.gov/products/mcd43c4v061/"
+        references: 
+            - "https://doi.org/10.5067/MODIS/MCD43C4.061"
+            - "https://www.umb.edu/spectralmass/terra_aqua_modis/v006"
+        grid_mapping: crs
+    NDVI:
+        long_name: Normalized Difference Vegetation Index
+        standard_name: NDVI
+        units: "1"
+        source: "https://github.com/awesome-spectral-indices/spyndex"
+        references: 
+            - "https://ntrs.nasa.gov/citations/19740022614"
+            - "https://github.com/awesome-spectral-indices/awesome-spectral-indices"
+        grid_mapping: crs
+    NIRv:
+        long_name: Near Infrared Reflectance of Vegetation
+        standard_name: NIRv
+        units: "1"
+        source: "https://github.com/awesome-spectral-indices/spyndex"
+        references: 
+            - "https://doi.org/10.1126/sciadv.1602244"
+            - "https://github.com/awesome-spectral-indices/awesome-spectral-indices"
+        grid_mapping: crs
+    Nadir_Reflectance_Band1:
+        long_name: Nadir BRDF Adjusted Reflectance of Band 1 (red)
+        wavelength: 645.0
+        wavelength_units: nm
+        bandwidth: 50.0
+        bandwidth_units: nm
+        standard_name: nadir_reflectance_band1
+        units: "1"
+        source: "https://lpdaac.usgs.gov/products/mcd43c4v061/"
+        references: 
+            - "https://doi.org/10.5067/MODIS/MCD43C4.061"
+            - "https://www.umb.edu/spectralmass/terra_aqua_modis/v006"
+        grid_mapping: crs
+    Nadir_Reflectance_Band2:
+        long_name: Nadir BRDF Adjusted Reflectance of Band 2 (NIR)
+        wavelength: 858.5
+        wavelength_units: nm
+        bandwidth: 35.0
+        bandwidth_units: nm
+        standard_name: nadir_reflectance_band2
+        units: "1"
+        source: "https://lpdaac.usgs.gov/products/mcd43c4v061/"
+        references: 
+            - "https://doi.org/10.5067/MODIS/MCD43C4.061"
+            - "https://www.umb.edu/spectralmass/terra_aqua_modis/v006"
+        grid_mapping: crs
+    Nadir_Reflectance_Band3:
+        long_name: Nadir Adjusted BRDF Reflectance of Band 3 (blue)
+        wavelength: 469.0
+        wavelength_units: nm
+        bandwidth: 20.0
+        bandwidth_units: nm
+        standard_name: nadir_reflectance_band3
+        units: "1"
+        source: "https://lpdaac.usgs.gov/products/mcd43c4v061/"
+        references: 
+            - "https://doi.org/10.5067/MODIS/MCD43C4.061"
+            - "https://www.umb.edu/spectralmass/terra_aqua_modis/v006"
+        grid_mapping: crs
+    Nadir_Reflectance_Band4:
+        long_name: Nadir Adjusted BRDF Reflectance of Band 4 (green)
+        wavelength: 555.0
+        wavelength_units: nm
+        bandwidth: 20.0
+        bandwidth_units: nm
+        standard_name: nadir_reflectance_band4
+        units: "1"
+        source: "https://lpdaac.usgs.gov/products/mcd43c4v061/"
+        references: 
+            - "https://doi.org/10.5067/MODIS/MCD43C4.061"
+            - "https://www.umb.edu/spectralmass/terra_aqua_modis/v006"
+        grid_mapping: crs
+    Nadir_Reflectance_Band5:
+        long_name: Nadir Adjusted BRDF Reflectance of Band 5 (SWIR 1)
+        wavelength: 1240.0
+        wavelength_units: nm
+        bandwidth: 20.0
+        bandwidth_units: nm
+        standard_name: nadir_reflectance_band5
+        units: "1"
+        source: "https://lpdaac.usgs.gov/products/mcd43c4v061/"
+        references: 
+            - "https://doi.org/10.5067/MODIS/MCD43C4.061"
+            - "https://www.umb.edu/spectralmass/terra_aqua_modis/v006"
+        grid_mapping: crs
+    Nadir_Reflectance_Band6:
+        long_name: Nadir Adjusted BRDF Reflectance of Band 6 (SWIR 2)
+        wavelength: 1640.0
+        wavelength_units: nm
+        bandwidth: 24.0
+        bandwidth_units: nm
+        standard_name: nadir_reflectance_band6
+        units: "1"
+        source: "https://lpdaac.usgs.gov/products/mcd43c4v061/"
+        references: 
+            - "https://doi.org/10.5067/MODIS/MCD43C4.061"
+            - "https://www.umb.edu/spectralmass/terra_aqua_modis/v006"
+        grid_mapping: crs
+    Nadir_Reflectance_Band7:
+        long_name: Nadir Adjusted BRDF Reflectance of Band 7 (SWIR 3)
+        wavelength: 2130.0
+        wavelength_units: nm
+        bandwidth: 50.0
+        bandwidth_units: nm
+        standard_name: nadir_reflectance_band7
+        units: "1"
+        source: "https://lpdaac.usgs.gov/products/mcd43c4v061/"
+        references: 
+            - "https://doi.org/10.5067/MODIS/MCD43C4.061"
+            - "https://www.umb.edu/spectralmass/terra_aqua_modis/v006"
+        grid_mapping: crs
+    Percent_Inputs:
+        long_name: Processed finer resolution data that contributed to this CMG pixel
+        standard_name: percent_inputs
+        units: percent
+        source: "https://lpdaac.usgs.gov/products/mcd43c4v061/"
+        references: 
+            - "https://doi.org/10.5067/MODIS/MCD43C4.061"
+            - "https://www.umb.edu/spectralmass/terra_aqua_modis/v006"
+        grid_mapping: crs
+    Percent_Snow:
+        long_name: Underlying data flagged as snow
+        standard_name: percent_snow
+        units: percent
+        source: "https://lpdaac.usgs.gov/products/mcd43c4v061/"
+        references: 
+            - "https://doi.org/10.5067/MODIS/MCD43C4.061"
+            - "https://www.umb.edu/spectralmass/terra_aqua_modis/v006"
+        grid_mapping: crs
+    kNDVI:
+        long_name: Kernel Normalized Difference Vegetation Index
+        standard_name: kNDVI
+        units: "1"
+        source: "https://github.com/awesome-spectral-indices/spyndex"
+        references: 
+            - "https://doi.org/10.1126/sciadv.abc7447"
+            - "https://github.com/awesome-spectral-indices/awesome-spectral-indices"
+        grid_mapping: crs

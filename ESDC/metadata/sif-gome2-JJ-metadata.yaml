@@ -1,0 +1,44 @@
+global:
+    Conventions: CF-1.9
+    acknowledgment: "https://doi.org/10.5194/essd-12-1101-2020"
+    contributor_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    contributor_url: rsc4earth.de
+    creator_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    creator_url: rsc4earth.de
+    id: sif-gome2-JJ-256x256x256
+    institution: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    license: Terms and conditions of the DeepESDL data distribution
+    project: DeepESDL
+    publisher_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    publisher_url: rsc4earth.de
+    references: "https://doi.org/10.5194/essd-12-1101-2020"
+    source: "https://data.jrc.ec.europa.eu/dataset/21935ffc-b797-4bee-94da-8fec85b3f9e1"
+    title: Spatially Downscaled Sun-Induced Fluorescence (JJ Method)
+    time_period: "8D"
+    temporal_resolution: "16D"
+    reported_day: 9.0
+    scale_factor: 1.0
+    original_scale_factor: 1.0
+    add_offset: 0.0
+    original_add_offset: 0.0
+    processing_steps:
+        - "Merging nc files"
+    
+local:
+    time:
+        long_name: time
+        standard_name: time
+    lat:
+        long_name: latitude
+        standard_name: latitude
+        units: degrees_north        
+    lon:
+        long_name: longitude
+        standard_name: longitude
+        units: degrees_east
+    SIF:
+        long_name: Downscaled Daily Corrected Sun-Induced Chlorophyll Fluorescence at 740 nm
+        standard_name: sif
+        units: m W m^-2 sr^-1 nm^-1
+        source: "https://data.jrc.ec.europa.eu/dataset/21935ffc-b797-4bee-94da-8fec85b3f9e1"
+        references: "https://doi.org/10.5194/essd-12-1101-2020"

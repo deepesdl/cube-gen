@@ -1,0 +1,47 @@
+global:
+    Conventions: CF-1.9
+    acknowledgment: "https://doi.org/10.3390/rs11050517"
+    contributor_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    contributor_url: rsc4earth.de
+    creator_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    creator_url: rsc4earth.de
+    id: sif-gosif-1x1024x1024
+    institution: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    license: Terms and conditions of the DeepESDL data distribution
+    project: DeepESDL
+    publisher_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    publisher_url: rsc4earth.de
+    references: "https://doi.org/10.3390/rs11050517"
+    source: "https://globalecology.unh.edu/data.html"
+    title: GOSIF Solar-Induced Chlorophyll Fluorescence Derived from OCO-2, MODIS, and Reanalysis Data
+    time_period: "8D"
+    temporal_resolution: "8D"
+    reported_day: 1.0
+    scale_factor: 1.0
+    original_scale_factor: 0.0001
+    add_offset: 0.0
+    original_add_offset: 0.0
+    processing_steps:
+        - "Merging tif files"
+        - "Converting water bodies and snow covered areas to NaN"
+        - "Applying original scale factor"
+    
+local:
+    time:
+        long_name: time
+        standard_name: time
+    lat:
+        long_name: latitude
+        standard_name: latitude
+        units: degrees_north        
+    lon:
+        long_name: longitude
+        standard_name: longitude
+        units: degrees_east
+    sif:
+        long_name: Solar-Induced Chlorophyll Fluorescence at 757 nm
+        standard_name: sif
+        units: W m^-2 sr^-1 um^-1
+        source: "https://globalecology.unh.edu/data.html"
+        references: "https://doi.org/10.3390/rs11050517"
+        grid_mapping: crs
