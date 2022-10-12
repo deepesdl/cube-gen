@@ -9,10 +9,10 @@ from tqdm import tqdm
 import numpy as np
 import os
 
-pathOut = "~/data-source/cci-sm/"
+pathOut = "/net/scratch/dmontero/CCI/SM"
 
-# if not os.path.exists(pathOut):
-#     os.mkdir(pathOut)
+if not os.path.exists(pathOut):
+    os.mkdir(pathOut)
 
 def get_url_paths(url, ext='', params={}):
     response = requests.get(url, params=params)
@@ -35,7 +35,7 @@ def download_file(url):
                 f.write(response.content)
     else:
         print(f"File {filename} already exists!")
-    ds = xr.open_dataset(pathOut + "/ESACCI-SOILMOISTURE-L3S-SSMV-COMBINED-19790101000000-fv06.1.nc")
+    ds = xr.open_dataset(pathFilename)
     ds = ds[['sm']].chunk(dict(time=1,lat=128,lon=128))
     ds.to_zarr(pathFilename.replace("nc","zarr"))
     os.remove(pathFilename)
