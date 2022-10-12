@@ -39,3 +39,10 @@ def download_file(url):
     ds = ds[['sm']].chunk(dict(time=1,lat=128,lon=128))
     ds.to_zarr(pathFilename.replace("nc","zarr"))
     os.remove(pathFilename)
+    
+years = np.arange(1979,2021)
+
+for year in tqdm(years):
+    urls = get_url_paths(f"https://dap.ceda.ac.uk/neodc/esacci/soil_moisture/data/daily_files/COMBINED/v06.1/{year}/","nc")
+    for url in urls:
+        download_file(url)
