@@ -1,0 +1,47 @@
+global:
+    Conventions: CF-1.9
+    acknowledgment: "https://www.globalfiredata.org/"
+    contributor_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    contributor_url: rsc4earth.de
+    creator_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    creator_url: rsc4earth.de
+    id: gfed4-burntarea-8d-0.25deg-256x128x128.zarr
+    institution: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    license: Terms and conditions of the DeepESDL data distribution
+    project: DeepESDL
+    publisher_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    publisher_url: rsc4earth.de
+    references: 
+        - "https://doi.org/10.1002/jgrg.20042"
+    source: "https://www.globalfiredata.org/"
+    title: "Global Fire Emissions Database (GFED) 4 Monthly Burnt Area"
+    time_period: "8D"
+    temporal_resolution: "8D"
+    reported_day: 5.0
+    scale_factor: 1.0
+    original_scale_factor: 0.01
+    add_offset: 0.0
+    original_add_offset: 0.0
+    processing_steps:
+        - "Merging hdf files"
+        - "Resampling by 8-day nearest neighbor"
+    
+local:
+    time:
+        long_name: time
+        standard_name: time
+    lat:
+        long_name: latitude
+        standard_name: latitude
+        units: degrees_north        
+    lon:
+        long_name: longitude
+        standard_name: longitude
+        units: degrees_east        
+    burnt_area:
+        long_name: Monthly Burnt Area
+        standard_name: burnt_area
+        units: hectares
+        source: "https://www.globalfiredata.org/"
+        references: 
+            - "https://doi.org/10.1002/jgrg.20042"
