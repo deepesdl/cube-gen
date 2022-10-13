@@ -1,0 +1,48 @@
+global:
+    Conventions: CF-1.9
+    acknowledgment: "ESA Aerosol Climate Change Initiative (Aerosol_cci)"
+    contributor_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    contributor_url: rsc4earth.de
+    creator_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    creator_url: rsc4earth.de
+    id: cci-aod550-8d-0.25deg-256x128x128
+    institution: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    license: Terms and conditions of the DeepESDL data distribution
+    project: DeepESDL
+    publisher_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    publisher_url: rsc4earth.de
+    references: 
+        - "https://doi.org/10.5194/amt-6-1919-2013"
+    source: "https://catalogue.ceda.ac.uk/uuid/c183044b88734442b6d37f5c4f6b0092"
+    title: "ESA Aerosol Climate Change Initiative (Aerosol_cci): Level 3 aerosol products from AATSR (ensemble product), Version 2.6"
+    time_period: "8D"
+    temporal_resolution: "8D"
+    reported_day: 5.0
+    scale_factor: 1.0
+    original_scale_factor: 1.0
+    add_offset: 0.0
+    original_add_offset: 0.0
+    processing_steps:
+        - "Loading data using the cciodp xcube data store"
+        - "Resampling by 8-day mean"
+        - "Upsampling to 0.25 degrees using nearest neighbor"
+    
+local:
+    time:
+        long_name: time
+        standard_name: time
+    lat:
+        long_name: latitude
+        standard_name: latitude
+        units: degrees_north        
+    lon:
+        long_name: longitude
+        standard_name: longitude
+        units: degrees_east        
+    AOD550_mean:
+        long_name: Aerosol Optical Thickness at 550 nm
+        standard_name: atmosphere_optical_thickness_due_to_ambient_aerosol
+        units: "1"
+        source: "https://catalogue.ceda.ac.uk/uuid/c183044b88734442b6d37f5c4f6b0092"
+        references: 
+            - "https://doi.org/10.5194/amt-6-1919-2013"
