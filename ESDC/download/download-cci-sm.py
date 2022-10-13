@@ -27,19 +27,18 @@ def get_url_paths(url, ext='', params={}):
 def download_file(url):
     filename = url.split("/")[-1]
     pathFilename = f"{pathOut}/" + filename
-    if not os.path.exists(pathFilename):
+    if not os.path.exists(pathFilename.replace("nc","zarr")):
         response = requests.get(url,stream=True)
-        print(response)
         if response.status_code == 200:
             with open(pathFilename, 'wb') as f:
                 f.write(response.content)
+        ds = xr.open_dataset(pathFilename)
+        ds = ds[['sm']].chunk(dict(time=1,lat=128,lon=128))
+        ds.to_zarr(pathFilename.replace("nc","zarr"))
+        os.remove(pathFilename)
     else:
         print(f"File {filename} already exists!")
-    ds = xr.open_dataset(pathFilename)
-    ds = ds[['sm']].chunk(dict(time=1,lat=128,lon=128))
-    ds.to_zarr(pathFilename.replace("nc","zarr"))
-    os.remove(pathFilename)
-    
+
 years = np.arange(1979,2021)
 
 for year in tqdm(years):
