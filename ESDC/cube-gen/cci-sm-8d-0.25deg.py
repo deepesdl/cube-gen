@@ -26,7 +26,7 @@ def resample_weekly(ds,year):
 print("Resampling in time")
 dataset_8d = [resample_weekly(dataset,year) for year in tqdm(years)]
 dataset_8d = xr.concat(dataset_8d,dim="time")
-dataset = dataset.chunk(dict(time=256))
+dataset_8d = dataset_8d.chunk(dict(time=256))
 
 print("Saving")
 dataset_8d.to_zarr("/net/scratch/dmontero/CCI/cci-sm-8d-0.25deg-256x128x128.zarr")
