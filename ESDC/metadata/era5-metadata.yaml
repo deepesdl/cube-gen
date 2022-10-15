@@ -1,0 +1,114 @@
+global:
+    Conventions: CF-1.9
+    acknowledgment: "ERA5 hourly data on single levels from 1959 to present"
+    contributor_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    contributor_url: rsc4earth.de
+    creator_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    creator_url: rsc4earth.de
+    id: era5-8d-0.25deg-256x128x128
+    institution: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    license: Terms and conditions of the DeepESDL data distribution
+    project: DeepESDL
+    publisher_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    publisher_url: rsc4earth.de
+    references: 
+        - "https://confluence.ecmwf.int/display/CKB/ERA5%3A+data+documentation"
+    source: "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels"
+    title: "ERA5 Reanalysis Products"
+    time_period: "8D"
+    temporal_resolution: "8D"
+    reported_day: 5.0
+    scale_factor: 1.0
+    original_scale_factor: 1.0
+    add_offset: 0.0
+    original_add_offset: 0.0
+    
+local:
+    time:
+        long_name: time
+        standard_name: time
+    lat:
+        long_name: latitude
+        standard_name: latitude
+        units: degrees_north        
+    lon:
+        long_name: longitude
+        standard_name: longitude
+        units: degrees_east        
+    e:
+        long_name: Evaporation
+        standard_name: lwe_thickness_of_water_evaporation_amount
+        units: mm d^-1
+        source: "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels"
+        references: 
+            - "https://confluence.ecmwf.int/display/CKB/ERA5%3A+data+documentation"
+        processing_steps:
+            - "Merging nc files"
+            - "Resampling by daily sum"
+            - "Converting to mm from m"
+            - "Resampling by 8-day mean"
+            - "Resampling to 0.25 degrees using bilinear interpolation"
+    tp:
+        long_name: Total Precipitation
+        standard_name: total_precipitation
+        units: mm d^-1
+        source: "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels"
+        references: 
+            - "https://confluence.ecmwf.int/display/CKB/ERA5%3A+data+documentation"
+        processing_steps:
+            - "Merging nc files"
+            - "Resampling by daily sum"
+            - "Converting to mm from m"
+            - "Resampling by 8-day mean"
+            - "Resampling to 0.25 degrees using bilinear interpolation"
+    t2m:
+        long_name: Mean Air Temperature at 2 m
+        standard_name: mean_air_temperature_2m
+        units: "°C"
+        source: "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels"
+        references: 
+            - "https://confluence.ecmwf.int/display/CKB/ERA5%3A+data+documentation"
+        processing_steps:
+            - "Merging nc files"
+            - "Resampling by daily mean"
+            - "Converting to °C from K"
+            - "Resampling by 8-day mean"
+            - "Resampling to 0.25 degrees using bilinear interpolation"
+    t2m_max:
+        long_name: Maximum Air Temperature at 2 m
+        standard_name: max_air_temperature_2m
+        units: "°C"
+        source: "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels"
+        references: 
+            - "https://confluence.ecmwf.int/display/CKB/ERA5%3A+data+documentation"
+        processing_steps:
+            - "Merging nc files"
+            - "Resampling by daily max"
+            - "Converting to °C from K"
+            - "Resampling by 8-day max"
+            - "Resampling to 0.25 degrees using bilinear interpolation"
+    t2m_min:
+        long_name: Minimum Air Temperature at 2 m
+        standard_name: min_air_temperature_2m
+        units: "°C"
+        source: "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels"
+        references: 
+            - "https://confluence.ecmwf.int/display/CKB/ERA5%3A+data+documentation"
+        processing_steps:
+            - "Merging nc files"
+            - "Resampling by daily min"
+            - "Converting to °C from K"
+            - "Resampling by 8-day min"
+            - "Resampling to 0.25 degrees using bilinear interpolation"
+    ssr:
+        long_name: Surface Net Solar Radiation
+        standard_name: surface_net_downward_shortwave_flux
+        units: J m^-2
+        source: "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels"
+        references: 
+            - "https://confluence.ecmwf.int/display/CKB/ERA5%3A+data+documentation"
+        processing_steps:
+            - "Merging nc files"
+            - "Resampling by daily mean"
+            - "Resampling by 8-day mean"
+            - "Resampling to 0.25 degrees using bilinear interpolation"
