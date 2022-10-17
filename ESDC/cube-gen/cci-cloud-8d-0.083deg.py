@@ -39,4 +39,4 @@ dataset_8d = dataset_8d.interp(coords=dict(lat=new_lats,lon=new_lons),method="ne
 dataset_8d = dataset_8d.chunk(dict(time=256,lat=128,lon=128))
 
 print("Saving")
-dataset_8d.to_zarr("~/data/cci-cloud-8d-0.083deg-256x128x128.zarr")
+dataset_8d.to_zarr("/net/scratch/dmontero/CCI/cci-cloud-8d-0.083deg-256x128x128.zarr")
