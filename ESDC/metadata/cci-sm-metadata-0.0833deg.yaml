@@ -1,0 +1,52 @@
+global:
+    Conventions: CF-1.9
+    acknowledgment: "ESA Soil Moisture Climate Change Initiative (Soil_Moisture_cci)"
+    contributor_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    contributor_url: rsc4earth.de
+    creator_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    creator_url: rsc4earth.de
+    id: cci-sm-8d-0.25deg-256x128x128
+    institution: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    license: Terms and conditions of the DeepESDL data distribution
+    project: DeepESDL
+    publisher_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    publisher_url: rsc4earth.de
+    references: 
+        - "https://data.cci.ceda.ac.uk/thredds/fileServer/esacci/soil_moisture/docs/v06.1/ESA_CCI_SM_RD_D2.1_v2_ATBD_v06.1_issue_1.1.pdf"
+        - "https://doi.org/10.5194/essd-11-717-2019"
+        - "https://doi.org/10.1016/j.rse.2017.07.001"
+    source: "https://catalogue.ceda.ac.uk/uuid/43d73291472444e6b9c2d2420dbad7d6"
+    title: "ESA Soil Moisture Climate Change Initiative (Soil_Moisture_cci): COMBINED product, Version 06.1"
+    time_period: "8D"
+    temporal_resolution: "8D"
+    reported_day: 5.0
+    scale_factor: 1.0
+    original_scale_factor: 1.0
+    add_offset: 0.0
+    original_add_offset: 0.0
+    processing_steps:
+        - "Merging nc files"
+        - "Resampling by 8-day mean"
+        - "Upsampling to 0.0833 degrees using nearest neighbour"
+    
+local:
+    time:
+        long_name: time
+        standard_name: time
+    lat:
+        long_name: latitude
+        standard_name: latitude
+        units: degrees_north        
+    lon:
+        long_name: longitude
+        standard_name: longitude
+        units: degrees_east        
+    sm:
+        long_name: Volumetric Soil Moisture
+        standard_name: volumetric_soil_moisture
+        units: m^3 m^-3
+        source: "https://catalogue.ceda.ac.uk/uuid/43d73291472444e6b9c2d2420dbad7d6"
+        references: 
+            - "https://data.cci.ceda.ac.uk/thredds/fileServer/esacci/soil_moisture/docs/v06.1/ESA_CCI_SM_RD_D2.1_v2_ATBD_v06.1_issue_1.1.pdf"
+            - "https://doi.org/10.5194/essd-11-717-2019"
+            - "https://doi.org/10.1016/j.rse.2017.07.001"
