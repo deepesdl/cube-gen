@@ -1,0 +1,88 @@
+global:
+    Conventions: CF-1.9
+    acknowledgment: "FLUXCOM"
+    contributor_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    contributor_url: rsc4earth.de
+    creator_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    creator_url: rsc4earth.de
+    id: fluxcom-8d-0.083deg-256x256x256
+    institution: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    license: Terms and conditions of the DeepESDL data distribution
+    project: DeepESDL
+    publisher_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    publisher_url: rsc4earth.de
+    references: 
+        - "https://doi.org/10.5194/bg-13-4291-2016"
+        - "https://doi.org/10.1038/s41597-019-0076-8"
+    source: "https://www.fluxcom.org/"
+    title: "FLUXCOM"
+    time_period: "8D"
+    temporal_resolution: "8D"
+    reported_day: 5.0
+    scale_factor: 1.0
+    original_scale_factor: 1.0
+    add_offset: 0.0
+    original_add_offset: 0.0
+    processing_steps:
+        - "Merging nc files"
+    
+local:
+    time:
+        long_name: time
+        standard_name: time
+    lat:
+        long_name: latitude
+        standard_name: latitude
+        units: degrees_north        
+    lon:
+        long_name: longitude
+        standard_name: longitude
+        units: degrees_east        
+    GPP:
+        long_name: Gross Primary Productivity
+        standard_name: gross_primary_productivity_of_carbon
+        units: g C m^-2 d^-1
+        source: "https://www.fluxcom.org/"
+        references: 
+            - "https://doi.org/10.5194/bg-13-4291-2016"
+            - "https://doi.org/10.1038/s41597-019-0076-8"
+    NEE:
+        long_name: Net Ecosystem Exchange
+        standard_name: net_primary_productivity_of_carbon
+        units: g C m^-2 d^-1
+        source: "https://www.fluxcom.org/"
+        references: 
+            - "https://doi.org/10.5194/bg-13-4291-2016"
+            - "https://doi.org/10.1038/s41597-019-0076-8"
+    TER:
+        long_name: Terrestrial Ecosystem Respiration
+        standard_name: ecosystem_respiration_carbon_flux
+        units: g C m^-2 d^-1
+        source: "https://www.fluxcom.org/"
+        references: 
+            - "https://doi.org/10.5194/bg-13-4291-2016"
+            - "https://doi.org/10.1038/s41597-019-0076-8"
+    H:
+        long_name: Sensible Heat
+        standard_name: surface_upward_sensible_heat_flux
+        units: MJ m^-2 d^-1
+        source: "https://www.fluxcom.org/"
+        references: 
+            - "https://doi.org/10.5194/bg-13-4291-2016"
+            - "https://doi.org/10.1038/s41597-019-0076-8"
+    LE:
+        long_name: Latent Energy
+        standard_name: surface_upward_latent_heat_flux
+        units: MJ m^-2 d^-1
+        source: "https://www.fluxcom.org/"
+        references: 
+            - "https://doi.org/10.5194/bg-13-4291-2016"
+            - "https://doi.org/10.1038/s41597-019-0076-8"
+    Rn:
+        long_name: Net Radiation
+        standard_name: surface_net_radiation_flux
+        units: MJ m^-2 d^-1
+        source: "https://www.fluxcom.org/"
+        references: 
+            - "https://doi.org/10.5194/bg-13-4291-2016"
+            - "https://doi.org/10.1038/s41597-019-0076-8"
