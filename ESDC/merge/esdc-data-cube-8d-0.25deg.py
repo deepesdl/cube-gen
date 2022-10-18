@@ -50,7 +50,9 @@ def rearrange_dataset(ds,rename_dict):
     remove_attrs_dataset(ds,rename_dict.keys(),[
         'grid_mapping',
         'id',
-        'Conventions'
+        'Conventions',
+        'add_offset',
+        'scale_factor'
     ])
     ds=rename_and_add_attr(ds,rename_dict)
     ds=ds.drop("crs")
@@ -215,7 +217,7 @@ datacube = xr.merge([
 ])
 
 print("Adding new variables")
-with open("cube-gen/ESDC/merge/esdc-metadata.yaml", "r") as stream:
+with open("esdc-metadata.yaml", "r") as stream:
     try:
         metadata = yaml.safe_load(stream)
     except yaml.YAMLError as exc:
@@ -245,6 +247,10 @@ datacube.attrs = dict(
 
 print("Chunking")
 datacube = datacube.chunk(dict(time=256,lat=128,lon=128))
+
+for variable in datacube.variables.keys():
+    if 'chunks' in datacube[variable].encoding.keys():
+        del datacube[variable].encoding['chunks']
 
 print("Saving")
 store_output.write_data(
