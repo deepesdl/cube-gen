@@ -1,0 +1,443 @@
+zarr_consolidated_format: 1
+metadata:
+
+    .zattrs:
+        contributor_name:
+            - University of Leipzig
+            - Max Planck Institute
+            - Brockmann Consult GmbH
+        contributor_url:
+            - https://www.uni-leipzig.de/
+            - https://www.mpg.de/en
+            - https://www.brockmann-consult.de/
+        creator_name:
+            - University of Leipzig
+            - Brockmann Consult GmbH
+        creator_url:
+            - https://www.uni-leipzig.de/
+            - https://www.brockmann-consult.de/
+        publisher_name: DeepESDL Team
+        publisher_url: "https://www.earthsystemdatalab.net/"
+        id: esdc-8d-0.25deg-256x128x128-3.0.0
+        institution: __delete__
+
+    aerosol_optical_thickness_550/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: 'ESA Aerosol Climate Change Initiative (Aerosol_cci): Level 3 aerosol products from AATSR (ensemble product), Version 2.6'
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    air_temperature_2m/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: ERA5 Reanalysis Products
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    bare_soil_evaporation/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: Global Land Evaporation Amsterdam Model (GLEAM) v3.6a
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    burnt_area/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: Global Fire Emissions Database (GFED) 4 Monthly Burnt Area
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    cot/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: 'ESA Cloud Climate Change Initiative (Cloud_cci): MODIS-TERRA monthly gridded cloud properties, version 2.0'
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    cth/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: 'ESA Cloud Climate Change Initiative (Cloud_cci): MODIS-TERRA monthly gridded cloud properties, version 2.0'
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    ctt/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: 'ESA Cloud Climate Change Initiative (Cloud_cci): MODIS-TERRA monthly gridded cloud properties, version 2.0'
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    evaporation/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: Global Land Evaporation Amsterdam Model (GLEAM) v3.6a
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    evaporation_era5/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: ERA5 Reanalysis Products
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    evaporative_stress/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: Global Land Evaporation Amsterdam Model (GLEAM) v3.6a
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    gross_primary_productivity/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: FLUXCOM
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    interception_loss/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: Global Land Evaporation Amsterdam Model (GLEAM) v3.6a
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    kndvi/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    latent_energy/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: FLUXCOM
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    max_air_temperature_2m/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: ERA5 Reanalysis Products
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    min_air_temperature_2m/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: ERA5 Reanalysis Products
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    nbar_blue/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    nbar_green/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    nbar_nir/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    nbar_red/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    nbar_swir1/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    nbar_swir2/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    nbar_swir3/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    ndvi/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    net_ecosystem_exchange/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: FLUXCOM
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    net_radiation/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: FLUXCOM
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    nirv/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    open_water_evaporation/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: Global Land Evaporation Amsterdam Model (GLEAM) v3.6a
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    potential_evaporation/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: Global Land Evaporation Amsterdam Model (GLEAM) v3.6a
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    precipitation_era5/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: ERA5 Reanalysis Products
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    radiation_era5/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: ERA5 Reanalysis Products
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    root_moisture/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: Global Land Evaporation Amsterdam Model (GLEAM) v3.6a
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    sensible_heat/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: FLUXCOM
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    sif_gome2_jj/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: Spatially Downscaled Sun-Induced Fluorescence (JJ Method)
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    sif_gome2_pk/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: Spatially Downscaled Sun-Induced Fluorescence (PK Method)
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    sif_gosif/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: GOSIF Solar-Induced Chlorophyll Fluorescence Derived from OCO-2, MODIS, and Reanalysis Data
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    sif_rtsif/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: Long-term Reconstructed TROPOMI Solar-Induced Fluorescence (RTSIF)
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    sm/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: 'ESA Soil Moisture Climate Change Initiative (Soil_Moisture_cci): COMBINED product, Version 06.1'
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    snow_sublimation/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: Global Land Evaporation Amsterdam Model (GLEAM) v3.6a
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    surface_moisture/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: Global Land Evaporation Amsterdam Model (GLEAM) v3.6a
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    terrestrial_ecosystem_respiration/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: FLUXCOM
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__
+    transpiration/.zattrs:
+        contributor_name: __delete__
+        contributor_url: __delete__
+        creator_name: __delete__
+        creator_url: __delete__
+        description: Global Land Evaporation Amsterdam Model (GLEAM) v3.6a
+        institution: __delete__
+        publisher_name: __delete__
+        publisher_url: __delete__
+        title: __delete__

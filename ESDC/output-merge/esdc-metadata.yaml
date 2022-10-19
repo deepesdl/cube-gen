@@ -1,0 +1,16 @@
+global:
+    Conventions: CF-1.9
+    acknowledgment: "All ESDC data providers are acknowledged inside each variable"
+    contributor_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    contributor_url: rsc4earth.de
+    creator_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    creator_url: rsc4earth.de
+    id: esdc-8d-0.25deg-256x128x128
+    institution: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    license: Terms and conditions of the DeepESDL data distribution
+    project: DeepESDL
+    publisher_name: Remote Sensing Centre for Earth System Research (RSC4Earth)
+    publisher_url: rsc4earth.de
+    title: "Earth System Data Cube (ESDC) v3.0.0"
+    time_period: "8D"
+    time_period_reported_day: 5.0
