@@ -30,10 +30,24 @@
     "properties": {
         "Conventions": "CF-1.9",
         "acknowledgment": "All ESDC data providers are acknowledged inside each variable",
-        "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-        "contributor_url": "rsc4earth.de",
-        "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-        "creator_url": "rsc4earth.de",
+        "contributor_name": [
+            "University of Leipzig",
+            "Max Planck Institute",
+            "Brockmann Consult GmbH"
+        ],
+        "contributor_url": [
+            "https://www.uni-leipzig.de/",
+            "https://www.mpg.de/en",
+            "https://www.brockmann-consult.de/"
+        ],
+        "creator_name": [
+            "University of Leipzig",
+            "Brockmann Consult GmbH"
+        ],
+        "creator_url": [
+            "https://www.uni-leipzig.de/",
+            "https://www.brockmann-consult.de/"
+        ],
         "date_modified": "2022-10-18 10:12:59.595300",
         "geospatial_lat_max": 89.875,
         "geospatial_lat_min": -89.875,
@@ -41,12 +55,11 @@
         "geospatial_lon_max": 179.875,
         "geospatial_lon_min": -179.875,
         "geospatial_lon_resolution": 0.25,
-        "id": "esdc-8d-0.25deg-256x128x128",
-        "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
+        "id": "esdc-8d-0.25deg-256x128x128-3.0.0",
         "license": "Terms and conditions of the DeepESDL data distribution",
         "project": "DeepESDL",
-        "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-        "publisher_url": "rsc4earth.de",
+        "publisher_name": "DeepESDL Team",
+        "publisher_url": "https://www.earthsystemdatalab.net/",
         "time_coverage_end": "2021-12-31T00:00:00.000000000",
         "time_coverage_start": "1979-01-05T00:00:00.000000000",
         "time_period": "8D",
@@ -56,18 +69,14 @@
             {
                 "name": "aerosol_optical_thickness_550",
                 "acknowledgment": "ESA Aerosol Climate Change Initiative (Aerosol_cci)",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-13 03:15:18.312024",
+                "description": "ESA Aerosol Climate Change Initiative (Aerosol_cci): Level 3 aerosol products from AATSR (ensemble product), Version 2.6",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.875,
                 "geospatial_lat_resolution": 0.25,
                 "geospatial_lon_max": 179.875,
                 "geospatial_lon_min": -179.875,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Aerosol Optical Thickness at 550 nm",
                 "original_add_offset": 0.0,
@@ -79,8 +88,6 @@
                     "Upsampling to 0.25 degrees using nearest neighbor"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://doi.org/10.5194/amt-6-1919-2013"
                 ],
@@ -93,24 +100,19 @@
                 "time_coverage_end": "2012-04-10T00:00:00.000000000",
                 "time_coverage_start": "2002-05-21T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "ESA Aerosol Climate Change Initiative (Aerosol_cci): Level 3 aerosol products from AATSR (ensemble product), Version 2.6",
                 "units": "1"
             },
             {
                 "name": "air_temperature_2m",
                 "acknowledgment": "ERA5 hourly data on single levels from 1959 to present",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-15 15:22:40.252342",
+                "description": "ERA5 Reanalysis Products",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.875,
                 "geospatial_lat_resolution": 0.25,
                 "geospatial_lon_max": 179.875,
                 "geospatial_lon_min": -179.875,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Mean Air Temperature at 2 m",
                 "original_add_offset": 0.0,
@@ -124,8 +126,6 @@
                     "Resampling to 0.25 degrees using bilinear interpolation"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://confluence.ecmwf.int/display/CKB/ERA5%3A+data+documentation"
                 ],
@@ -138,24 +138,19 @@
                 "time_coverage_end": "2021-12-27T00:00:00.000000000",
                 "time_coverage_start": "1979-01-01T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "ERA5 Reanalysis Products",
                 "units": "\u00b0C"
             },
             {
                 "name": "bare_soil_evaporation",
                 "acknowledgment": "https://www.gleam.eu/",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-11 16:47:36.234042",
+                "description": "Global Land Evaporation Amsterdam Model (GLEAM) v3.6a",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.875,
                 "geospatial_lat_resolution": -0.25,
                 "geospatial_lon_max": 179.875,
                 "geospatial_lon_min": -179.875,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Bare soil evaporation",
                 "original_add_offset": 0.0,
@@ -166,8 +161,6 @@
                     "resampling by 8-day mean"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://doi.org/10.5194/gmd-10-1903-2017",
                     "https://doi.org/10.5194/hess-15-453-2011"
@@ -182,24 +175,19 @@
                 "time_coverage_end": "2021-12-31T00:00:00.000000000",
                 "time_coverage_start": "1980-01-05T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "Global Land Evaporation Amsterdam Model (GLEAM) v3.6a",
                 "units": "mm d^-1"
             },
             {
                 "name": "burnt_area",
                 "acknowledgment": "https://www.globalfiredata.org/",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-13 14:55:35.002779",
+                "description": "Global Fire Emissions Database (GFED) 4 Monthly Burnt Area",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.875,
                 "geospatial_lat_resolution": -0.25,
                 "geospatial_lon_max": 179.875,
                 "geospatial_lon_min": -179.875,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Monthly Burnt Area",
                 "original_add_offset": 0.0,
@@ -210,8 +198,6 @@
                     "Resampling by 8-day nearest neighbor"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://doi.org/10.1002/jgrg.20042"
                 ],
@@ -224,24 +210,19 @@
                 "time_coverage_end": "2016-12-30T00:00:00.000000000",
                 "time_coverage_start": "1995-06-06T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "Global Fire Emissions Database (GFED) 4 Monthly Burnt Area",
                 "units": "hectares"
             },
             {
                 "name": "cot",
                 "acknowledgment": "ESA Cloud Climate Change Initiative (Cloud_cci)",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-13 03:11:42.331361",
+                "description": "ESA Cloud Climate Change Initiative (Cloud_cci): MODIS-TERRA monthly gridded cloud properties, version 2.0",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.875,
                 "geospatial_lat_resolution": 0.25,
                 "geospatial_lon_max": 179.875,
                 "geospatial_lon_min": -179.875,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Cloud Optical Thickness",
                 "original_add_offset": 0.0,
@@ -253,8 +234,6 @@
                     "Upsampling to 0.25 degrees using nearest neighbor"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://public.satproj.klima.dwd.de/data/ESA_Cloud_CCI/CLD_PRODUCTS/v2.0/DOIs/DOI_ESA_Cloud_cci_MODIS-Terra_v2.0_landingpage.html",
                     "https://dap.ceda.ac.uk/neodc/esacci/cloud/docs/DataSet_Desc_ESA_Cloud_cci_CC4CL_1.5.pdf"
@@ -268,24 +247,19 @@
                 "time_coverage_end": "2014-12-15T00:00:00.000000000",
                 "time_coverage_start": "2000-02-22T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "ESA Cloud Climate Change Initiative (Cloud_cci): MODIS-TERRA monthly gridded cloud properties, version 2.0",
                 "units": "1"
             },
             {
                 "name": "cth",
                 "acknowledgment": "ESA Cloud Climate Change Initiative (Cloud_cci)",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-13 03:11:42.331361",
+                "description": "ESA Cloud Climate Change Initiative (Cloud_cci): MODIS-TERRA monthly gridded cloud properties, version 2.0",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.875,
                 "geospatial_lat_resolution": 0.25,
                 "geospatial_lon_max": 179.875,
                 "geospatial_lon_min": -179.875,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Cloud Top Height",
                 "original_add_offset": 0.0,
@@ -297,8 +271,6 @@
                     "Upsampling to 0.25 degrees using nearest neighbor"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://public.satproj.klima.dwd.de/data/ESA_Cloud_CCI/CLD_PRODUCTS/v2.0/DOIs/DOI_ESA_Cloud_cci_MODIS-Terra_v2.0_landingpage.html",
                     "https://dap.ceda.ac.uk/neodc/esacci/cloud/docs/DataSet_Desc_ESA_Cloud_cci_CC4CL_1.5.pdf"
@@ -312,24 +284,19 @@
                 "time_coverage_end": "2014-12-15T00:00:00.000000000",
                 "time_coverage_start": "2000-02-22T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "ESA Cloud Climate Change Initiative (Cloud_cci): MODIS-TERRA monthly gridded cloud properties, version 2.0",
                 "units": "km"
             },
             {
                 "name": "ctt",
                 "acknowledgment": "ESA Cloud Climate Change Initiative (Cloud_cci)",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-13 03:11:42.331361",
+                "description": "ESA Cloud Climate Change Initiative (Cloud_cci): MODIS-TERRA monthly gridded cloud properties, version 2.0",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.875,
                 "geospatial_lat_resolution": 0.25,
                 "geospatial_lon_max": 179.875,
                 "geospatial_lon_min": -179.875,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Cloud Top Temperature",
                 "original_add_offset": 0.0,
@@ -341,8 +308,6 @@
                     "Upsampling to 0.25 degrees using nearest neighbor"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://public.satproj.klima.dwd.de/data/ESA_Cloud_CCI/CLD_PRODUCTS/v2.0/DOIs/DOI_ESA_Cloud_cci_MODIS-Terra_v2.0_landingpage.html",
                     "https://dap.ceda.ac.uk/neodc/esacci/cloud/docs/DataSet_Desc_ESA_Cloud_cci_CC4CL_1.5.pdf"
@@ -356,24 +321,19 @@
                 "time_coverage_end": "2014-12-15T00:00:00.000000000",
                 "time_coverage_start": "2000-02-22T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "ESA Cloud Climate Change Initiative (Cloud_cci): MODIS-TERRA monthly gridded cloud properties, version 2.0",
                 "units": "K"
             },
             {
                 "name": "evaporation",
                 "acknowledgment": "https://www.gleam.eu/",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-11 16:47:36.234042",
+                "description": "Global Land Evaporation Amsterdam Model (GLEAM) v3.6a",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.875,
                 "geospatial_lat_resolution": -0.25,
                 "geospatial_lon_max": 179.875,
                 "geospatial_lon_min": -179.875,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Actual evaporation",
                 "original_add_offset": 0.0,
@@ -384,8 +344,6 @@
                     "resampling by 8-day mean"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://doi.org/10.5194/gmd-10-1903-2017",
                     "https://doi.org/10.5194/hess-15-453-2011"
@@ -400,24 +358,19 @@
                 "time_coverage_end": "2021-12-31T00:00:00.000000000",
                 "time_coverage_start": "1980-01-05T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "Global Land Evaporation Amsterdam Model (GLEAM) v3.6a",
                 "units": "mm d^-1"
             },
             {
                 "name": "evaporation_era5",
                 "acknowledgment": "ERA5 hourly data on single levels from 1959 to present",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-15 15:22:40.252342",
+                "description": "ERA5 Reanalysis Products",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.875,
                 "geospatial_lat_resolution": 0.25,
                 "geospatial_lon_max": 179.875,
                 "geospatial_lon_min": -179.875,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Evaporation",
                 "original_add_offset": 0.0,
@@ -431,8 +384,6 @@
                     "Resampling to 0.25 degrees using bilinear interpolation"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://confluence.ecmwf.int/display/CKB/ERA5%3A+data+documentation"
                 ],
@@ -445,24 +396,19 @@
                 "time_coverage_end": "2021-12-27T00:00:00.000000000",
                 "time_coverage_start": "1979-01-01T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "ERA5 Reanalysis Products",
                 "units": "mm d^-1"
             },
             {
                 "name": "evaporative_stress",
                 "acknowledgment": "https://www.gleam.eu/",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-11 16:47:36.234042",
+                "description": "Global Land Evaporation Amsterdam Model (GLEAM) v3.6a",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.875,
                 "geospatial_lat_resolution": -0.25,
                 "geospatial_lon_max": 179.875,
                 "geospatial_lon_min": -179.875,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Evaporative stress",
                 "original_add_offset": 0.0,
@@ -473,8 +419,6 @@
                     "resampling by 8-day mean"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://doi.org/10.5194/gmd-10-1903-2017",
                     "https://doi.org/10.5194/hess-15-453-2011"
@@ -489,24 +433,19 @@
                 "time_coverage_end": "2021-12-31T00:00:00.000000000",
                 "time_coverage_start": "1980-01-05T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "Global Land Evaporation Amsterdam Model (GLEAM) v3.6a",
                 "units": "1"
             },
             {
                 "name": "gross_primary_productivity",
                 "acknowledgment": "FLUXCOM",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-17 22:14:30.401506",
+                "description": "FLUXCOM",
                 "geospatial_lat_max": 89.87499928049999,
                 "geospatial_lat_min": -89.8750000005,
                 "geospatial_lat_resolution": 0.25,
                 "geospatial_lon_max": 179.87499856049996,
                 "geospatial_lon_min": -179.8750000005,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Gross Primary Productivity",
                 "original_add_offset": 0.0,
@@ -517,8 +456,6 @@
                     "Downsampling to 0.25 deg with mean"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://doi.org/10.5194/bg-13-4291-2016",
                     "https://doi.org/10.1038/s41597-019-0076-8"
@@ -532,24 +469,19 @@
                 "time_coverage_end": "2020-12-30T00:00:00.000000000",
                 "time_coverage_start": "2001-01-05T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "FLUXCOM",
                 "units": "g C m^-2 d^-1"
             },
             {
                 "name": "interception_loss",
                 "acknowledgment": "https://www.gleam.eu/",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-11 16:47:36.234042",
+                "description": "Global Land Evaporation Amsterdam Model (GLEAM) v3.6a",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.875,
                 "geospatial_lat_resolution": -0.25,
                 "geospatial_lon_max": 179.875,
                 "geospatial_lon_min": -179.875,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Interception loss",
                 "original_add_offset": 0.0,
@@ -560,8 +492,6 @@
                     "resampling by 8-day mean"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://doi.org/10.5194/gmd-10-1903-2017",
                     "https://doi.org/10.5194/hess-15-453-2011"
@@ -576,24 +506,19 @@
                 "time_coverage_end": "2021-12-31T00:00:00.000000000",
                 "time_coverage_start": "1980-01-05T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "Global Land Evaporation Amsterdam Model (GLEAM) v3.6a",
                 "units": "mm d^-1"
             },
             {
                 "name": "kndvi",
                 "acknowledgment": "https://lpdaac.usgs.gov/products/mcd43c4v061/",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-11 23:51:00.603768",
+                "description": "MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.87499999998977,
                 "geospatial_lat_resolution": 0.25,
                 "geospatial_lon_max": 179.87500000008183,
                 "geospatial_lon_min": -179.87499999999997,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Kernel Normalized Difference Vegetation Index",
                 "original_add_offset": 0.0,
@@ -608,8 +533,6 @@
                     "Masking water using GLEAM as reference"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://doi.org/10.1126/sciadv.abc7447",
                     "https://github.com/awesome-spectral-indices/awesome-spectral-indices",
@@ -626,24 +549,19 @@
                 "time_coverage_end": "2021-12-31T00:00:00.000000000",
                 "time_coverage_start": "2000-03-01T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices",
                 "units": "1"
             },
             {
                 "name": "latent_energy",
                 "acknowledgment": "FLUXCOM",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-17 22:14:30.401506",
+                "description": "FLUXCOM",
                 "geospatial_lat_max": 89.87499928049999,
                 "geospatial_lat_min": -89.8750000005,
                 "geospatial_lat_resolution": 0.25,
                 "geospatial_lon_max": 179.87499856049996,
                 "geospatial_lon_min": -179.8750000005,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Latent Energy",
                 "original_add_offset": 0.0,
@@ -654,8 +572,6 @@
                     "Downsampling to 0.25 deg with mean"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://doi.org/10.5194/bg-13-4291-2016",
                     "https://doi.org/10.1038/s41597-019-0076-8"
@@ -669,24 +585,19 @@
                 "time_coverage_end": "2020-12-30T00:00:00.000000000",
                 "time_coverage_start": "2001-01-05T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "FLUXCOM",
                 "units": "MJ m^-2 d^-1"
             },
             {
                 "name": "max_air_temperature_2m",
                 "acknowledgment": "ERA5 hourly data on single levels from 1959 to present",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-15 15:22:40.252342",
+                "description": "ERA5 Reanalysis Products",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.875,
                 "geospatial_lat_resolution": 0.25,
                 "geospatial_lon_max": 179.875,
                 "geospatial_lon_min": -179.875,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Maximum Air Temperature at 2 m",
                 "original_add_offset": 0.0,
@@ -700,8 +611,6 @@
                     "Resampling to 0.25 degrees using bilinear interpolation"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://confluence.ecmwf.int/display/CKB/ERA5%3A+data+documentation"
                 ],
@@ -714,24 +623,19 @@
                 "time_coverage_end": "2021-12-27T00:00:00.000000000",
                 "time_coverage_start": "1979-01-01T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "ERA5 Reanalysis Products",
                 "units": "\u00b0C"
             },
             {
                 "name": "min_air_temperature_2m",
                 "acknowledgment": "ERA5 hourly data on single levels from 1959 to present",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-15 15:22:40.252342",
+                "description": "ERA5 Reanalysis Products",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.875,
                 "geospatial_lat_resolution": 0.25,
                 "geospatial_lon_max": 179.875,
                 "geospatial_lon_min": -179.875,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Minimum Air Temperature at 2 m",
                 "original_add_offset": 0.0,
@@ -745,8 +649,6 @@
                     "Resampling to 0.25 degrees using bilinear interpolation"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://confluence.ecmwf.int/display/CKB/ERA5%3A+data+documentation"
                 ],
@@ -759,7 +661,6 @@
                 "time_coverage_end": "2021-12-27T00:00:00.000000000",
                 "time_coverage_start": "1979-01-01T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "ERA5 Reanalysis Products",
                 "units": "\u00b0C"
             },
             {
@@ -767,18 +668,14 @@
                 "acknowledgment": "https://lpdaac.usgs.gov/products/mcd43c4v061/",
                 "bandwidth": 20.0,
                 "bandwidth_units": "nm",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-11 23:51:00.603768",
+                "description": "MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.87499999998977,
                 "geospatial_lat_resolution": 0.25,
                 "geospatial_lon_max": 179.87500000008183,
                 "geospatial_lon_min": -179.87499999999997,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Nadir Adjusted BRDF Reflectance of Band 3 (blue)",
                 "original_add_offset": 0.0,
@@ -793,8 +690,6 @@
                     "Masking water using GLEAM as reference"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://doi.org/10.5067/MODIS/MCD43C4.061",
                     "https://www.umb.edu/spectralmass/terra_aqua_modis/v006"
@@ -808,7 +703,6 @@
                 "time_coverage_end": "2021-12-31T00:00:00.000000000",
                 "time_coverage_start": "2000-03-01T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices",
                 "units": "1",
                 "wavelength": 469.0,
                 "wavelength_units": "nm"
@@ -818,18 +712,14 @@
                 "acknowledgment": "https://lpdaac.usgs.gov/products/mcd43c4v061/",
                 "bandwidth": 20.0,
                 "bandwidth_units": "nm",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-11 23:51:00.603768",
+                "description": "MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.87499999998977,
                 "geospatial_lat_resolution": 0.25,
                 "geospatial_lon_max": 179.87500000008183,
                 "geospatial_lon_min": -179.87499999999997,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Nadir Adjusted BRDF Reflectance of Band 4 (green)",
                 "original_add_offset": 0.0,
@@ -844,8 +734,6 @@
                     "Masking water using GLEAM as reference"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://doi.org/10.5067/MODIS/MCD43C4.061",
                     "https://www.umb.edu/spectralmass/terra_aqua_modis/v006"
@@ -859,7 +747,6 @@
                 "time_coverage_end": "2021-12-31T00:00:00.000000000",
                 "time_coverage_start": "2000-03-01T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices",
                 "units": "1",
                 "wavelength": 555.0,
                 "wavelength_units": "nm"
@@ -869,18 +756,14 @@
                 "acknowledgment": "https://lpdaac.usgs.gov/products/mcd43c4v061/",
                 "bandwidth": 35.0,
                 "bandwidth_units": "nm",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-11 23:51:00.603768",
+                "description": "MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.87499999998977,
                 "geospatial_lat_resolution": 0.25,
                 "geospatial_lon_max": 179.87500000008183,
                 "geospatial_lon_min": -179.87499999999997,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Nadir BRDF Adjusted Reflectance of Band 2 (NIR)",
                 "original_add_offset": 0.0,
@@ -895,8 +778,6 @@
                     "Masking water using GLEAM as reference"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://doi.org/10.5067/MODIS/MCD43C4.061",
                     "https://www.umb.edu/spectralmass/terra_aqua_modis/v006"
@@ -910,7 +791,6 @@
                 "time_coverage_end": "2021-12-31T00:00:00.000000000",
                 "time_coverage_start": "2000-03-01T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices",
                 "units": "1",
                 "wavelength": 858.5,
                 "wavelength_units": "nm"
@@ -920,18 +800,14 @@
                 "acknowledgment": "https://lpdaac.usgs.gov/products/mcd43c4v061/",
                 "bandwidth": 50.0,
                 "bandwidth_units": "nm",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-11 23:51:00.603768",
+                "description": "MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.87499999998977,
                 "geospatial_lat_resolution": 0.25,
                 "geospatial_lon_max": 179.87500000008183,
                 "geospatial_lon_min": -179.87499999999997,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Nadir BRDF Adjusted Reflectance of Band 1 (red)",
                 "original_add_offset": 0.0,
@@ -946,8 +822,6 @@
                     "Masking water using GLEAM as reference"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://doi.org/10.5067/MODIS/MCD43C4.061",
                     "https://www.umb.edu/spectralmass/terra_aqua_modis/v006"
@@ -961,7 +835,6 @@
                 "time_coverage_end": "2021-12-31T00:00:00.000000000",
                 "time_coverage_start": "2000-03-01T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices",
                 "units": "1",
                 "wavelength": 645.0,
                 "wavelength_units": "nm"
@@ -971,18 +844,14 @@
                 "acknowledgment": "https://lpdaac.usgs.gov/products/mcd43c4v061/",
                 "bandwidth": 20.0,
                 "bandwidth_units": "nm",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-11 23:51:00.603768",
+                "description": "MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.87499999998977,
                 "geospatial_lat_resolution": 0.25,
                 "geospatial_lon_max": 179.87500000008183,
                 "geospatial_lon_min": -179.87499999999997,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Nadir Adjusted BRDF Reflectance of Band 5 (SWIR 1)",
                 "original_add_offset": 0.0,
@@ -997,8 +866,6 @@
                     "Masking water using GLEAM as reference"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://doi.org/10.5067/MODIS/MCD43C4.061",
                     "https://www.umb.edu/spectralmass/terra_aqua_modis/v006"
@@ -1012,7 +879,6 @@
                 "time_coverage_end": "2021-12-31T00:00:00.000000000",
                 "time_coverage_start": "2000-03-01T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices",
                 "units": "1",
                 "wavelength": 1240.0,
                 "wavelength_units": "nm"
@@ -1022,18 +888,14 @@
                 "acknowledgment": "https://lpdaac.usgs.gov/products/mcd43c4v061/",
                 "bandwidth": 24.0,
                 "bandwidth_units": "nm",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-11 23:51:00.603768",
+                "description": "MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.87499999998977,
                 "geospatial_lat_resolution": 0.25,
                 "geospatial_lon_max": 179.87500000008183,
                 "geospatial_lon_min": -179.87499999999997,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Nadir Adjusted BRDF Reflectance of Band 6 (SWIR 2)",
                 "original_add_offset": 0.0,
@@ -1048,8 +910,6 @@
                     "Masking water using GLEAM as reference"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://doi.org/10.5067/MODIS/MCD43C4.061",
                     "https://www.umb.edu/spectralmass/terra_aqua_modis/v006"
@@ -1063,7 +923,6 @@
                 "time_coverage_end": "2021-12-31T00:00:00.000000000",
                 "time_coverage_start": "2000-03-01T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices",
                 "units": "1",
                 "wavelength": 1640.0,
                 "wavelength_units": "nm"
@@ -1073,18 +932,14 @@
                 "acknowledgment": "https://lpdaac.usgs.gov/products/mcd43c4v061/",
                 "bandwidth": 50.0,
                 "bandwidth_units": "nm",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-11 23:51:00.603768",
+                "description": "MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.87499999998977,
                 "geospatial_lat_resolution": 0.25,
                 "geospatial_lon_max": 179.87500000008183,
                 "geospatial_lon_min": -179.87499999999997,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Nadir Adjusted BRDF Reflectance of Band 7 (SWIR 3)",
                 "original_add_offset": 0.0,
@@ -1099,8 +954,6 @@
                     "Masking water using GLEAM as reference"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://doi.org/10.5067/MODIS/MCD43C4.061",
                     "https://www.umb.edu/spectralmass/terra_aqua_modis/v006"
@@ -1114,7 +967,6 @@
                 "time_coverage_end": "2021-12-31T00:00:00.000000000",
                 "time_coverage_start": "2000-03-01T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices",
                 "units": "1",
                 "wavelength": 2130.0,
                 "wavelength_units": "nm"
@@ -1122,18 +974,14 @@
             {
                 "name": "ndvi",
                 "acknowledgment": "https://lpdaac.usgs.gov/products/mcd43c4v061/",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-11 23:51:00.603768",
+                "description": "MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.87499999998977,
                 "geospatial_lat_resolution": 0.25,
                 "geospatial_lon_max": 179.87500000008183,
                 "geospatial_lon_min": -179.87499999999997,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Normalized Difference Vegetation Index",
                 "original_add_offset": 0.0,
@@ -1148,8 +996,6 @@
                     "Masking water using GLEAM as reference"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://ntrs.nasa.gov/citations/19740022614",
                     "https://github.com/awesome-spectral-indices/awesome-spectral-indices",
@@ -1166,24 +1012,19 @@
                 "time_coverage_end": "2021-12-31T00:00:00.000000000",
                 "time_coverage_start": "2000-03-01T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices",
                 "units": "1"
             },
             {
                 "name": "net_ecosystem_exchange",
                 "acknowledgment": "FLUXCOM",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-17 22:14:30.401506",
+                "description": "FLUXCOM",
                 "geospatial_lat_max": 89.87499928049999,
                 "geospatial_lat_min": -89.8750000005,
                 "geospatial_lat_resolution": 0.25,
                 "geospatial_lon_max": 179.87499856049996,
                 "geospatial_lon_min": -179.8750000005,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Net Ecosystem Exchange",
                 "original_add_offset": 0.0,
@@ -1194,8 +1035,6 @@
                     "Downsampling to 0.25 deg with mean"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://doi.org/10.5194/bg-13-4291-2016",
                     "https://doi.org/10.1038/s41597-019-0076-8"
@@ -1209,24 +1048,19 @@
                 "time_coverage_end": "2020-12-30T00:00:00.000000000",
                 "time_coverage_start": "2001-01-05T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "FLUXCOM",
                 "units": "g C m^-2 d^-1"
             },
             {
                 "name": "net_radiation",
                 "acknowledgment": "FLUXCOM",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-17 22:14:30.401506",
+                "description": "FLUXCOM",
                 "geospatial_lat_max": 89.87499928049999,
                 "geospatial_lat_min": -89.8750000005,
                 "geospatial_lat_resolution": 0.25,
                 "geospatial_lon_max": 179.87499856049996,
                 "geospatial_lon_min": -179.8750000005,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Net Radiation",
                 "original_add_offset": 0.0,
@@ -1237,8 +1071,6 @@
                     "Downsampling to 0.25 deg with mean"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://doi.org/10.5194/bg-13-4291-2016",
                     "https://doi.org/10.1038/s41597-019-0076-8"
@@ -1252,24 +1084,19 @@
                 "time_coverage_end": "2020-12-30T00:00:00.000000000",
                 "time_coverage_start": "2001-01-05T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "FLUXCOM",
                 "units": "MJ m^-2 d^-1"
             },
             {
                 "name": "nirv",
                 "acknowledgment": "https://lpdaac.usgs.gov/products/mcd43c4v061/",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-11 23:51:00.603768",
+                "description": "MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.87499999998977,
                 "geospatial_lat_resolution": 0.25,
                 "geospatial_lon_max": 179.87500000008183,
                 "geospatial_lon_min": -179.87499999999997,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Near Infrared Reflectance of Vegetation",
                 "original_add_offset": 0.0,
@@ -1284,8 +1111,6 @@
                     "Masking water using GLEAM as reference"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://doi.org/10.1126/sciadv.1602244",
                     "https://github.com/awesome-spectral-indices/awesome-spectral-indices",
@@ -1302,24 +1127,19 @@
                 "time_coverage_end": "2021-12-31T00:00:00.000000000",
                 "time_coverage_start": "2000-03-01T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "MODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices",
                 "units": "1"
             },
             {
                 "name": "open_water_evaporation",
                 "acknowledgment": "https://www.gleam.eu/",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-11 16:47:36.234042",
+                "description": "Global Land Evaporation Amsterdam Model (GLEAM) v3.6a",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.875,
                 "geospatial_lat_resolution": -0.25,
                 "geospatial_lon_max": 179.875,
                 "geospatial_lon_min": -179.875,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Open-water evaporation",
                 "original_add_offset": 0.0,
@@ -1330,8 +1150,6 @@
                     "resampling by 8-day mean"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://doi.org/10.5194/gmd-10-1903-2017",
                     "https://doi.org/10.5194/hess-15-453-2011"
@@ -1346,24 +1164,19 @@
                 "time_coverage_end": "2021-12-31T00:00:00.000000000",
                 "time_coverage_start": "1980-01-05T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "Global Land Evaporation Amsterdam Model (GLEAM) v3.6a",
                 "units": "mm d^-1"
             },
             {
                 "name": "potential_evaporation",
                 "acknowledgment": "https://www.gleam.eu/",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-11 16:47:36.234042",
+                "description": "Global Land Evaporation Amsterdam Model (GLEAM) v3.6a",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.875,
                 "geospatial_lat_resolution": -0.25,
                 "geospatial_lon_max": 179.875,
                 "geospatial_lon_min": -179.875,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Potential evaporation",
                 "original_add_offset": 0.0,
@@ -1374,8 +1187,6 @@
                     "resampling by 8-day mean"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://doi.org/10.5194/gmd-10-1903-2017",
                     "https://doi.org/10.5194/hess-15-453-2011"
@@ -1390,24 +1201,19 @@
                 "time_coverage_end": "2021-12-31T00:00:00.000000000",
                 "time_coverage_start": "1980-01-05T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "Global Land Evaporation Amsterdam Model (GLEAM) v3.6a",
                 "units": "mm d^-1"
             },
             {
                 "name": "precipitation_era5",
                 "acknowledgment": "ERA5 hourly data on single levels from 1959 to present",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-15 15:22:40.252342",
+                "description": "ERA5 Reanalysis Products",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.875,
                 "geospatial_lat_resolution": 0.25,
                 "geospatial_lon_max": 179.875,
                 "geospatial_lon_min": -179.875,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Total Precipitation",
                 "original_add_offset": 0.0,
@@ -1421,8 +1227,6 @@
                     "Resampling to 0.25 degrees using bilinear interpolation"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://confluence.ecmwf.int/display/CKB/ERA5%3A+data+documentation"
                 ],
@@ -1435,24 +1239,19 @@
                 "time_coverage_end": "2021-12-27T00:00:00.000000000",
                 "time_coverage_start": "1979-01-01T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "ERA5 Reanalysis Products",
                 "units": "mm d^-1"
             },
             {
                 "name": "radiation_era5",
                 "acknowledgment": "ERA5 hourly data on single levels from 1959 to present",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-15 15:22:40.252342",
+                "description": "ERA5 Reanalysis Products",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.875,
                 "geospatial_lat_resolution": 0.25,
                 "geospatial_lon_max": 179.875,
                 "geospatial_lon_min": -179.875,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Surface Net Solar Radiation",
                 "original_add_offset": 0.0,
@@ -1465,8 +1264,6 @@
                     "Resampling to 0.25 degrees using bilinear interpolation"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://confluence.ecmwf.int/display/CKB/ERA5%3A+data+documentation"
                 ],
@@ -1479,24 +1276,19 @@
                 "time_coverage_end": "2021-12-27T00:00:00.000000000",
                 "time_coverage_start": "1979-01-01T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "ERA5 Reanalysis Products",
                 "units": "J m^-2"
             },
             {
                 "name": "root_moisture",
                 "acknowledgment": "https://www.gleam.eu/",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-11 16:47:36.234042",
+                "description": "Global Land Evaporation Amsterdam Model (GLEAM) v3.6a",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.875,
                 "geospatial_lat_resolution": -0.25,
                 "geospatial_lon_max": 179.875,
                 "geospatial_lon_min": -179.875,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Root-zone soil moisture",
                 "original_add_offset": 0.0,
@@ -1507,8 +1299,6 @@
                     "resampling by 8-day mean"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://doi.org/10.5194/gmd-10-1903-2017",
                     "https://doi.org/10.5194/hess-15-453-2011"
@@ -1523,24 +1313,19 @@
                 "time_coverage_end": "2021-12-31T00:00:00.000000000",
                 "time_coverage_start": "1980-01-05T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "Global Land Evaporation Amsterdam Model (GLEAM) v3.6a",
                 "units": "mm d^-1"
             },
             {
                 "name": "sensible_heat",
                 "acknowledgment": "FLUXCOM",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-17 22:14:30.401506",
+                "description": "FLUXCOM",
                 "geospatial_lat_max": 89.87499928049999,
                 "geospatial_lat_min": -89.8750000005,
                 "geospatial_lat_resolution": 0.25,
                 "geospatial_lon_max": 179.87499856049996,
                 "geospatial_lon_min": -179.8750000005,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Sensible Heat",
                 "original_add_offset": 0.0,
@@ -1551,8 +1336,6 @@
                     "Downsampling to 0.25 deg with mean"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://doi.org/10.5194/bg-13-4291-2016",
                     "https://doi.org/10.1038/s41597-019-0076-8"
@@ -1566,24 +1349,19 @@
                 "time_coverage_end": "2020-12-30T00:00:00.000000000",
                 "time_coverage_start": "2001-01-05T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "FLUXCOM",
                 "units": "MJ m^-2 d^-1"
             },
             {
                 "name": "sif_gome2_jj",
                 "acknowledgment": "https://doi.org/10.5194/essd-12-1101-2020",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-11 22:36:53.583022",
+                "description": "Spatially Downscaled Sun-Induced Fluorescence (JJ Method)",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.875,
                 "geospatial_lat_resolution": 0.25,
                 "geospatial_lon_max": 179.87500000000003,
                 "geospatial_lon_min": -179.87499999999997,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Downscaled Daily Corrected Sun-Induced Chlorophyll Fluorescence at 740 nm",
                 "original_add_offset": 0.0,
@@ -1595,8 +1373,6 @@
                     "Interpolating NA with linear interpolation"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://doi.org/10.5194/essd-12-1101-2020"
                 ],
@@ -1609,24 +1385,19 @@
                 "time_coverage_end": "2018-10-04T00:00:00.000000000",
                 "time_coverage_start": "2007-01-21T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "Spatially Downscaled Sun-Induced Fluorescence (JJ Method)",
                 "units": "m W m^-2 sr^-1 nm^-1"
             },
             {
                 "name": "sif_gome2_pk",
                 "acknowledgment": "https://doi.org/10.5194/essd-12-1101-2020",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-11 22:43:08.258033",
+                "description": "Spatially Downscaled Sun-Induced Fluorescence (PK Method)",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.875,
                 "geospatial_lat_resolution": 0.25,
                 "geospatial_lon_max": 179.87500000000003,
                 "geospatial_lon_min": -179.87499999999997,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Downscaled Daily Corrected Sun-Induced Chlorophyll Fluorescence at 740 nm",
                 "original_add_offset": 0.0,
@@ -1638,8 +1409,6 @@
                     "Interpolating NA with linear interpolation"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://doi.org/10.5194/essd-12-1101-2020"
                 ],
@@ -1652,24 +1421,19 @@
                 "time_coverage_end": "2018-12-31T00:00:00.000000000",
                 "time_coverage_start": "2007-01-21T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "Spatially Downscaled Sun-Induced Fluorescence (PK Method)",
                 "units": "m W m^-2 sr^-1 nm^-1"
             },
             {
                 "name": "sif_gosif",
                 "acknowledgment": "https://doi.org/10.3390/rs11050517",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-11 22:20:05.841847",
+                "description": "GOSIF Solar-Induced Chlorophyll Fluorescence Derived from OCO-2, MODIS, and Reanalysis Data",
                 "geospatial_lat_max": 89.87499999999999,
                 "geospatial_lat_min": -89.87500000000001,
                 "geospatial_lat_resolution": 0.25,
                 "geospatial_lon_max": 179.87500000000003,
                 "geospatial_lon_min": -179.87499999999997,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Solar-Induced Chlorophyll Fluorescence at 757 nm",
                 "original_add_offset": 0.0,
@@ -1682,8 +1446,6 @@
                     "Downsampling to 0.25 deg with mean"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://doi.org/10.3390/rs11050517"
                 ],
@@ -1696,24 +1458,19 @@
                 "time_coverage_end": "2021-12-31T00:00:00.000000000",
                 "time_coverage_start": "2000-03-01T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "GOSIF Solar-Induced Chlorophyll Fluorescence Derived from OCO-2, MODIS, and Reanalysis Data",
                 "units": "W m^-2 sr^-1 um^-1"
             },
             {
                 "name": "sif_rtsif",
                 "acknowledgment": "https://doi.org/10.1038/s41597-022-01520-1",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-12 14:26:02.972963",
+                "description": "Long-term Reconstructed TROPOMI Solar-Induced Fluorescence (RTSIF)",
                 "geospatial_lat_max": 89.87499999999999,
                 "geospatial_lat_min": -89.87500000000001,
                 "geospatial_lat_resolution": 0.25,
                 "geospatial_lon_max": 179.87500000000003,
                 "geospatial_lon_min": -179.87499999999997,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Solar-Induced Chlorophyll Fluorescence at 740 nm",
                 "original_add_offset": 0.0,
@@ -1724,8 +1481,6 @@
                     "Downsampling to 0.25 deg with mean"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://doi.org/10.1038/s41597-022-01520-1"
                 ],
@@ -1738,24 +1493,19 @@
                 "time_coverage_end": "2020-12-30T00:00:00.000000000",
                 "time_coverage_start": "2001-01-05T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "Long-term Reconstructed TROPOMI Solar-Induced Fluorescence (RTSIF)",
                 "units": "m W m^-2 sr^-1 um^-1"
             },
             {
                 "name": "sm",
                 "acknowledgment": "ESA Soil Moisture Climate Change Initiative (Soil_Moisture_cci)",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-13 20:42:41.277132",
+                "description": "ESA Soil Moisture Climate Change Initiative (Soil_Moisture_cci): COMBINED product, Version 06.1",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.875,
                 "geospatial_lat_resolution": -0.25,
                 "geospatial_lon_max": 179.875,
                 "geospatial_lon_min": -179.875,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Volumetric Soil Moisture",
                 "original_add_offset": 0.0,
@@ -1766,8 +1516,6 @@
                     "Resampling by 8-day mean"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://data.cci.ceda.ac.uk/thredds/fileServer/esacci/soil_moisture/docs/v06.1/ESA_CCI_SM_RD_D2.1_v2_ATBD_v06.1_issue_1.1.pdf",
                     "https://doi.org/10.5194/essd-11-717-2019",
@@ -1782,24 +1530,19 @@
                 "time_coverage_end": "2020-12-30T00:00:00.000000000",
                 "time_coverage_start": "1979-01-05T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "ESA Soil Moisture Climate Change Initiative (Soil_Moisture_cci): COMBINED product, Version 06.1",
                 "units": "m^3 m^-3"
             },
             {
                 "name": "snow_sublimation",
                 "acknowledgment": "https://www.gleam.eu/",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-11 16:47:36.234042",
+                "description": "Global Land Evaporation Amsterdam Model (GLEAM) v3.6a",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.875,
                 "geospatial_lat_resolution": -0.25,
                 "geospatial_lon_max": 179.875,
                 "geospatial_lon_min": -179.875,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Snow sublimation",
                 "original_add_offset": 0.0,
@@ -1810,8 +1553,6 @@
                     "resampling by 8-day mean"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://doi.org/10.5194/gmd-10-1903-2017",
                     "https://doi.org/10.5194/hess-15-453-2011"
@@ -1826,24 +1567,19 @@
                 "time_coverage_end": "2021-12-31T00:00:00.000000000",
                 "time_coverage_start": "1980-01-05T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "Global Land Evaporation Amsterdam Model (GLEAM) v3.6a",
                 "units": "mm d^-1"
             },
             {
                 "name": "surface_moisture",
                 "acknowledgment": "https://www.gleam.eu/",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-11 16:47:36.234042",
+                "description": "Global Land Evaporation Amsterdam Model (GLEAM) v3.6a",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.875,
                 "geospatial_lat_resolution": -0.25,
                 "geospatial_lon_max": 179.875,
                 "geospatial_lon_min": -179.875,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Surface soil moisture",
                 "original_add_offset": 0.0,
@@ -1854,8 +1590,6 @@
                     "resampling by 8-day mean"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://doi.org/10.5194/gmd-10-1903-2017",
                     "https://doi.org/10.5194/hess-15-453-2011"
@@ -1870,24 +1604,19 @@
                 "time_coverage_end": "2021-12-31T00:00:00.000000000",
                 "time_coverage_start": "1980-01-05T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "Global Land Evaporation Amsterdam Model (GLEAM) v3.6a",
                 "units": "mm d^-1"
             },
             {
                 "name": "terrestrial_ecosystem_respiration",
                 "acknowledgment": "FLUXCOM",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-17 22:14:30.401506",
+                "description": "FLUXCOM",
                 "geospatial_lat_max": 89.87499928049999,
                 "geospatial_lat_min": -89.8750000005,
                 "geospatial_lat_resolution": 0.25,
                 "geospatial_lon_max": 179.87499856049996,
                 "geospatial_lon_min": -179.8750000005,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Terrestrial Ecosystem Respiration",
                 "original_add_offset": 0.0,
@@ -1898,8 +1627,6 @@
                     "Downsampling to 0.25 deg with mean"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://doi.org/10.5194/bg-13-4291-2016",
                     "https://doi.org/10.1038/s41597-019-0076-8"
@@ -1913,24 +1640,19 @@
                 "time_coverage_end": "2020-12-30T00:00:00.000000000",
                 "time_coverage_start": "2001-01-05T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "FLUXCOM",
                 "units": "g C m^-2 d^-1"
             },
             {
                 "name": "transpiration",
                 "acknowledgment": "https://www.gleam.eu/",
-                "contributor_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "contributor_url": "rsc4earth.de",
-                "creator_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "creator_url": "rsc4earth.de",
                 "date_modified": "2022-10-11 16:47:36.234042",
+                "description": "Global Land Evaporation Amsterdam Model (GLEAM) v3.6a",
                 "geospatial_lat_max": 89.875,
                 "geospatial_lat_min": -89.875,
                 "geospatial_lat_resolution": -0.25,
                 "geospatial_lon_max": 179.875,
                 "geospatial_lon_min": -179.875,
                 "geospatial_lon_resolution": 0.25,
-                "institution": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
                 "license": "Terms and conditions of the DeepESDL data distribution",
                 "long_name": "Transpiration",
                 "original_add_offset": 0.0,
@@ -1941,8 +1663,6 @@
                     "resampling by 8-day mean"
                 ],
                 "project": "DeepESDL",
-                "publisher_name": "Remote Sensing Centre for Earth System Research (RSC4Earth)",
-                "publisher_url": "rsc4earth.de",
                 "references": [
                     "https://doi.org/10.5194/gmd-10-1903-2017",
                     "https://doi.org/10.5194/hess-15-453-2011"
@@ -1957,7 +1677,6 @@
                 "time_coverage_end": "2021-12-31T00:00:00.000000000",
                 "time_coverage_start": "1980-01-05T00:00:00.000000000",
                 "time_period": "8D",
-                "title": "Global Land Evaporation Amsterdam Model (GLEAM) v3.6a",
                 "units": "mm d^-1"
             }
         ]
