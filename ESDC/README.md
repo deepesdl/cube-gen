@@ -182,8 +182,8 @@ inputs-preprocess/gleam-data-cube-8d.py # Resample by 8-days
 
 # FLUXCOM: Preprocessing
 inputs-preprocess/fluxcom-data-cube.py # Concatenate .nc files
-inputs-preprocess/fluxcom-data-cube-8d-0.25deg.py # Resample to 0.25 degress
 inputs-preprocess/fluxcom-metadata.py # Add initial metadata
+inputs-preprocess/fluxcom-data-cube-8d-0.25deg.py # Resample to 0.25 degress
 
 # GOSIF: Preprocessing
 inputs-preprocess/sif-gosif-data-cube-part1.py # Convert .tif to .zarr
@@ -202,8 +202,8 @@ inputs-preprocess/sif-gome2-PK-metadata.py # Add initial metadata
 inputs-preprocess/sif-gome2-PK-data-cube-0.25deg.py # Resample to 0.25 degrees
 
 # RTSIF: Preprocessing
-inputs-preprocess/sif-rtsif-data-cube-0.25deg.py # Resample to 0.25 degrees
 inputs-preprocess/sif-rtsif-metadata.py # Add initial metadata
+inputs-preprocess/sif-rtsif-data-cube-0.25deg.py # Resample to 0.25 degrees
 
 # ERA5: Preprocessing
 inputs-preprocess/era5-data-cube-8d-part1.py # Resample by 1-day
