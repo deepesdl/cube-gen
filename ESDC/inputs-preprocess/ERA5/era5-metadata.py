@@ -6,13 +6,22 @@ import xarray as xr
 import numpy as np
 
 
+pathIn = "~/data/ERA5/preprocess"
+pathIn = os.path.expanduser(pathIn)
+
+pathOut = "~/data/ERA5/output"
+pathOut = os.path.expanduser(pathOut)
+
+if not os.path.exists(pathOut):
+    os.makedirs(pathOut)
+
 with open("era5-metadata.yaml", "r") as stream:
     try:
         metadata = yaml.safe_load(stream)
     except yaml.YAMLError as exc:
         print(exc)
 
-datacube = xr.open_zarr("/Net/Groups/BGI/work_1/scratch/dmontero/ERA5/era5-8d-0.25deg-256x128x128.zarr")
+datacube = xr.open_zarr(f"{pathIn}/era5-8d-0.25deg-256x128x128.zarr")
 
 datacube = datacube.rio.write_crs(
     "epsg:4326", grid_mapping_name="crs"
@@ -44,4 +53,4 @@ datacube.attrs = dict(
     sorted({**datacube.attrs, **additional_attrs}.items())
 )
 
-datacube.to_zarr("/Net/Groups/BGI/work_1/scratch/dmontero/ERA5/metadata/era5-8d-0.25deg-256x128x128.zarr")
+datacube.to_zarr(f"{pathOut}/era5-8d-0.25deg-256x128x128.zarr")

@@ -3,7 +3,16 @@ from tqdm import tqdm
 import xarray as xr
 import glob
 
-files=glob.glob("/Net/Groups/BGI/work_1/scratch/dmontero/ERA5/yearly/*.zarr")
+pathIn = "~/data/ERA5/preprocess/yearly"
+pathIn = os.path.expanduser(pathIn)
+
+pathOut = "~/data/ERA5/preprocess"
+pathOut = os.path.expanduser(pathOut)
+
+if not os.path.exists(pathOut):
+    os.makedirs(pathOut)
+
+files=glob.glob(f"{pathIn}/*.zarr")
 files.sort()
 
 print("Reading")
@@ -17,4 +26,4 @@ ds = ds.interp(coords=dict(lat=new_lats,lon=new_lons),method="linear")
 ds = ds.chunk(dict(time=256,lat=128,lon=128))
 
 print("Saving")
-ds.to_zarr("/Net/Groups/BGI/work_1/scratch/dmontero/ERA5/era5-8d-0.25deg-256x128x128.zarr")
+ds.to_zarr(f"{pathOut}/era5-8d-0.25deg-256x128x128.zarr")
