@@ -5,6 +5,14 @@ import rioxarray
 import xarray as xr
 import numpy as np
 
+pathIn = "~/data/GLEAM/preprocess"
+pathIn = os.path.expanduser(pathIn)
+
+pathOut = "~/data/GLEAM/output"
+pathOut = os.path.expanduser(pathOut)
+
+if not os.path.exists(pathOut):
+    os.makedirs(pathOut)
 
 with open("gleam-metadata.yaml", "r") as stream:
     try:
@@ -12,7 +20,7 @@ with open("gleam-metadata.yaml", "r") as stream:
     except yaml.YAMLError as exc:
         print(exc)
 
-datacube = xr.open_zarr("/net/projects/deep_esdl/data/GLEAM/cubes/gleam-no-metadata-512x128x128.zarr")
+datacube = xr.open_zarr(f"{pathIn}/gleam-512x128x128.zarr")
 
 datacube = datacube.rio.write_crs(
     "epsg:4326", grid_mapping_name="crs"
@@ -44,4 +52,4 @@ datacube.attrs = dict(
     sorted({**datacube.attrs, **additional_attrs}.items())
 )
 
-datacube.to_zarr("/net/projects/deep_esdl/data/GLEAM/cubes/gleam-512x128x128.zarr")
+datacube.to_zarr(f"{pathOut}/gleam-512x128x128.zarr")

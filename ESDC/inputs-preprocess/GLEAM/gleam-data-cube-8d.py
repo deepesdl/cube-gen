@@ -4,7 +4,10 @@ import numpy as np
 from tqdm import tqdm
 from datetime import datetime
 
-GLEAM = xr.open_zarr("/net/data/GLEAM/gleam-512x128x128.zarr")
+pathOut = "~/data/GLEAM/output"
+pathOut = os.path.expanduser(pathOut)
+
+GLEAM = xr.open_zarr(f"{pathOut}/gleam-512x128x128.zarr")
 
 last_year = np.datetime64(GLEAM.time_coverage_end).astype("datetime64[Y]").astype(str).astype(int)
 first_year = np.datetime64(GLEAM.time_coverage_start).astype("datetime64[Y]").astype(str).astype(int)
@@ -34,4 +37,4 @@ GLEAM_8d.attrs['processing_steps'] = GLEAM_8d.attrs['processing_steps'] + ['resa
 GLEAM_8d = GLEAM_8d.chunk(dict(time=256,lat=128,lon=128))
 GLEAM_8d.attrs['id'] = "256x128x128"
 
-GLEAM_8d.to_zarr("/net/scratch/dmontero/GLEAM/gleam-8d-0.25deg-256x128x128.zarr") # /net/data/GLEAM/gleam-8d-0.25deg-256x128x128.zarr
+GLEAM_8d.to_zarr(f"{pathOut}/gleam-8d-0.25deg-256x128x128.zarr") # /net/data/GLEAM/gleam-8d-0.25deg-256x128x128.zarr

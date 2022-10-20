@@ -177,8 +177,8 @@ The raw data is preprocessed in order to create a single input `.zarr` cube per 
 ```
 # GLEAM: Preprocessing
 inputs-preprocess/gleam-data-cube.py # Concatenate .nc files
-inputs-preprocess/gleam-data-cube-8d.py # Resample by 8-days
 inputs-preprocess/gleam-metadata.py # Add initial metadata
+inputs-preprocess/gleam-data-cube-8d.py # Resample by 8-days
 
 # FLUXCOM: Preprocessing
 inputs-preprocess/fluxcom-data-cube.py # Concatenate .nc files
