@@ -5,6 +5,14 @@ import rioxarray
 import xarray as xr
 import numpy as np
 
+pathIn = "~/data/CCI/cloud/preprocess"
+pathIn = os.path.expanduser(pathIn)
+
+pathOut = "~/data/CCI/cloud/output"
+pathOut = os.path.expanduser(pathOut)
+
+if not os.path.exists(pathOut):
+    os.makedirs(pathOut)
 
 with open("cci-cloud-metadata.yaml", "r") as stream:
     try:
@@ -12,7 +20,7 @@ with open("cci-cloud-metadata.yaml", "r") as stream:
     except yaml.YAMLError as exc:
         print(exc)
 
-datacube = xr.open_zarr("/home/davemlz/data/cci-cloud-8d-0.25deg-256x128x128.zarr")
+datacube = xr.open_zarr(f"{pathIn}/cci-cloud-8d-0.25deg-256x128x128.zarr")
 
 datacube = datacube.rio.write_crs(
     "epsg:4326", grid_mapping_name="crs"
@@ -44,4 +52,4 @@ datacube.attrs = dict(
     sorted({**datacube.attrs, **additional_attrs}.items())
 )
 
-datacube.to_zarr("/home/davemlz/data/metadata/cci-cloud-8d-0.25deg-256x128x128.zarr")
+datacube.to_zarr(f"{pathOut}/cci-cloud-8d-0.25deg-256x128x128.zarr")
