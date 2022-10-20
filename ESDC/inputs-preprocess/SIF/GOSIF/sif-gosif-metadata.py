@@ -5,14 +5,22 @@ import rioxarray
 import xarray as xr
 import numpy as np
 
+pathIn = "~/data/SIF/GOSIF/preprocess"
+pathIn = os.path.expanduser(pathIn)
 
-with open("sif-tropomi-metadata.yaml", "r") as stream:
+pathOut = "~/data/SIF/GOSIF/output"
+pathOut = os.path.expanduser(pathOut)
+
+if not os.path.exists(pathOut):
+    os.makedirs(pathOut)
+
+with open("sif-gosif-metadata.yaml", "r") as stream:
     try:
         metadata = yaml.safe_load(stream)
     except yaml.YAMLError as exc:
         print(exc)
 
-datacube = xr.open_zarr("/net/projects/deep_esdl/data/TROPOMI/cubes/sif-tropomi-no-metadata-176x128x128.zarr")
+datacube = xr.open_zarr(f"{pathIn}/sif-gosif-1x1024x1024.zarr")
 
 datacube = datacube.rio.write_crs(
     "epsg:4326", grid_mapping_name="crs"
@@ -44,4 +52,4 @@ datacube.attrs = dict(
     sorted({**datacube.attrs, **additional_attrs}.items())
 )
 
-datacube.to_zarr("/net/projects/deep_esdl/data/TROPOMI/cubes/sif-tropomi-176x128x128.zarr")
+datacube.to_zarr(f"{pathOut}/sif-gosif-8d-0.05deg-1x1024x1024.zarr")

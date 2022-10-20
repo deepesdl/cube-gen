@@ -5,7 +5,13 @@ import re
 from os.path import exists
 
 URL = "http://data.globalecology.unh.edu/data/GOSIF_v2/8day/"
-PATH = "/net/projects/deep_esdl/data/GOSIF/data/"
+# pathOut = "/net/projects/deep_esdl/data/GOSIF/data/"
+
+pathOut = "~/data/SIF/GOSIF/source"
+pathOut = os.path.expanduser(pathOut)
+
+if not os.path.exists(pathOut):
+    os.makedirs(pathOut)
 
 req = Request(URL)
 html_page = urlopen(req)
@@ -18,9 +24,9 @@ for link in soup.findAll('a'):
     link = link.get('href')
     if link.endswith(".tif.gz"):
         file_to_download = link.split("/")[-1]
-        if not exists(PATH + file_to_download):
+        if not exists(pathOut + file_to_download):
             print(f"Downloading {file_to_download}")
             response = requests.get(URL + file_to_download)
-            open(PATH + file_to_download, "wb").write(response.content)
+            open(pathOut + file_to_download, "wb").write(response.content)
         else:
             pass

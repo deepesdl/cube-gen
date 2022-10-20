@@ -5,6 +5,14 @@ import rioxarray
 import xarray as xr
 import numpy as np
 
+pathIn = "~/data/SIF/GOME2-SIF/preprocess"
+pathIn = os.path.expanduser(pathIn)
+
+pathOut = "~/data/SIF/GOME2-SIF/output"
+pathOut = os.path.expanduser(pathOut)
+
+if not os.path.exists(pathOut):
+    os.makedirs(pathOut)
 
 with open("sif-gome2-PK-metadata.yaml", "r") as stream:
     try:
@@ -12,7 +20,7 @@ with open("sif-gome2-PK-metadata.yaml", "r") as stream:
     except yaml.YAMLError as exc:
         print(exc)
 
-datacube = xr.open_zarr("/net/projects/deep_esdl/data/GOME2-SIF/cubes/sif-gome2-PK-256x256x256.zarr")
+datacube = xr.open_zarr(f"{pathIn}/sif-gome2-PK-256x256x256.zarr")
 
 datacube = datacube.rio.write_crs(
     "epsg:4326", grid_mapping_name="crs"
@@ -44,4 +52,4 @@ datacube.attrs = dict(
     sorted({**datacube.attrs, **additional_attrs}.items())
 )
 
-datacube.to_zarr("/net/projects/deep_esdl/data/GOME2-SIF/cubes/sif-gome2-PK-metadata-256x256x256.zarr")
+datacube.to_zarr(f"{pathOut}/sif-gome2-PK-8d-0.05deg-256x256x256.zarr")

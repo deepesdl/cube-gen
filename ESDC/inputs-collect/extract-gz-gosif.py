@@ -4,7 +4,10 @@ import glob
 
 from tqdm import tqdm
 
-files = glob.glob("/net/projects/deep_esdl/data/GOSIF/data/*")
+pathOut = "~/data/SIF/GOSIF/source"
+pathOut = os.path.expanduser(pathOut)
+
+files = glob.glob(f"{pathOut}/*")
 files.sort()
 
 for file in tqdm(files):

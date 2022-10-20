@@ -4,8 +4,11 @@ import numpy as np
 from tqdm import tqdm
 from datetime import datetime
 
+pathOut = "~/data/SIF/GOME2-SIF/output"
+pathOut = os.path.expanduser(pathOut)
+
 print("Reading")
-dataset = xr.open_zarr("/net/data/SIF/sif-gome2-JJ-256x256x256.zarr")
+dataset = xr.open_zarr(f"{pathOut}/sif-gome2-PK-8d-0.05deg-256x256x256.zarr")
 
 print("Interpolating")
 dataset = dataset.coarsen(lat=5,lon=5).mean()
@@ -28,4 +31,4 @@ dataset.attrs['geospatial_lat_resolution'] = 0.25
 dataset.attrs['geospatial_lon_resolution'] = 0.25
 
 print("Saving")
-dataset.to_zarr("/net/scratch/dmontero/SIF/sif-gome2-JJ-8d-0.25deg-256x128x128.zarr")
+dataset.to_zarr(f"{pathOut}/sif-gome2-PK-8d-0.25deg-256x128x128.zarr")

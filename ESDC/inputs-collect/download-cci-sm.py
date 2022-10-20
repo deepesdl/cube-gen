@@ -9,10 +9,16 @@ from tqdm import tqdm
 import numpy as np
 import os
 
-pathOut = "/net/scratch/dmontero/CCI/SM"
+# pathOut = "/net/scratch/dmontero/CCI/SM"
+
+# if not os.path.exists(pathOut):
+#    os.mkdir(pathOut)
+
+pathOut = "~/data/CCI/sm/source"
+pathOut = os.path.expanduser(pathOut)
 
 if not os.path.exists(pathOut):
-    os.mkdir(pathOut)
+    os.makedirs(pathOut)
 
 def get_url_paths(url, ext='', params={}):
     response = requests.get(url, params=params)

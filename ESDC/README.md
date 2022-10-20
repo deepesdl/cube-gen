@@ -193,13 +193,13 @@ inputs-preprocess/sif-gosif-metadata.py # Add initial metadata
 
 # GOME-2 JJ Method: Preprocessing
 inputs-preprocess/sif-gome2-JJ-data-cube.py # Concatenate .nc files
-inputs-preprocess/sif-gome2-JJ-data-cube-0.25deg.py # Resample to 0.25 degrees
 inputs-preprocess/sif-gome2-JJ-metadata.py # Add initial metadata
+inputs-preprocess/sif-gome2-JJ-data-cube-0.25deg.py # Resample to 0.25 degrees
 
 # GOME-2 PK Method: Preprocessing
 inputs-preprocess/sif-gome2-PK-data-cube.py # Concatenate .nc files
-inputs-preprocess/sif-gome2-PK-data-cube-0.25deg.py # Resample to 0.25 degrees
 inputs-preprocess/sif-gome2-PK-metadata.py # Add initial metadata
+inputs-preprocess/sif-gome2-PK-data-cube-0.25deg.py # Resample to 0.25 degrees
 
 # RTSIF: Preprocessing
 inputs-preprocess/sif-rtsif-data-cube-0.25deg.py # Resample to 0.25 degrees

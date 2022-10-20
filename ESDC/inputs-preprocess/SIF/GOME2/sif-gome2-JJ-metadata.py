@@ -6,13 +6,22 @@ import xarray as xr
 import numpy as np
 
 
+pathIn = "~/data/SIF/GOME2-SIF/preprocess"
+pathIn = os.path.expanduser(pathIn)
+
+pathOut = "~/data/SIF/GOME2-SIF/output"
+pathOut = os.path.expanduser(pathOut)
+
+if not os.path.exists(pathOut):
+    os.makedirs(pathOut)
+
 with open("sif-gome2-JJ-metadata.yaml", "r") as stream:
     try:
         metadata = yaml.safe_load(stream)
     except yaml.YAMLError as exc:
         print(exc)
 
-    datacube = xr.open_zarr("/net/projects/deep_esdl/data/GOME2-SIF/cubes/sif-gome2-JJ-256x256x256.zarr")
+datacube = xr.open_zarr(f"{pathIn}/sif-gome2-JJ-256x256x256.zarr")
 
 datacube = datacube.rio.write_crs(
     "epsg:4326", grid_mapping_name="crs"
@@ -44,4 +53,4 @@ datacube.attrs = dict(
     sorted({**datacube.attrs, **additional_attrs}.items())
 )
 
-datacube.to_zarr("/net/projects/deep_esdl/data/GOME2-SIF/cubes/sif-gome2-JJ-metadata-256x256x256.zarr",mode = "w")
+datacube.to_zarr(f"{pathOutput}/sif-gome2-JJ-8d-0.05deg-256x256x256.zarr",mode = "w")

@@ -5,12 +5,15 @@ import os
 import datetime
 from tqdm import tqdm
 
-pathOut = "/net/projects/deep_esdl/data/GOSIF/cubes/"
+# pathOut = "/net/projects/deep_esdl/data/GOSIF/cubes/"
 
-if not os.path.exists(pathOut):
-    os.mkdir(pathOut)
-    
-files = glob.glob("/net/projects/deep_esdl/data/GOSIF/data/*.tif")
+# if not os.path.exists(pathOut):
+#     os.mkdir(pathOut)
+
+pathIn = "~/data/SIF/GOSIF/source"
+pathIn = os.path.expanduser(pathIn)
+
+files = glob.glob(f"{pathIn}/*.tif")
 files.sort()
 
 def to_xarray(file):
@@ -23,6 +26,6 @@ def to_xarray(file):
     ds = ds.assign_coords({"time": date}).expand_dims("time")
     ds = ds * 0.0001
     ds = ds.transpose("time","lat","lon")
-    ds.to_zarr(f"/net/projects/deep_esdl/data/GOSIF/data/{filename.replace('.tif','.zarr')}")
+    ds.to_zarr(f"{pathIn}/{filename.replace('.tif','.zarr')}")
 
 [to_xarray(file) for file in tqdm(files)]

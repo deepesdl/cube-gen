@@ -3,8 +3,17 @@ from tqdm import tqdm
 import xarray as xr
 import glob
 
+pathOut = "~/data/CCI/sm/preprocess"
+pathOut = os.path.expanduser(pathOut)
+
+if not os.path.exists(pathOut):
+    os.makedirs(pathOut)
+
+pathIn = "~/data/CCI/sm/source"
+pathIn = os.path.expanduser(pathIn)
+
 print("Reading")
-files = glob.glob("/net/scratch/dmontero/CCI/SM/*.zarr")
+files = glob.glob(f"{pathIn}/*.zarr")
 files.sort()
 
 dataset = [xr.open_zarr(file) for file in tqdm(files)]
@@ -29,4 +38,4 @@ dataset_8d = xr.concat(dataset_8d,dim="time")
 dataset_8d = dataset_8d.chunk(dict(time=256))
 
 print("Saving")
-dataset_8d.to_zarr("/net/scratch/dmontero/CCI/cci-sm-8d-0.25deg-256x128x128.zarr")
+dataset_8d.to_zarr(f"{pathOut}/cci-sm-8d-0.25deg-256x128x128.zarr")

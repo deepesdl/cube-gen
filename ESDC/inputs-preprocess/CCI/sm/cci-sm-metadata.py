@@ -6,13 +6,22 @@ import xarray as xr
 import numpy as np
 
 
+pathOut = "~/data/CCI/sm/output"
+pathOut = os.path.expanduser(pathOut)
+
+if not os.path.exists(pathOut):
+    os.makedirs(pathOut)
+
+pathIn = "~/data/CCI/sm/preprocess"
+pathIn = os.path.expanduser(pathIn)
+
 with open("cci-sm-metadata.yaml", "r") as stream:
     try:
         metadata = yaml.safe_load(stream)
     except yaml.YAMLError as exc:
         print(exc)
 
-datacube = xr.open_zarr("/net/scratch/dmontero/CCI/cci-sm-8d-0.25deg-256x128x128.zarr")
+datacube = xr.open_zarr(f"{pathIn}/cci-sm-8d-0.25deg-256x128x128.zarr")
 
 datacube = datacube.rio.write_crs(
     "epsg:4326", grid_mapping_name="crs"
@@ -44,4 +53,4 @@ datacube.attrs = dict(
     sorted({**datacube.attrs, **additional_attrs}.items())
 )
 
-datacube.to_zarr("/net/scratch/dmontero/CCI/metadata/cci-sm-8d-0.25deg-256x128x128.zarr")
+datacube.to_zarr(f"{pathOut}/cci-sm-8d-0.25deg-256x128x128.zarr")
