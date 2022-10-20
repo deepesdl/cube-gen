@@ -162,8 +162,9 @@ inputs-collect/download-MCD43C4.py
 # GOME-2: Download 8-days .nc files
 inputs-collect/download-GOME2-SIF.py
 
-# GOSIF: Download 8-days .tif files
+# GOSIF: Download 8-days and extract .tif files
 inputs-collect/download-GOSIF.py
+inputs-collect/extract-gz-gosif.py
 
 # CCI-SM: Download daily .nc files
 inputs-collect/download-cci-sm.py
