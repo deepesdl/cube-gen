@@ -6,7 +6,15 @@ import os
 import datetime
 from tqdm import tqdm
 
-files = glob.glob("/net/scratch/dmontero/GFED4/*.hdf")
+pathIn = "path-to-GFED4-folder"
+
+pathOut = "~/data/GFED4/preprocess"
+pathOut = os.path.expanduser(pathOut)
+
+if not os.path.exists(pathOut):
+    os.makedirs(pathOut)
+
+files = glob.glob(f"{pathIn}/*.hdf")
 files.sort()
 
 print("Reading")
@@ -45,4 +53,4 @@ dataset_8d = dataset.interp(coords=dict(time=dates),method="nearest",kwargs={"fi
 dataset_8d.chunk(dict(time=256))
 
 print("Saving")
-dataset_8d.to_zarr("/net/scratch/dmontero/GFED4/cubes/gfed4-burntarea-8d-0.25deg-256x128x128.zarr")
+dataset_8d.to_zarr(f"{pathOut}/gfed4-burntarea-8d-0.25deg-256x128x128.zarr")

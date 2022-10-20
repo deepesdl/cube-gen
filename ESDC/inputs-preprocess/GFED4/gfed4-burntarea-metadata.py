@@ -6,13 +6,22 @@ import xarray as xr
 import numpy as np
 
 
+pathIn = "~/data/GFED4/preprocess"
+pathIn = os.path.expanduser(pathIn)
+
+pathOut = "~/data/GFED4/output"
+pathOut = os.path.expanduser(pathOut)
+
+if not os.path.exists(pathOut):
+    os.makedirs(pathOut)
+
 with open("gfed4-burntarea-metadata.yaml", "r") as stream:
     try:
         metadata = yaml.safe_load(stream)
     except yaml.YAMLError as exc:
         print(exc)
 
-datacube = xr.open_zarr("/net/scratch/dmontero/GFED4/cubes/gfed4-burntarea-8d-0.25deg-256x128x128.zarr")
+datacube = xr.open_zarr(f"{pathIn}/gfed4-burntarea-8d-0.25deg-256x128x128.zarr")
 
 datacube = datacube.rio.write_crs(
     "epsg:4326", grid_mapping_name="crs"
@@ -44,4 +53,4 @@ datacube.attrs = dict(
     sorted({**datacube.attrs, **additional_attrs}.items())
 )
 
-datacube.to_zarr("/net/scratch/dmontero/GFED4/cubes/metadata/gfed4-burntarea-8d-0.25deg-256x128x128.zarr")
+datacube.to_zarr(f"{pathOut}/gfed4-burntarea-8d-0.25deg-256x128x128.zarr")
