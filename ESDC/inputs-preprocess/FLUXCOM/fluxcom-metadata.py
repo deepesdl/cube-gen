@@ -5,6 +5,14 @@ import rioxarray
 import xarray as xr
 import numpy as np
 
+pathIn = "~/data/FLUXCOM/preprocess"
+pathIn = os.path.expanduser(pathIn)
+
+pathOut = "~/data/FLUXCOM/output"
+pathOut = os.path.expanduser(pathOut)
+
+if not os.path.exists(pathOut):
+    os.makedirs(pathOut)
 
 with open("fluxcom-metadata.yaml", "r") as stream:
     try:
@@ -12,7 +20,7 @@ with open("fluxcom-metadata.yaml", "r") as stream:
     except yaml.YAMLError as exc:
         print(exc)
 
-datacube = xr.open_zarr("/Net/Groups/BGI/work_1/scratch/dmontero/FLUXCOM/fluxcom-8d-0.083deg-256x256x256.zarr")
+datacube = xr.open_zarr(f"{pathIn}/fluxcom-8d-0.083deg-256x256x256.zarr")
 
 datacube = datacube.rio.write_crs(
     "epsg:4326", grid_mapping_name="crs"
@@ -46,4 +54,4 @@ datacube.attrs = dict(
     sorted({**datacube.attrs, **additional_attrs}.items())
 )
 
-datacube.to_zarr("/Net/Groups/BGI/work_1/scratch/dmontero/FLUXCOM/metadata/fluxcom-8d-0.083deg-256x256x256.zarr",mode="w")
+datacube.to_zarr(f"{pathOut}/fluxcom-8d-0.083deg-256x256x256.zarr",mode="w")

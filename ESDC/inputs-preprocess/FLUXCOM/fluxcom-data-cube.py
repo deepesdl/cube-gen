@@ -4,9 +4,15 @@ import glob
 
 from tqdm import tqdm
 
+pathOut = "~/data/FLUXCOM/preprocess"
+pathOut = os.path.expanduser(pathOut)
+
+if not os.path.exists(pathOut):
+    os.makedirs(pathOut)
+
 print("Reading")
-Cpath="/Net/Groups/BGI/work_3/FluxcomDataStructure/internal/QOVbZtjf6sSIZowqIc99/tCarbonFluxes/RS_V006/ensemble/4320_2160/8daily"
-Epath="/Net/Groups/BGI/work_3/FluxcomDataStructure/internal/QOVbZtjf6sSIZowqIc99/tEnergyFluxes/RS_V006/ensemble/4320_2160/8daily"
+Cpath="path-to-daily-carbon-fluxes"
+Epath="path-to-daily-energy-fluxes"
 
 GPPfiles=glob.glob(f"{Cpath}/GPP*.nc")
 GPPfiles.sort()
@@ -43,4 +49,4 @@ fluxcom['time'] = fluxcom.time + np.timedelta64(4,"D")
 fluxcom = fluxcom.chunk(dict(time=256,lat=256,lon=256))
 
 print("Saving")
-fluxcom.to_zarr("/Net/Groups/BGI/work_1/scratch/dmontero/FLUXCOM/fluxcom-8d-0.083deg-256x256x256.zarr")
+fluxcom.to_zarr(f"{pathOut}/fluxcom-8d-0.083deg-256x256x256.zarr")

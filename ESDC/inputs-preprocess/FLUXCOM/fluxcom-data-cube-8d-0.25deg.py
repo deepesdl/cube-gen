@@ -3,8 +3,11 @@ import numpy as np
 from tqdm import tqdm
 from datetime import datetime
 
+pathOut = "~/data/FLUXCOM/output"
+pathOut = os.path.expanduser(pathOut)
+
 print("Reading")
-dataset = xr.open_zarr("/Net/Groups/BGI/work_1/scratch/dmontero/FLUXCOM/metadata/fluxcom-8d-0.083deg-256x256x256.zarr")
+dataset = xr.open_zarr(f"{pathOut}/fluxcom-8d-0.083deg-256x256x256.zarr")
 
 print("Interpolating")
 dataset = dataset.coarsen(lat=3,lon=3).mean()
@@ -28,4 +31,4 @@ for variable in dataset.variables.keys():
     del dataset[variable].encoding['chunks']
 
 print("Saving")
-dataset.to_zarr("/Net/Groups/BGI/work_1/scratch/dmontero/FLUXCOM/metadata/fluxcom-8d-0.25deg-256x128x128.zarr")
+dataset.to_zarr(f"{pathOut}/fluxcom-8d-0.25deg-256x128x128.zarr")
