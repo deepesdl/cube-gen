@@ -4,8 +4,17 @@ import numpy as np
 from tqdm import tqdm
 from datetime import datetime
 
+pathIn = "~/data/SIF/RTSIF/preprocess"
+pathIn = os.path.expanduser(pathIn)
+
+pathOut = "~/data/SIF/RTSIF/output"
+pathOut = os.path.expanduser(pathOut)
+
+if not os.path.exists(pathOut):
+    os.makedirs(pathOut)
+
 print("Reading")
-dataset = xr.open_zarr("/net/data/SIF/sif-rtsif-1x1200x7200.zarr")
+dataset = xr.open_zarr(f"{pathIn}/sif-rtsif-1x1200x7200.zarr")
 
 print("Fixing time")
 keep_attrs = dataset.time.attrs
@@ -40,4 +49,4 @@ print("Deleting previous chunks")
 del dataset['sif'].encoding['chunks']
 
 print("Saving")
-dataset.to_zarr("/net/scratch/dmontero/SIF/sif-rtsif-8d-0.25deg-256x128x128.zarr")
+dataset.to_zarr(f"{pathOut}/sif-rtsif-8d-0.25deg-256x128x128.zarr")

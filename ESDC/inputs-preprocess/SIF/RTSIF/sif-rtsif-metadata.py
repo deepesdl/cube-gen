@@ -5,6 +5,13 @@ import rioxarray
 import xarray as xr
 import numpy as np
 
+pathIn = "path-to-RTSIF-cube"
+
+pathOut = "~/data/SIF/RTSIF/preprocess"
+pathOut = os.path.expanduser(pathOut)
+
+if not os.path.exists(pathOut):
+    os.makedirs(pathOut)
 
 with open("sif-rtsif-metadata.yaml", "r") as stream:
     try:
@@ -12,7 +19,7 @@ with open("sif-rtsif-metadata.yaml", "r") as stream:
     except yaml.YAMLError as exc:
         print(exc)
 
-datacube = xr.open_zarr("/net/data/RTSIF/RTSIF.zarr")
+datacube = xr.open_zarr(f"{pathIn}/RTSIF.zarr")
 
 datacube = datacube.rename({"layer":"sif","latitude":"lat","longitude":"lon"})
 
@@ -46,4 +53,4 @@ datacube.attrs = dict(
     sorted({**datacube.attrs, **additional_attrs}.items())
 )
 
-datacube.to_zarr("/net/data/SIF/sif-rtsif-1x1200x7200.zarr")
+datacube.to_zarr(f"{pathOut}/sif-rtsif-1x1200x7200.zarr")
