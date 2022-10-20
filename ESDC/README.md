@@ -153,7 +153,7 @@ The cube generation process is divided in four phases:
 
 ### 1. Downloading required raw datasets
 
-These datasets are the input data. Each dataset can be a set of `.nc`, `.hdf`, or `.tif` files. These files contains data with its original configuration. The downloading code for each dataset is found at the `inputs-collect` folder. Note that some datasets can be acquired via `xcube-cci` and don't require to be downloaded. Additional datasets where acquired va ftp (e.g. GLEAM) or sftp (e.g. GFED4) and don't have a download program.
+These datasets are the input data. Each dataset can be a set of `.nc`, `.hdf`, or `.tif` files. These files contains data with its original configuration. The downloading code for each dataset is found at the `inputs-collect` folder. Note that some datasets can be acquired via `xcube-cci` and don't require to be downloaded. Additional datasets were acquired va ftp (e.g. GLEAM) or sftp (e.g. GFED4) and don't have a download program. Other datasets were provided by their original providers (e.g. FLUXCOM) and don't have a download program neither.
 
 ```
 # MODIS: Download daily .hdf files
@@ -176,67 +176,69 @@ The raw data is preprocessed in order to create a single input `.zarr` cube per 
 
 ```
 # GLEAM: Preprocessing
-inputs-preprocess/gleam-data-cube.py # Concatenate .nc files
-inputs-preprocess/gleam-metadata.py # Add initial metadata
-inputs-preprocess/gleam-data-cube-8d.py # Resample by 8-days
+inputs-preprocess/GLEAM/gleam-data-cube.py # Concatenate .nc files
+inputs-preprocess/GLEAM/gleam-metadata.py # Add initial metadata
+inputs-preprocess/GLEAM/gleam-data-cube-8d.py # Resample by 8-days
 
 # FLUXCOM: Preprocessing
-inputs-preprocess/fluxcom-data-cube.py # Concatenate .nc files
-inputs-preprocess/fluxcom-metadata.py # Add initial metadata
-inputs-preprocess/fluxcom-data-cube-8d-0.25deg.py # Resample to 0.25 degress
+inputs-preprocess/FLUXCOM/fluxcom-data-cube.py # Concatenate .nc files
+inputs-preprocess/FLUXCOM/fluxcom-metadata.py # Add initial metadata
+inputs-preprocess/FLUXCOM/fluxcom-data-cube-8d-0.25deg.py # Resample to 0.25 degress
 
 # GOSIF: Preprocessing
-inputs-preprocess/sif-gosif-data-cube-part1.py # Convert .tif to .zarr
-inputs-preprocess/sif-gosif-data-cube-part2.py # Concatenate .zarr files
-inputs-preprocess/sif-gosif-data-cube-0.25deg.py # Resample to 0.25 degrees
-inputs-preprocess/sif-gosif-metadata.py # Add initial metadata
+inputs-preprocess/SIF/GOSIF/sif-gosif-data-cube-part1.py # Convert .tif to .zarr
+inputs-preprocess/SIF/GOSIF/sif-gosif-data-cube-part2.py # Concatenate .zarr files
+inputs-preprocess/SIF/GOSIF/sif-gosif-data-cube-0.25deg.py # Resample to 0.25 degrees
+inputs-preprocess/SIF/GOSIF/sif-gosif-metadata.py # Add initial metadata
 
 # GOME-2 JJ Method: Preprocessing
-inputs-preprocess/sif-gome2-JJ-data-cube.py # Concatenate .nc files
-inputs-preprocess/sif-gome2-JJ-metadata.py # Add initial metadata
-inputs-preprocess/sif-gome2-JJ-data-cube-0.25deg.py # Resample to 0.25 degrees
+inputs-preprocess/SIF/GOME2/sif-gome2-JJ-data-cube.py # Concatenate .nc files
+inputs-preprocess/SIF/GOME2/sif-gome2-JJ-metadata.py # Add initial metadata
+inputs-preprocess/SIF/GOME2/sif-gome2-JJ-data-cube-0.25deg.py # Resample to 0.25 degrees
 
 # GOME-2 PK Method: Preprocessing
-inputs-preprocess/sif-gome2-PK-data-cube.py # Concatenate .nc files
-inputs-preprocess/sif-gome2-PK-metadata.py # Add initial metadata
-inputs-preprocess/sif-gome2-PK-data-cube-0.25deg.py # Resample to 0.25 degrees
+inputs-preprocess/SIF/GOME2/sif-gome2-PK-data-cube.py # Concatenate .nc files
+inputs-preprocess/SIF/GOME2/sif-gome2-PK-metadata.py # Add initial metadata
+inputs-preprocess/SIF/GOME2/sif-gome2-PK-data-cube-0.25deg.py # Resample to 0.25 degrees
 
 # RTSIF: Preprocessing
-inputs-preprocess/sif-rtsif-metadata.py # Add initial metadata
-inputs-preprocess/sif-rtsif-data-cube-0.25deg.py # Resample to 0.25 degrees
+inputs-preprocess/SIF/RTSIF/sif-rtsif-metadata.py # Add initial metadata
+inputs-preprocess/SIF/RTSIFsif-rtsif-data-cube-0.25deg.py # Resample to 0.25 degrees
 
 # ERA5: Preprocessing
-inputs-preprocess/era5-data-cube-8d-part1.py # Resample by 1-day
-inputs-preprocess/era5-data-cube-8d-part2.py # Resample by 8-days
-inputs-preprocess/era5-data-cube-8d-0.25deg.py # Resample to 0.25 degrees
-inputs-preprocess/era5-metadata.py # Add initial metadata
+inputs-preprocess/ERA5/era5-data-cube-8d-part1.py # Resample by 1-day
+inputs-preprocess/ERA5/era5-data-cube-8d-part2.py # Resample by 8-days
+inputs-preprocess/ERA5/era5-data-cube-8d-0.25deg.py # Resample to 0.25 degrees
+inputs-preprocess/ERA5/era5-metadata.py # Add initial metadata
 
 # MODIS: Preprocessing
-inputs-preprocess/modis-mcd43c4-data-cube-part1.py # Convert .hdf to .zarr
-inputs-preprocess/modis-mcd43c4-data-cube-part2.py # Concatenate .zarr files
-inputs-preprocess/modis-mcd43c4-data-cube-part3.py # Compute spectral indices
-inputs-preprocess/modis-mcd43c4-data-cube-part4.py # Merge spectral indices and bands
-inputs-preprocess/modis-metadata.py # Add initial metadata
-inputs-preprocess/modis-mcd43c4-data-cube-8d.py # Resample by 8-days
-inputs-preprocess/modis-mcd43c4-data-cube-8d-0.25deg.py # Resample to 0.25 degrees
-inputs-preprocess/modis-mcd43c4-data-cube-8d-0.25deg-mask.py # Mask out water pixels
+inputs-preprocess/MODIS/modis-mcd43c4-data-cube-part1.py # Convert .hdf to .zarr
+inputs-preprocess/MODIS/modis-mcd43c4-data-cube-part2.py # Concatenate .zarr files
+inputs-preprocess/MODIS/modis-mcd43c4-data-cube-part3.py # Compute spectral indices
+inputs-preprocess/MODIS/modis-mcd43c4-data-cube-part4.py # Merge spectral indices and bands
+inputs-preprocess/MODIS/modis-metadata.py # Add initial metadata
+inputs-preprocess/MODIS/modis-mcd43c4-data-cube-8d.py # Resample by 8-days
+inputs-preprocess/MODIS/modis-mcd43c4-data-cube-8d-0.25deg.py # Resample to 0.25 degrees
+inputs-preprocess/MODIS/modis-mcd43c4-data-cube-8d-0.25deg-mask.py # Mask out water pixels
 
 # CCI Aerosol: Preprocessing
-inputs-preprocess/cci-aod550-8d-0.25deg.py # Resample to 0.25 degrees
-inputs-preprocess/cci-aod550-metadata.py # Add initial metadata
+inputs-preprocess/CCI/aerosol/cci-aod550-8d-0.25deg.py # Resample to 0.25 degrees
+inputs-preprocess/CCI/aerosol/cci-aod550-metadata.py # Add initial metadata
 
 # CCI Cloud: Preprocessing
-inputs-preprocess/cci-cloud-8d-0.25deg.py # Resample to 0.25 degrees
-inputs-preprocess/cci-cloud-metadata.py # Add initial metadata
+inputs-preprocess/CCI/cloud/cci-cloud-8d-0.25deg.py # Resample to 0.25 degrees
+inputs-preprocess/CCI/cloud/cci-cloud-metadata.py # Add initial metadata
 
 # CCI Soil Moisture: Preprocessing
-inputs-preprocess/cci-sm-8d-0.25deg.py # Resample to 0.25 degrees
-inputs-preprocess/cci-sm-metadata.py # Add initial metadata
+inputs-preprocess/CCI/sm/cci-sm-8d-0.25deg.py # Resample to 0.25 degrees
+inputs-preprocess/CCI/sm/cci-sm-metadata.py # Add initial metadata
 
 # GFED4: Preprocessing
-inputs-preprocess/gfed4-burntarea-data-cube-8d-0.25deg.py # Resample to 0.25 degrees
-inputs-preprocess/gfed4-burntarea-metadata.py # Add initial metadata
+inputs-preprocess/GFED4/gfed4-burntarea-data-cube-8d-0.25deg.py # Resample to 0.25 degrees
+inputs-preprocess/GFED4/gfed4-burntarea-metadata.py # Add initial metadata
 ```
+
+After preprocessing, all `.zarr` cubes were uploaded to `s3://deep-esdl-input/` using the AWS CLI.
 
 ### 3. Merging all datasets into a single cube
 
