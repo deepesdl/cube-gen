@@ -5,6 +5,17 @@ import rioxarray
 import xarray as xr
 import numpy as np
 
+pathSource = "~/data/MODIS/source"
+patpathSourcehIn = os.path.expanduser(pathSource)
+
+pathIn = "~/data/MODIS/preprocess"
+pathIn = os.path.expanduser(pathIn)
+
+pathOut = "~/data/MODIS/output"
+pathOut = os.path.expanduser(pathOut)
+
+if not os.path.exists(pathOut):
+    os.makedirs(pathOut)
 
 with open("modis-metadata.yaml", "r") as stream:
     try:
@@ -12,9 +23,9 @@ with open("modis-metadata.yaml", "r") as stream:
     except yaml.YAMLError as exc:
         print(exc)
 
-datacube = xr.open_zarr("/net/projects/deep_esdl/data/MODIS/MCD43C4/cubes/modis-mcd43c4-vis-no-metadata-256x256x256.zarr")
+datacube = xr.open_zarr(f"{pathIn}/modis-mcd43c4-vis-256x256x256.zarr")
 
-ref = xr.open_zarr("/net/projects/deep_esdl/data/MODIS/MCD43C4/data/MCD43C4.A2000055.061.2020038224934.zarr")
+ref = xr.open_zarr(f"{pathSource}/MCD43C4.A2000055.061.2020038224934.zarr")
 
 datacube = datacube.rio.write_crs(
     ref.rio.crs, grid_mapping_name="crs"
@@ -46,4 +57,4 @@ datacube.attrs = dict(
     sorted({**datacube.attrs, **additional_attrs}.items())
 )
 
-datacube.to_zarr("/net/projects/deep_esdl/data/MODIS/MCD43C4/cubes/modis-mcd43c4-vis-256x256x256.zarr")
+datacube.to_zarr(f"{pathOut}/modis-mcd43c4-vis-256x256x256.zarr")

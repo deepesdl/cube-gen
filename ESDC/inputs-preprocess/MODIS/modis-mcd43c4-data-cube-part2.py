@@ -8,12 +8,21 @@ from tqdm import tqdm
 
 chunks = dict(time=256,lat=256,lon=256)
 
-pathOut = "/net/projects/deep_esdl/data/MODIS/MCD43C4/cubes"
+# pathOut = "/net/projects/deep_esdl/data/MODIS/MCD43C4/cubes"
+
+# if not os.path.exists(pathOut):
+#     os.mkdir(pathOut)
+
+pathIn = "~/data/MODIS/source"
+pathIn = os.path.expanduser(pathIn)
+
+pathOut = "~/data/MODIS/preprocess"
+pathOut = os.path.expanduser(pathOut)
 
 if not os.path.exists(pathOut):
-    os.mkdir(pathOut)
-    
-files = glob.glob("/net/projects/deep_esdl/data/MODIS/MCD43C4/data/*.zarr")
+    os.makedirs(pathOut)
+
+files = glob.glob(f"{pathIn}/*.zarr")
 files.sort()
 
 datasets = [xr.open_zarr(file) for file in tqdm(files)]    
@@ -72,6 +81,6 @@ for variable in variables:
 
 print("Saving...")
     
-datasets.to_zarr(f"{pathOut}/modis-mcd43c4-no-metadata-256x256x256.zarr")
+datasets.to_zarr(f"{pathOut}/modis-mcd43c4-256x256x256.zarr")
 
 print("Done!")

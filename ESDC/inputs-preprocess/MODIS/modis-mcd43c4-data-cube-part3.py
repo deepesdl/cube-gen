@@ -8,7 +8,10 @@ from tqdm import tqdm
 
 before = datetime.datetime.now()
 
-datasets = xr.open_zarr("/net/projects/deep_esdl/data/MODIS/MCD43C4/cubes/modis-mcd43c4-no-metadata-256x256x256.zarr")
+pathOut = "~/data/MODIS/preprocess"
+pathOut = os.path.expanduser(pathOut)
+
+datasets = xr.open_zarr(f"{pathOut}/modis-mcd43c4-256x256x256.zarr")
 
 print("Computing NDVI")
 
@@ -21,7 +24,7 @@ indices = spyndex.computeIndex(
 indices.name = "NDVI"
 indices = indices.to_dataset()
 
-indices.to_zarr(f"/net/projects/deep_esdl/data/MODIS/MCD43C4/cubes/modis-mcd43c4-ndvi-no-metadata-256x256x256.zarr")
+indices.to_zarr(f"{pathOut}/modis-mcd43c4-ndvi-256x256x256.zarr")
 print(f"NDVI took {((datetime.datetime.now() - before).total_seconds())/60} minutes in total")
 
 print("Computing NIRv")
@@ -35,7 +38,7 @@ indices = spyndex.computeIndex(
 indices.name = "NIRv"
 indices = indices.to_dataset()
 
-indices.to_zarr(f"/net/projects/deep_esdl/data/MODIS/MCD43C4/cubes/modis-mcd43c4-nirv-no-metadata-256x256x256.zarr")
+indices.to_zarr(f"{pathOut}/modis-mcd43c4-nirv-256x256x256.zarr")
 print(f"NDVI + NIRv took {((datetime.datetime.now() - before).total_seconds())/60} minutes in total")
 
 print("Computing kNDVI")
@@ -54,7 +57,7 @@ indices = spyndex.computeIndex(
 indices.name = "kNDVI"
 indices = indices.to_dataset()
 
-indices.to_zarr(f"/net/projects/deep_esdl/data/MODIS/MCD43C4/cubes/modis-mcd43c4-kndvi-no-metadata-256x256x256.zarr")
+indices.to_zarr(f"{pathOut}/modis-mcd43c4-kndvi-256x256x256.zarr")
 print(f"NDVI + NIRv + kNDVI took {((datetime.datetime.now() - before).total_seconds())/60} minutes in total")
 
 # print("Computing spectral indices...")

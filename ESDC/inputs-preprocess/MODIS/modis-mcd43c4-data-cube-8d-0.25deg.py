@@ -4,8 +4,11 @@ import numpy as np
 from tqdm import tqdm
 from datetime import datetime
 
+pathOut = "~/data/MODIS/output"
+pathOut = os.path.expanduser(pathOut)
+
 print("Reading")
-dataset = xr.open_zarr("/net/scratch/dmontero/MODIS/modis-mcd43c4-vis-8d-0.05deg-256x128x128.zarr")
+dataset = xr.open_zarr(f"{pathOut}/modis-mcd43c4-vis-8d-0.05deg-256x128x128.zarr")
 
 print("Interpolating")
 dataset = dataset.sel(time=slice("2000-03-01","2021-12-31")).coarsen(lat=5,lon=5).mean()
@@ -28,4 +31,4 @@ dataset.attrs['geospatial_lat_resolution'] = 0.25
 dataset.attrs['geospatial_lon_resolution'] = 0.25
 
 print("Saving")
-dataset.to_zarr("/net/scratch/dmontero/MODIS/modis-mcd43c4-vis-8d-0.25deg-256x128x128.zarr")
+dataset.to_zarr(f"{pathOut}/modis-mcd43c4-vis-8d-0.25deg-256x128x128.zarr")

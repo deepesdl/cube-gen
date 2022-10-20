@@ -4,10 +4,16 @@ import numpy as np
 from tqdm import tqdm
 from datetime import datetime
 
-print("Reading")
-dataset = xr.open_zarr("/net/scratch/dmontero/MODIS/modis-mcd43c4-vis-8d-0.25deg-256x128x128.zarr")
+pathGLEAM = "~/data/GLEAM/output"
+pathGLEAM = os.path.expanduser(pathGLEAM)
 
-mask = xr.open_zarr("/net/scratch/dmontero/GLEAM/gleam-8d-0.25deg-256x128x128.zarr")
+pathOut = "~/data/MODIS/output"
+pathOut = os.path.expanduser(pathOut)
+
+print("Reading")
+dataset = xr.open_zarr(f"{pathOut}/modis-mcd43c4-vis-8d-0.25deg-256x128x128.zarr")
+
+mask = xr.open_zarr(f"{pathGLEAM}/gleam-8d-0.25deg-256x128x128.zarr")
 mask = (mask.SMsurf[0]/mask.SMsurf[0]).drop("time")
 
 mask["lat"] = dataset.lat
@@ -28,4 +34,4 @@ masked.attrs['processing_steps'] = masked.attrs['processing_steps'] + ['Masking 
 masked = masked.transpose("time","lat","lon")
 
 print("Saving")
-masked.to_zarr("/net/scratch/dmontero/MODIS/modis-mcd43c4-vis-mask-8d-0.25deg-256x128x128.zarr")
+masked.to_zarr(f"{pathOut}/modis-mcd43c4-vis-mask-8d-0.25deg-256x128x128.zarr")

@@ -216,10 +216,10 @@ inputs-preprocess/modis-mcd43c4-data-cube-part1.py # Convert .hdf to .zarr
 inputs-preprocess/modis-mcd43c4-data-cube-part2.py # Concatenate .zarr files
 inputs-preprocess/modis-mcd43c4-data-cube-part3.py # Compute spectral indices
 inputs-preprocess/modis-mcd43c4-data-cube-part4.py # Merge spectral indices and bands
+inputs-preprocess/modis-metadata.py # Add initial metadata
 inputs-preprocess/modis-mcd43c4-data-cube-8d.py # Resample by 8-days
 inputs-preprocess/modis-mcd43c4-data-cube-8d-0.25deg.py # Resample to 0.25 degrees
 inputs-preprocess/modis-mcd43c4-data-cube-8d-0.25deg-mask.py # Mask out water pixels
-inputs-preprocess/modis-metadata.py # Add initial metadata
 
 # CCI Aerosol: Preprocessing
 inputs-preprocess/cci-aod550-8d-0.25deg.py # Resample to 0.25 degrees

@@ -4,6 +4,9 @@ import numpy as np
 from tqdm import tqdm
 from datetime import datetime
 
+pathOut = "~/data/MODIS/output"
+pathOut = os.path.expanduser(pathOut)
+
 keep_vars = [
     'NDVI',
     'NIRv',
@@ -20,7 +23,7 @@ keep_vars = [
 
 dates_2000 = np.arange(np.datetime64("2000-01-05"), np.datetime64("2000-12-31"), np.timedelta64(8, "D")).astype("datetime64[ns]")
 
-dataset = xr.open_zarr("/net/data/MODIS/MCD43C4/modis-mcd43c4-vis-256x256x256.zarr")
+dataset = xr.open_zarr(f"{pathOut}/modis-mcd43c4-vis-256x256x256.zarr")
 
 dataset = dataset[keep_vars]
 
@@ -54,4 +57,4 @@ dataset_8d.attrs['processing_steps'] = dataset_8d.attrs['processing_steps'] + ['
 dataset_8d = dataset_8d.chunk(dict(time=256,lat=128,lon=128))
 dataset_8d.attrs['id'] = "256x128x128"
 
-dataset_8d.to_zarr("/net/scratch/dmontero/MODIS/modis-mcd43c4-vis-8d-0.05deg-256x128x128.zarr")
+dataset_8d.to_zarr(f"{pathOut}/modis-mcd43c4-vis-8d-0.05deg-256x128x128.zarr")

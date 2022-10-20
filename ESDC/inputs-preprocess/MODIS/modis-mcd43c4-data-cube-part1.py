@@ -6,7 +6,10 @@ import os
 import datetime
 from tqdm import tqdm
 
-files = glob.glob("/net/projects/deep_esdl/data/MODIS/MCD43C4/data/*.hdf")
+pathOut = "~/data/MODIS/source"
+pathOut = os.path.expanduser(pathOut)
+
+files = glob.glob(f"{pathOut}/*.hdf")
 files.sort()
 
 chunks = dict(band=1,y=512,x=512)
@@ -46,6 +49,6 @@ def read_and_chunk(file):
     ds = ds.rename({"y": "lat", "x":"lon"})
     ds = ds.assign_coords({"time": date}).expand_dims("time")
     ds = ds.transpose("time","lat","lon")
-    ds.to_zarr(f"/net/projects/deep_esdl/data/MODIS/MCD43C4/data/{filename.replace('.hdf','.zarr')}")
+    ds.to_zarr(f"{pathOut}/{filename.replace('.hdf','.zarr')}")
 
 [read_and_chunk(file) for file in tqdm(files)]

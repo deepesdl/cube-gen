@@ -9,10 +9,16 @@ from tqdm import tqdm
 import numpy as np
 import os
 
-pathOut = "/net/projects/deep_esdl/data/MODIS/MCD43C4/data/"
+# pathOut = "/net/projects/deep_esdl/data/MODIS/MCD43C4/data/"
+
+# if not os.path.exists(pathOut):
+#     os.mkdir(pathOut)
+
+pathOut = "~/data/MODIS/source"
+pathOut = os.path.expanduser(pathOut)
 
 if not os.path.exists(pathOut):
-    os.mkdir(pathOut)
+    os.makedirs(pathOut)
     
 def get_dates_url_paths(url, ext='', params={}):
     response = requests.get(url, params=params)
