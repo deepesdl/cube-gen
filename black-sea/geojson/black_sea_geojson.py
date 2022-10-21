@@ -118,7 +118,7 @@ BBox = shapely.geometry.box(
 
 polygon = [[[x[0], x[1]] for x in list(BBox.exterior.coords)]]
 
-with open("black-sea.geojson", "w") as f:
+with open("../cube.geojson", "w") as f:
     dump(
         Feature(
             geometry=Polygon(polygon),
