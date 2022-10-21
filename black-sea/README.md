@@ -23,33 +23,33 @@ Source data is available from EO4SIBS (3 datasets) and CMEMS (2 datasets). To do
 
 ```
 # Download Sea Surface Temperature
-python black-sea/download/download-data-CMEMS-SST.py
+python inputs-collect/download-data-CMEMS-SST.py
 
 # Download Significant Wave Height
-python black-sea/download/download-data-CMEMS-wave-height.py
+python inputs-collect/download-data-CMEMS-wave-height.py
 
 # Download Surface Currents
-python black-sea/download/download-data-EO4SIBS-altimetry.py
+python inputs-collect/download-data-EO4SIBS-altimetry.py
 
 # Download Chlorophyll
-python black-sea/download/download-data-EO4SIBS-chl.py
+python inputs-collect/download-data-EO4SIBS-chl.py
 
 # Download Sea Surface Salinity
-python black-sea/download/download-data-EO4SIBS-SSS.py
+python inputs-collect/download-data-EO4SIBS-SSS.py
 ```
 
 To convert source data to zarr in the S3 deepESDL bucket:
 
 ```
-nc2zarr -c nc2zarr-config/nc2zarr-CMEMS-black-sea-sst.yml
-nc2zarr -c nc2zarr-config/nc2zarr-CMEMS-black-sea-wave-height.yml
-nc2zarr -c nc2zarr-config/nc2zarr-EO4SIBS-black-sea-altimetry.yml
-nc2zarr -c nc2zarr-config/nc2zarr-EO4SIBS-black-sea-chl.yml
-nc2zarr -c nc2zarr-config/nc2zarr-EO4SIBS-black-sea-sss.yml
+nc2zarr -c inputs-preprocess/nc2zarr-CMEMS-black-sea-sst.yml
+nc2zarr -c inputs-preprocess/nc2zarr-CMEMS-black-sea-wave-height.yml
+nc2zarr -c inputs-preprocess/nc2zarr-EO4SIBS-black-sea-altimetry.yml
+nc2zarr -c inputs-preprocess/nc2zarr-EO4SIBS-black-sea-chl.yml
+nc2zarr -c inputs-preprocess/nc2zarr-EO4SIBS-black-sea-sss.yml
 ```
 
 To preprocess, aggregate, resample, and generate the final data cube:
 
 ```
-python black-sea/cube-gen/black-sea-datacube.py
+python output-merge/black-sea-datacube.py
 ```

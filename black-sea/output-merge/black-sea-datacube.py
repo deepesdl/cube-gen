@@ -13,7 +13,7 @@ with tqdm(total=100) as pbar:
 
     pbar.set_description("Reading metadata and opening stores")
 
-    with open("black-sea-metadata.yaml", "r") as stream:
+    with open("../output-postprocess/black-sea-metadata.yaml", "r") as stream:
         try:
             metadata = yaml.safe_load(stream)
         except yaml.YAMLError as exc:

@@ -7,8 +7,8 @@ from datetime import datetime
 print("Reading")
 dataset = xr.open_zarr("/net/scratch/dmontero/MODIS/modis-mcd43c4-vis-8d-0.05deg-256x128x128.zarr")
 
-new_lats=np.load("/net/home/dmontero/DeepESDL/black-sea-datacube/cube-gen/ESDC/cube-gen/lat.npy")
-new_lons=np.load("/net/home/dmontero/DeepESDL/black-sea-datacube/cube-gen/ESDC/cube-gen/lon.npy")
+new_lats=np.load("/net/home/dmontero/DeepESDL/black-sea-datacube/output-merge/ESDC/output-merge/lat.npy")
+new_lons=np.load("/net/home/dmontero/DeepESDL/black-sea-datacube/output-merge/ESDC/output-merge/lon.npy")
 
 print("Interpolating")
 dataset = dataset.sel(time=slice("2000-03-01","2022-01-01")).interp(coords=dict(lat=new_lats,lon=new_lons),method="linear")
