@@ -64,7 +64,7 @@
                 },
                 "sources": [
                     {
-                        "data_url": "UNKNOWN",
+                        "data_url": "ftp://my.cmems-du.eu/Core/BLKSEA_MULTIYEAR_WAV_007_006/bs-hzg-wav-rean-h/",
                         "license_url": "UNKNOWN",
                         "home_url": "https://resources.marine.copernicus.eu/product-detail/BLKSEA_MULTIYEAR_WAV_007_006/DOCUMENTATION",
                         "processing_steps": [
@@ -109,7 +109,7 @@
                 },
                 "sources": [
                     {
-                        "data_url": "UNKNOWN",
+                        "data_url": "http://www.eo4sibs.uliege.be/map/netcdf_export",
                         "license_url": "UNKNOWN",
                         "home_url": "http://www.eo4sibs.uliege.be/doc/EO4SIBS_DUM_ATBD_OceanColour.pdf",
                         "processing_steps": [
@@ -153,7 +153,7 @@
                 },
                 "sources": [
                     {
-                        "data_url": "UNKNOWN",
+                        "data_url": "http://www.eo4sibs.uliege.be/map/netcdf_export",
                         "license_url": "UNKNOWN",
                         "home_url": "http://www.eo4sibs.uliege.be/doc/EO4SIBS_D4.4_AltimetryL4_DUM_v1.1.pdf",
                         "processing_steps": [
@@ -197,7 +197,7 @@
                 },
                 "sources": [
                     {
-                        "data_url": "UNKNOWN",
+                        "data_url": "http://www.eo4sibs.uliege.be/map/netcdf_export",
                         "license_url": "UNKNOWN",
                         "home_url": "http://www.eo4sibs.uliege.be/doc/EO4SIBS_DUM_ATBD_Salinity.pdf",
                         "processing_steps": [
@@ -241,7 +241,7 @@
                 },
                 "sources": [
                     {
-                        "data_url": "UNKNOWN",
+                        "data_url": "ftp://nrt.cmems-du.eu/Core/SST_BS_SST_L3S_NRT_OBSERVATIONS_010_013/SST_BS_SST_L3S_NRT_OBSERVATIONS_010_013_b/",
                         "license_url": "UNKNOWN",
                         "home_url": "https://resources.marine.copernicus.eu/product-detail/SST_BS_SST_L3S_NRT_OBSERVATIONS_010_013/DOCUMENTATION",
                         "processing_steps": [
@@ -285,7 +285,7 @@
                 },
                 "sources": [
                     {
-                        "data_url": "UNKNOWN",
+                        "data_url": "http://www.eo4sibs.uliege.be/map/netcdf_export",
                         "license_url": "UNKNOWN",
                         "home_url": "http://www.eo4sibs.uliege.be/doc/EO4SIBS_D4.4_AltimetryL4_DUM_v1.1.pdf",
                         "processing_steps": [
@@ -329,7 +329,7 @@
                 },
                 "sources": [
                     {
-                        "data_url": "UNKNOWN",
+                        "data_url": "http://www.eo4sibs.uliege.be/map/netcdf_export",
                         "license_url": "UNKNOWN",
                         "home_url": "http://www.eo4sibs.uliege.be/doc/EO4SIBS_D4.4_AltimetryL4_DUM_v1.1.pdf",
                         "processing_steps": [
@@ -373,7 +373,7 @@
                 },
                 "sources": [
                     {
-                        "data_url": "UNKNOWN",
+                        "data_url": "http://www.eo4sibs.uliege.be/map/netcdf_export",
                         "license_url": "UNKNOWN",
                         "home_url": "http://www.eo4sibs.uliege.be/doc/EO4SIBS_D4.4_AltimetryL4_DUM_v1.1.pdf",
                         "processing_steps": [
@@ -417,7 +417,7 @@
                 },
                 "sources": [
                     {
-                        "data_url": "UNKNOWN",
+                        "data_url": "http://www.eo4sibs.uliege.be/map/netcdf_export",
                         "license_url": "UNKNOWN",
                         "home_url": "http://www.eo4sibs.uliege.be/doc/EO4SIBS_D4.4_AltimetryL4_DUM_v1.1.pdf",
                         "processing_steps": [
