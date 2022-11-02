@@ -1,5 +1,446 @@
 {
     "type": "Feature",
+    "properties": {
+        "title": "Black Sea Data Cube",
+        "data_id": "black-sea-256x256x256",
+        "description": "Black Sea Data Cube",
+        "time_range": [
+            "2016-01-01",
+            "2017-12-31"
+        ],
+        "time_period": "1D",
+        "spatial_ref": "CRS84",
+        "spatial_bbox": [
+            26.0015,
+            39.0015,
+            41.9975,
+            47.9985
+        ],
+        "spatial_res": 0.0030000000000001137,
+        "metadata": {
+            "Conventions": "CF-1.9",
+            "acknowledgment": "EO4SIBS, CMEMS, DeepESDL project",
+            "contributor_name": "Brockmann Geomatics Sweden AB",
+            "contributor_url": "www.brockmann-geomatics.se",
+            "creator_email": "info@brockmann-consult.de",
+            "creator_name": "Brockmann Consult GmbH",
+            "creator_url": "www.brockmann-consult.de",
+            "date_modified": "2022-08-19 16:19:15.359970",
+            "geospatial_lat_max": 47.9985,
+            "geospatial_lat_min": 39.001500000000156,
+            "geospatial_lat_resolution": 0.0030000000000001137,
+            "geospatial_lon_max": 41.997499999999725,
+            "geospatial_lon_min": 26.0015,
+            "geospatial_lon_resolution": 0.0030000000000001137,
+            "institution": "Brockmann Consult GmbH",
+            "license": "Terms and conditions of the DeepESDL data distribution",
+            "project": "DeepESDL",
+            "publisher_email": "info@brockmann-consult.de",
+            "publisher_name": "Brockmann Consult GmbH",
+            "publisher_url": "www.brockmann-consult.de",
+            "source": "EO4SIBS, CMEMS"
+        },
+        "variables": [
+            {
+                "name": "VHM0",
+                "long_name": "Spectral Significant Wave Height (Hm0)",
+                "units": "m",
+                "metadata": {
+                    "processing_level": "L4",
+                    "processing_steps": [
+                        "Temporal daily mean aggregation",
+                        "Spatial nearest neighbor interpolation"
+                    ],
+                    "original_add_offset": 0.0,
+                    "original_name": "VHM0",
+                    "standard_name": "sea_surface_wave_significant_height",
+                    "original_time_period": "1H",
+                    "references": "https://resources.marine.copernicus.eu/product-detail/BLKSEA_MULTIYEAR_WAV_007_006/DOCUMENTATION",
+                    "source": "CMEMS, Black Sea Waves Reanalysis",
+                    "original_lat_spatial_res": 0.028,
+                    "original_scale_factor": 1.0,
+                    "grid_mapping": "crs",
+                    "original_lon_spatial_res": 0.037
+                },
+                "sources": [
+                    {
+                        "data_url": "UNKNOWN",
+                        "license_url": "UNKNOWN",
+                        "home_url": "https://resources.marine.copernicus.eu/product-detail/BLKSEA_MULTIYEAR_WAV_007_006/DOCUMENTATION",
+                        "processing_steps": [
+                            "Temporal daily mean aggregation",
+                            "Spatial nearest neighbor interpolation"
+                        ],
+                        "remarks": "CMEMS, Black Sea Waves Reanalysis"
+                    }
+                ],
+                "time_range": [
+                    "2016-01-01",
+                    "2017-12-31"
+                ],
+                "dtype": "float32",
+                "valid_min": -3.4028234663852886e+38,
+                "valid_max": 3.4028234663852886e+38,
+                "dims": [
+                    "time",
+                    "lat",
+                    "lon"
+                ]
+            },
+            {
+                "name": "chl",
+                "long_name": "Chlorophyll Concentration",
+                "units": "mg m^-3",
+                "metadata": {
+                    "processing_level": "L3",
+                    "processing_steps": [
+                        "Multiplying original scale factor"
+                    ],
+                    "original_add_offset": 0.0,
+                    "original_name": "Chlorophyll",
+                    "standard_name": "chlorophyll_concentration",
+                    "original_time_period": "1D",
+                    "references": "http://www.eo4sibs.uliege.be/doc/EO4SIBS_DUM_ATBD_OceanColour.pdf",
+                    "source": "EO4SIBS, Level 3 Chl-a, 300m, daily and monthly",
+                    "original_lat_spatial_res": 0.003,
+                    "original_scale_factor": 0.01,
+                    "grid_mapping": "crs",
+                    "original_lon_spatial_res": 0.003
+                },
+                "sources": [
+                    {
+                        "data_url": "UNKNOWN",
+                        "license_url": "UNKNOWN",
+                        "home_url": "http://www.eo4sibs.uliege.be/doc/EO4SIBS_DUM_ATBD_OceanColour.pdf",
+                        "processing_steps": [
+                            "Multiplying original scale factor"
+                        ],
+                        "remarks": "EO4SIBS, Level 3 Chl-a, 300m, daily and monthly"
+                    }
+                ],
+                "time_range": [
+                    "2016-01-01",
+                    "2017-12-31"
+                ],
+                "dtype": "float32",
+                "valid_min": -3.4028234663852886e+38,
+                "valid_max": 3.4028234663852886e+38,
+                "dims": [
+                    "time",
+                    "lat",
+                    "lon"
+                ]
+            },
+            {
+                "name": "sla",
+                "long_name": "Sea Level Anomaly",
+                "units": "m",
+                "metadata": {
+                    "processing_level": "L4",
+                    "processing_steps": [
+                        "Spatial nearest neighbor interpolation"
+                    ],
+                    "original_add_offset": 0.0,
+                    "original_name": "sla",
+                    "standard_name": "sea_surface_height_above_sea_level",
+                    "original_time_period": "1D",
+                    "references": "http://www.eo4sibs.uliege.be/doc/EO4SIBS_D4.4_AltimetryL4_DUM_v1.1.pdf",
+                    "source": "EO4SIBS, Level 4, geostrophic currents, multi-mission gridded merged products for a period of 1 year, 0.0625\u00b0*0.0625\u00b0, daily",
+                    "original_lat_spatial_res": 0.0625,
+                    "original_scale_factor": 1.0,
+                    "grid_mapping": "crs",
+                    "original_lon_spatial_res": 0.0625
+                },
+                "sources": [
+                    {
+                        "data_url": "UNKNOWN",
+                        "license_url": "UNKNOWN",
+                        "home_url": "http://www.eo4sibs.uliege.be/doc/EO4SIBS_D4.4_AltimetryL4_DUM_v1.1.pdf",
+                        "processing_steps": [
+                            "Spatial nearest neighbor interpolation"
+                        ],
+                        "remarks": "EO4SIBS, Level 4, geostrophic currents, multi-mission gridded merged products for a period of 1 year, 0.0625\u00b0*0.0625\u00b0, daily"
+                    }
+                ],
+                "time_range": [
+                    "2016-01-01",
+                    "2017-12-31"
+                ],
+                "dtype": "float32",
+                "valid_min": -3.4028234663852886e+38,
+                "valid_max": 3.4028234663852886e+38,
+                "dims": [
+                    "time",
+                    "lat",
+                    "lon"
+                ]
+            },
+            {
+                "name": "sss",
+                "long_name": "Sea Surface Salinity",
+                "units": "psu",
+                "metadata": {
+                    "processing_level": "L3",
+                    "processing_steps": [
+                        "Spatial nearest neighbor interpolation"
+                    ],
+                    "original_add_offset": 0.0,
+                    "original_name": "sss",
+                    "standard_name": "sea_surface_salinity",
+                    "original_time_period": "1D",
+                    "references": "http://www.eo4sibs.uliege.be/doc/EO4SIBS_DUM_ATBD_Salinity.pdf",
+                    "source": "EO4SIBS, Level 3 SSS, 0.25\u00b0*0.25\u00b0, 9-day averaged produced daily",
+                    "original_lat_spatial_res": 0.25,
+                    "original_scale_factor": 1.0,
+                    "grid_mapping": "crs",
+                    "original_lon_spatial_res": 0.25
+                },
+                "sources": [
+                    {
+                        "data_url": "UNKNOWN",
+                        "license_url": "UNKNOWN",
+                        "home_url": "http://www.eo4sibs.uliege.be/doc/EO4SIBS_DUM_ATBD_Salinity.pdf",
+                        "processing_steps": [
+                            "Spatial nearest neighbor interpolation"
+                        ],
+                        "remarks": "EO4SIBS, Level 3 SSS, 0.25\u00b0*0.25\u00b0, 9-day averaged produced daily"
+                    }
+                ],
+                "time_range": [
+                    "2016-01-01",
+                    "2017-12-31"
+                ],
+                "dtype": "float32",
+                "valid_min": -3.4028234663852886e+38,
+                "valid_max": 3.4028234663852886e+38,
+                "dims": [
+                    "time",
+                    "lat",
+                    "lon"
+                ]
+            },
+            {
+                "name": "sst",
+                "long_name": "Sea Surface Temperature",
+                "units": "K",
+                "metadata": {
+                    "processing_level": "L3",
+                    "processing_steps": [
+                        "Spatial nearest neighbor interpolation"
+                    ],
+                    "original_add_offset": 0.0,
+                    "original_name": "sea_surface_temperature",
+                    "standard_name": "sea_surface_temperature",
+                    "original_time_period": "1D",
+                    "references": "https://resources.marine.copernicus.eu/product-detail/SST_BS_SST_L3S_NRT_OBSERVATIONS_010_013/DOCUMENTATION",
+                    "source": "CMEMS, Black Sea - High Resolution and Ultra High Resolution L3S Sea Surface Temperature",
+                    "original_lat_spatial_res": 0.00833,
+                    "original_scale_factor": 1.0,
+                    "grid_mapping": "crs",
+                    "original_lon_spatial_res": 0.00833
+                },
+                "sources": [
+                    {
+                        "data_url": "UNKNOWN",
+                        "license_url": "UNKNOWN",
+                        "home_url": "https://resources.marine.copernicus.eu/product-detail/SST_BS_SST_L3S_NRT_OBSERVATIONS_010_013/DOCUMENTATION",
+                        "processing_steps": [
+                            "Spatial nearest neighbor interpolation"
+                        ],
+                        "remarks": "CMEMS, Black Sea - High Resolution and Ultra High Resolution L3S Sea Surface Temperature"
+                    }
+                ],
+                "time_range": [
+                    "2016-01-01",
+                    "2017-12-31"
+                ],
+                "dtype": "float32",
+                "valid_min": -3.4028234663852886e+38,
+                "valid_max": 3.4028234663852886e+38,
+                "dims": [
+                    "time",
+                    "lat",
+                    "lon"
+                ]
+            },
+            {
+                "name": "ugos",
+                "long_name": "Absolute Geostrophic Velocity: Zonal Component",
+                "units": "m s^-1",
+                "metadata": {
+                    "processing_level": "L4",
+                    "processing_steps": [
+                        "Spatial nearest neighbor interpolation"
+                    ],
+                    "original_add_offset": 0.0,
+                    "original_name": "ugos",
+                    "standard_name": "surface_geostrophic_eastward_sea_water_velocity",
+                    "original_time_period": "1D",
+                    "references": "http://www.eo4sibs.uliege.be/doc/EO4SIBS_D4.4_AltimetryL4_DUM_v1.1.pdf",
+                    "source": "EO4SIBS, Level 4, geostrophic currents, multi-mission gridded merged products for a period of 1 year, 0.0625\u00b0*0.0625\u00b0, daily",
+                    "original_lat_spatial_res": 0.0625,
+                    "original_scale_factor": 1.0,
+                    "grid_mapping": "crs",
+                    "original_lon_spatial_res": 0.0625
+                },
+                "sources": [
+                    {
+                        "data_url": "UNKNOWN",
+                        "license_url": "UNKNOWN",
+                        "home_url": "http://www.eo4sibs.uliege.be/doc/EO4SIBS_D4.4_AltimetryL4_DUM_v1.1.pdf",
+                        "processing_steps": [
+                            "Spatial nearest neighbor interpolation"
+                        ],
+                        "remarks": "EO4SIBS, Level 4, geostrophic currents, multi-mission gridded merged products for a period of 1 year, 0.0625\u00b0*0.0625\u00b0, daily"
+                    }
+                ],
+                "time_range": [
+                    "2016-01-01",
+                    "2017-12-31"
+                ],
+                "dtype": "float32",
+                "valid_min": -3.4028234663852886e+38,
+                "valid_max": 3.4028234663852886e+38,
+                "dims": [
+                    "time",
+                    "lat",
+                    "lon"
+                ]
+            },
+            {
+                "name": "ugosa",
+                "long_name": "Geostrophic Velocity Anomalies: Zonal Component",
+                "units": "m s^-1",
+                "metadata": {
+                    "processing_level": "L4",
+                    "processing_steps": [
+                        "Spatial nearest neighbor interpolation"
+                    ],
+                    "original_add_offset": 0.0,
+                    "original_name": "ugosa",
+                    "standard_name": "surface_geostrophic_eastward_sea_water_velocity_assuming_sea_level_for_geoid",
+                    "original_time_period": "1D",
+                    "references": "http://www.eo4sibs.uliege.be/doc/EO4SIBS_D4.4_AltimetryL4_DUM_v1.1.pdf",
+                    "source": "EO4SIBS, Level 4, geostrophic currents, multi-mission gridded merged products for a period of 1 year, 0.0625\u00b0*0.0625\u00b0, daily",
+                    "original_lat_spatial_res": 0.0625,
+                    "original_scale_factor": 1.0,
+                    "grid_mapping": "crs",
+                    "original_lon_spatial_res": 0.0625
+                },
+                "sources": [
+                    {
+                        "data_url": "UNKNOWN",
+                        "license_url": "UNKNOWN",
+                        "home_url": "http://www.eo4sibs.uliege.be/doc/EO4SIBS_D4.4_AltimetryL4_DUM_v1.1.pdf",
+                        "processing_steps": [
+                            "Spatial nearest neighbor interpolation"
+                        ],
+                        "remarks": "EO4SIBS, Level 4, geostrophic currents, multi-mission gridded merged products for a period of 1 year, 0.0625\u00b0*0.0625\u00b0, daily"
+                    }
+                ],
+                "time_range": [
+                    "2016-01-01",
+                    "2017-12-31"
+                ],
+                "dtype": "float32",
+                "valid_min": -3.4028234663852886e+38,
+                "valid_max": 3.4028234663852886e+38,
+                "dims": [
+                    "time",
+                    "lat",
+                    "lon"
+                ]
+            },
+            {
+                "name": "vgos",
+                "long_name": "Absolute Geostrophic Velocity: Meridian Component",
+                "units": "m s^-1",
+                "metadata": {
+                    "processing_level": "L4",
+                    "processing_steps": [
+                        "Spatial nearest neighbor interpolation"
+                    ],
+                    "original_add_offset": 0.0,
+                    "original_name": "vgos",
+                    "standard_name": "surface_geostrophic_northward_sea_water_velocity",
+                    "original_time_period": "1D",
+                    "references": "http://www.eo4sibs.uliege.be/doc/EO4SIBS_D4.4_AltimetryL4_DUM_v1.1.pdf",
+                    "source": "EO4SIBS, Level 4, geostrophic currents, multi-mission gridded merged products for a period of 1 year, 0.0625\u00b0*0.0625\u00b0, daily",
+                    "original_lat_spatial_res": 0.0625,
+                    "original_scale_factor": 1.0,
+                    "grid_mapping": "crs",
+                    "original_lon_spatial_res": 0.0625
+                },
+                "sources": [
+                    {
+                        "data_url": "UNKNOWN",
+                        "license_url": "UNKNOWN",
+                        "home_url": "http://www.eo4sibs.uliege.be/doc/EO4SIBS_D4.4_AltimetryL4_DUM_v1.1.pdf",
+                        "processing_steps": [
+                            "Spatial nearest neighbor interpolation"
+                        ],
+                        "remarks": "EO4SIBS, Level 4, geostrophic currents, multi-mission gridded merged products for a period of 1 year, 0.0625\u00b0*0.0625\u00b0, daily"
+                    }
+                ],
+                "time_range": [
+                    "2016-01-01",
+                    "2017-12-31"
+                ],
+                "dtype": "float32",
+                "valid_min": -3.4028234663852886e+38,
+                "valid_max": 3.4028234663852886e+38,
+                "dims": [
+                    "time",
+                    "lat",
+                    "lon"
+                ]
+            },
+            {
+                "name": "vgosa",
+                "long_name": "Geostrophic Velocity Anomalies: Meridian Component",
+                "units": "m s^-1",
+                "metadata": {
+                    "processing_level": "L4",
+                    "processing_steps": [
+                        "Spatial nearest neighbor interpolation"
+                    ],
+                    "original_add_offset": 0.0,
+                    "original_name": "vgosa",
+                    "standard_name": "surface_geostrophic_northward_sea_water_velocity_assuming_sea_level_for_geoid",
+                    "original_time_period": "1D",
+                    "references": "http://www.eo4sibs.uliege.be/doc/EO4SIBS_D4.4_AltimetryL4_DUM_v1.1.pdf",
+                    "source": "EO4SIBS, Level 4, geostrophic currents, multi-mission gridded merged products for a period of 1 year, 0.0625\u00b0*0.0625\u00b0, daily",
+                    "original_lat_spatial_res": 0.0625,
+                    "original_scale_factor": 1.0,
+                    "grid_mapping": "crs",
+                    "original_lon_spatial_res": 0.0625
+                },
+                "sources": [
+                    {
+                        "data_url": "UNKNOWN",
+                        "license_url": "UNKNOWN",
+                        "home_url": "http://www.eo4sibs.uliege.be/doc/EO4SIBS_D4.4_AltimetryL4_DUM_v1.1.pdf",
+                        "processing_steps": [
+                            "Spatial nearest neighbor interpolation"
+                        ],
+                        "remarks": "EO4SIBS, Level 4, geostrophic currents, multi-mission gridded merged products for a period of 1 year, 0.0625\u00b0*0.0625\u00b0, daily"
+                    }
+                ],
+                "time_range": [
+                    "2016-01-01",
+                    "2017-12-31"
+                ],
+                "dtype": "float32",
+                "valid_min": -3.4028234663852886e+38,
+                "valid_max": 3.4028234663852886e+38,
+                "dims": [
+                    "time",
+                    "lat",
+                    "lon"
+                ]
+            }
+        ]
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -25,207 +466,6 @@
                     39.0015
                 ]
             ]
-        ]
-    },
-    "properties": {
-        "Conventions": "CF-1.9",
-        "acknowledgment": "EO4SIBS, CMEMS, DeepESDL project",
-        "contributor_name": "Brockmann Geomatics Sweden AB",
-        "contributor_url": "www.brockmann-geomatics.se",
-        "creator_email": "info@brockmann-consult.de",
-        "creator_name": "Brockmann Consult GmbH",
-        "creator_url": "www.brockmann-consult.de",
-        "date_modified": "2022-08-19 16:19:15.359970",
-        "geospatial_lat_max": 47.9985,
-        "geospatial_lat_min": 39.001500000000156,
-        "geospatial_lat_resolution": 0.0030000000000001137,
-        "geospatial_lon_max": 41.997499999999725,
-        "geospatial_lon_min": 26.0015,
-        "geospatial_lon_resolution": 0.0030000000000001137,
-        "id": "black-sea-256x256x256",
-        "institution": "Brockmann Consult GmbH",
-        "license": "Terms and conditions of the DeepESDL data distribution",
-        "project": "DeepESDL",
-        "publisher_email": "info@brockmann-consult.de",
-        "publisher_name": "Brockmann Consult GmbH",
-        "publisher_url": "www.brockmann-consult.de",
-        "source": "EO4SIBS, CMEMS",
-        "time_coverage_end": "2017-12-31T00:00:00.000000000",
-        "time_coverage_start": "2016-01-01T00:00:00.000000000",
-        "title": "Black Sea Data Cube",
-        "variables": [
-            {
-                "name": "VHM0",
-                "grid_mapping": "crs",
-                "long_name": "Spectral Significant Wave Height (Hm0)",
-                "processing_level": "L4",
-                "references": "https://resources.marine.copernicus.eu/product-detail/BLKSEA_MULTIYEAR_WAV_007_006/DOCUMENTATION",
-                "source": "CMEMS, Black Sea Waves Reanalysis",
-                "standard_name": "sea_surface_wave_significant_height",
-                "units": "m",
-                "original_lon_spatial_res": 0.037,
-                "original_lat_spatial_res": 0.028,
-                "original_name": "VHM0",
-                "original_scale_factor": 1.0,
-                "original_add_offset": 0.0,
-                "original_time_period": "1H",
-                "processing_steps": [
-                    "Temporal daily mean aggregation",
-                    "Spatial nearest neighbor interpolation"
-                ]
-            },
-            {
-                "name": "chl",
-                "grid_mapping": "crs",
-                "long_name": "Chlorophyll Concentration",
-                "processing_level": "L3",
-                "references": "http://www.eo4sibs.uliege.be/doc/EO4SIBS_DUM_ATBD_OceanColour.pdf",
-                "source": "EO4SIBS, Level 3 Chl-a, 300m, daily and monthly",
-                "standard_name": "chlorophyll_concentration",
-                "units": "mg m^-3",
-                "original_lon_spatial_res": 0.003,
-                "original_lat_spatial_res": 0.003,
-                "original_name": "Chlorophyll",
-                "original_scale_factor": 0.01,
-                "original_add_offset": 0.0,
-                "original_time_period": "1D",
-                "processing_steps": [
-                    "Multiplying original scale factor"
-                ]
-            },
-            {
-                "name": "sla",
-                "grid_mapping": "crs",
-                "long_name": "Sea Level Anomaly",
-                "processing_level": "L4",
-                "references": "http://www.eo4sibs.uliege.be/doc/EO4SIBS_D4.4_AltimetryL4_DUM_v1.1.pdf",
-                "source": "EO4SIBS, Level 4, geostrophic currents, multi-mission gridded merged products for a period of 1 year, 0.0625\u00b0*0.0625\u00b0, daily",
-                "standard_name": "sea_surface_height_above_sea_level",
-                "units": "m",
-                "original_lon_spatial_res": 0.0625,
-                "original_lat_spatial_res": 0.0625,
-                "original_name": "sla",
-                "original_scale_factor": 1.0,
-                "original_add_offset": 0.0,
-                "original_time_period": "1D",
-                "processing_steps": [
-                    "Spatial nearest neighbor interpolation"
-                ]
-            },
-            {
-                "name": "sss",
-                "grid_mapping": "crs",
-                "long_name": "Sea Surface Salinity",
-                "processing_level": "L3",
-                "references": "http://www.eo4sibs.uliege.be/doc/EO4SIBS_DUM_ATBD_Salinity.pdf",
-                "source": "EO4SIBS, Level 3 SSS, 0.25\u00b0*0.25\u00b0, 9-day averaged produced daily",
-                "standard_name": "sea_surface_salinity",
-                "units": "psu",
-                "original_lon_spatial_res": 0.25,
-                "original_lat_spatial_res": 0.25,
-                "original_name": "sss",
-                "original_scale_factor": 1.0,
-                "original_add_offset": 0.0,
-                "original_time_period": "1D",
-                "processing_steps": [
-                    "Spatial nearest neighbor interpolation"
-                ]
-            },
-            {
-                "name": "sst",
-                "grid_mapping": "crs",
-                "long_name": "Sea Surface Temperature",
-                "processing_level": "L3",
-                "references": "https://resources.marine.copernicus.eu/product-detail/SST_BS_SST_L3S_NRT_OBSERVATIONS_010_013/DOCUMENTATION",
-                "source": "CMEMS, Black Sea - High Resolution and Ultra High Resolution L3S Sea Surface Temperature",
-                "standard_name": "sea_surface_temperature",
-                "units": "K",
-                "original_lon_spatial_res": 0.00833,
-                "original_lat_spatial_res": 0.00833,
-                "original_name": "sea_surface_temperature",
-                "original_scale_factor": 1.0,
-                "original_add_offset": 0.0,
-                "original_time_period": "1D",
-                "processing_steps": [
-                    "Spatial nearest neighbor interpolation"
-                ]
-            },
-            {
-                "name": "ugos",
-                "grid_mapping": "crs",
-                "long_name": "Absolute Geostrophic Velocity: Zonal Component",
-                "processing_level": "L4",
-                "references": "http://www.eo4sibs.uliege.be/doc/EO4SIBS_D4.4_AltimetryL4_DUM_v1.1.pdf",
-                "source": "EO4SIBS, Level 4, geostrophic currents, multi-mission gridded merged products for a period of 1 year, 0.0625\u00b0*0.0625\u00b0, daily",
-                "standard_name": "surface_geostrophic_eastward_sea_water_velocity",
-                "units": "m s^-1",
-                "original_lon_spatial_res": 0.0625,
-                "original_lat_spatial_res": 0.0625,
-                "original_name": "ugos",
-                "original_scale_factor": 1.0,
-                "original_add_offset": 0.0,
-                "original_time_period": "1D",
-                "processing_steps": [
-                    "Spatial nearest neighbor interpolation"
-                ]
-            },
-            {
-                "name": "ugosa",
-                "grid_mapping": "crs",
-                "long_name": "Geostrophic Velocity Anomalies: Zonal Component",
-                "processing_level": "L4",
-                "references": "http://www.eo4sibs.uliege.be/doc/EO4SIBS_D4.4_AltimetryL4_DUM_v1.1.pdf",
-                "source": "EO4SIBS, Level 4, geostrophic currents, multi-mission gridded merged products for a period of 1 year, 0.0625\u00b0*0.0625\u00b0, daily",
-                "standard_name": "surface_geostrophic_eastward_sea_water_velocity_assuming_sea_level_for_geoid",
-                "units": "m s^-1",
-                "original_lon_spatial_res": 0.0625,
-                "original_lat_spatial_res": 0.0625,
-                "original_name": "ugosa",
-                "original_scale_factor": 1.0,
-                "original_add_offset": 0.0,
-                "original_time_period": "1D",
-                "processing_steps": [
-                    "Spatial nearest neighbor interpolation"
-                ]
-            },
-            {
-                "name": "vgos",
-                "grid_mapping": "crs",
-                "long_name": "Absolute Geostrophic Velocity: Meridian Component",
-                "processing_level": "L4",
-                "references": "http://www.eo4sibs.uliege.be/doc/EO4SIBS_D4.4_AltimetryL4_DUM_v1.1.pdf",
-                "source": "EO4SIBS, Level 4, geostrophic currents, multi-mission gridded merged products for a period of 1 year, 0.0625\u00b0*0.0625\u00b0, daily",
-                "standard_name": "surface_geostrophic_northward_sea_water_velocity",
-                "units": "m s^-1",
-                "original_lon_spatial_res": 0.0625,
-                "original_lat_spatial_res": 0.0625,
-                "original_name": "vgos",
-                "original_scale_factor": 1.0,
-                "original_add_offset": 0.0,
-                "original_time_period": "1D",
-                "processing_steps": [
-                    "Spatial nearest neighbor interpolation"
-                ]
-            },
-            {
-                "name": "vgosa",
-                "grid_mapping": "crs",
-                "long_name": "Geostrophic Velocity Anomalies: Meridian Component",
-                "processing_level": "L4",
-                "references": "http://www.eo4sibs.uliege.be/doc/EO4SIBS_D4.4_AltimetryL4_DUM_v1.1.pdf",
-                "source": "EO4SIBS, Level 4, geostrophic currents, multi-mission gridded merged products for a period of 1 year, 0.0625\u00b0*0.0625\u00b0, daily",
-                "standard_name": "surface_geostrophic_northward_sea_water_velocity_assuming_sea_level_for_geoid",
-                "units": "m s^-1",
-                "original_lon_spatial_res": 0.0625,
-                "original_lat_spatial_res": 0.0625,
-                "original_name": "vgosa",
-                "original_scale_factor": 1.0,
-                "original_add_offset": 0.0,
-                "original_time_period": "1D",
-                "processing_steps": [
-                    "Spatial nearest neighbor interpolation"
-                ]
-            }
         ]
     }
 }
