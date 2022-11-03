@@ -47,10 +47,6 @@
                 "units": "m",
                 "metadata": {
                     "processing_level": "L4",
-                    "processing_steps": [
-                        "Temporal daily mean aggregation",
-                        "Spatial nearest neighbor interpolation"
-                    ],
                     "original_add_offset": 0.0,
                     "original_name": "VHM0",
                     "standard_name": "sea_surface_wave_significant_height",
@@ -84,6 +80,10 @@
                     "time",
                     "lat",
                     "lon"
+                ],
+                "processing_steps": [
+                    "Temporal daily mean aggregation",
+                    "Spatial nearest neighbor interpolation"
                 ]
             },
             {
@@ -92,9 +92,6 @@
                 "units": "mg m^-3",
                 "metadata": {
                     "processing_level": "L3",
-                    "processing_steps": [
-                        "Multiplying original scale factor"
-                    ],
                     "original_add_offset": 0.0,
                     "original_name": "Chlorophyll",
                     "standard_name": "chlorophyll_concentration",
@@ -127,6 +124,9 @@
                     "time",
                     "lat",
                     "lon"
+                ],
+                "processing_steps": [
+                    "Multiplying original scale factor"
                 ]
             },
             {
@@ -135,9 +135,6 @@
                 "units": "m",
                 "metadata": {
                     "processing_level": "L4",
-                    "processing_steps": [
-                        "Spatial nearest neighbor interpolation"
-                    ],
                     "original_add_offset": 0.0,
                     "original_name": "sla",
                     "standard_name": "sea_surface_height_above_sea_level",
@@ -170,6 +167,9 @@
                     "time",
                     "lat",
                     "lon"
+                ],
+                "processing_steps": [
+                    "Spatial nearest neighbor interpolation"
                 ]
             },
             {
@@ -178,9 +178,6 @@
                 "units": "psu",
                 "metadata": {
                     "processing_level": "L3",
-                    "processing_steps": [
-                        "Spatial nearest neighbor interpolation"
-                    ],
                     "original_add_offset": 0.0,
                     "original_name": "sss",
                     "standard_name": "sea_surface_salinity",
@@ -213,6 +210,9 @@
                     "time",
                     "lat",
                     "lon"
+                ],
+                "processing_steps": [
+                    "Spatial nearest neighbor interpolation"
                 ]
             },
             {
@@ -221,9 +221,6 @@
                 "units": "K",
                 "metadata": {
                     "processing_level": "L3",
-                    "processing_steps": [
-                        "Spatial nearest neighbor interpolation"
-                    ],
                     "original_add_offset": 0.0,
                     "original_name": "sea_surface_temperature",
                     "standard_name": "sea_surface_temperature",
@@ -256,6 +253,9 @@
                     "time",
                     "lat",
                     "lon"
+                ],
+                "processing_steps": [
+                    "Spatial nearest neighbor interpolation"
                 ]
             },
             {
@@ -264,9 +264,6 @@
                 "units": "m s^-1",
                 "metadata": {
                     "processing_level": "L4",
-                    "processing_steps": [
-                        "Spatial nearest neighbor interpolation"
-                    ],
                     "original_add_offset": 0.0,
                     "original_name": "ugos",
                     "standard_name": "surface_geostrophic_eastward_sea_water_velocity",
@@ -299,6 +296,9 @@
                     "time",
                     "lat",
                     "lon"
+                ],
+                "processing_steps": [
+                    "Spatial nearest neighbor interpolation"
                 ]
             },
             {
@@ -307,9 +307,6 @@
                 "units": "m s^-1",
                 "metadata": {
                     "processing_level": "L4",
-                    "processing_steps": [
-                        "Spatial nearest neighbor interpolation"
-                    ],
                     "original_add_offset": 0.0,
                     "original_name": "ugosa",
                     "standard_name": "surface_geostrophic_eastward_sea_water_velocity_assuming_sea_level_for_geoid",
@@ -342,6 +339,9 @@
                     "time",
                     "lat",
                     "lon"
+                ],
+                "processing_steps": [
+                    "Spatial nearest neighbor interpolation"
                 ]
             },
             {
@@ -350,9 +350,6 @@
                 "units": "m s^-1",
                 "metadata": {
                     "processing_level": "L4",
-                    "processing_steps": [
-                        "Spatial nearest neighbor interpolation"
-                    ],
                     "original_add_offset": 0.0,
                     "original_name": "vgos",
                     "standard_name": "surface_geostrophic_northward_sea_water_velocity",
@@ -385,6 +382,9 @@
                     "time",
                     "lat",
                     "lon"
+                ],
+                "processing_steps": [
+                    "Spatial nearest neighbor interpolation"
                 ]
             },
             {
@@ -393,9 +393,6 @@
                 "units": "m s^-1",
                 "metadata": {
                     "processing_level": "L4",
-                    "processing_steps": [
-                        "Spatial nearest neighbor interpolation"
-                    ],
                     "original_add_offset": 0.0,
                     "original_name": "vgosa",
                     "standard_name": "surface_geostrophic_northward_sea_water_velocity_assuming_sea_level_for_geoid",
@@ -428,6 +425,9 @@
                     "time",
                     "lat",
                     "lon"
+                ],
+                "processing_steps": [
+                    "Spatial nearest neighbor interpolation"
                 ]
             }
         ]
