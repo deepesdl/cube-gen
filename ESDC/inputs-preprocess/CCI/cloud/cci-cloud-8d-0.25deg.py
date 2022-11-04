@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from tqdm import tqdm
 import xarray as xr
+import os
 
 pathOut = "~/data/CCI/cloud/preprocess"
 pathOut = os.path.expanduser(pathOut)
@@ -41,7 +42,7 @@ new_lats = np.arange(-89.875,90,0.25)
 new_lons = np.arange(-179.875,180,0.25)
 
 print("Resampling in space")
-dataset_8d = dataset_8d.interp(coords=dict(lat=new_lats,lon=new_lons),method="nearest")
+dataset_8d = dataset_8d.interp(coords=dict(lat=new_lats,lon=new_lons),method="nearest",kwargs={"fill_value": "extrapolate"})
 dataset_8d = dataset_8d.chunk(dict(time=256,lat=128,lon=128))
 
 print("Saving")

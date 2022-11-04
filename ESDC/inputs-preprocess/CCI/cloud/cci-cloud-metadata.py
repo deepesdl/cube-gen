@@ -4,6 +4,7 @@ import yaml
 import rioxarray
 import xarray as xr
 import numpy as np
+import os
 
 pathIn = "~/data/CCI/cloud/preprocess"
 pathIn = os.path.expanduser(pathIn)
