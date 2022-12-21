@@ -33,7 +33,7 @@
         ],
         "sources": [
             {
-                "name": "Repeat Subglacial Lake Drainage and Filling Beneath Thwaites Glacier",
+                "name": "Repeat Subglacial Lake Drainage and Filling Thwaites Glacier",
                 "variable_names": [
                     "Ice Sheets",
                     "Ice Shelves"
@@ -47,7 +47,7 @@
                 "source_crs": null
             },
             {
-                "name": "A snapshot map of supra-glacial lakes across the West Antarctic Ice Sheet in January 2017",
+                "name": "Supra-glacial lakes West Antarctic Ice Sheet 2017-01",
                 "variable_names": [
                     "Ice Sheets",
                     "Ice Shelves"
@@ -61,7 +61,7 @@
                 "source_crs": "EPSG:3031"
             },
             {
-                "name": "Curie depth estimates, 200x200km xyz data",
+                "name": "Curie depth estimates 200x200km xyz data",
                 "variable_names": [
                     "Magnetic proxy for GHF"
                 ],
@@ -74,7 +74,7 @@
                 "source_crs": null
             },
             {
-                "name": "Curie depth estimates, 300x300km xyz data",
+                "name": "Curie depth estimates 300x300km xyz data",
                 "variable_names": [
                     "Magnetic proxy for GHF"
                 ],
@@ -87,7 +87,7 @@
                 "source_crs": null
             },
             {
-                "name": "Geothermal heat flow, 200x200km xyz data",
+                "name": "Geothermal heat flow 200x200km xyz data",
                 "variable_names": [
                     "Magnetic proxy for GHF"
                 ],
@@ -100,7 +100,7 @@
                 "source_crs": null
             },
             {
-                "name": "Geothermal heat flow, 300x300km xyz data",
+                "name": "Geothermal heat flow 300x300km xyz data",
                 "variable_names": [
                     "Magnetic proxy for GHF"
                 ],
@@ -113,7 +113,7 @@
                 "source_crs": null
             },
             {
-                "name": "Geothermal heat flow, uncertainty, 200x200km xyz data",
+                "name": "Geothermal heat flow uncertainty 200x200km xyz data",
                 "variable_names": [
                     "Magnetic proxy for GHF"
                 ],
@@ -126,7 +126,7 @@
                 "source_crs": null
             },
             {
-                "name": "Geothermal heat flow, uncertainty, 300x300km xyz data",
+                "name": "Geothermal heat flow uncertainty 300x300km xyz data",
                 "variable_names": [
                     "Magnetic proxy for GHF"
                 ],
@@ -139,7 +139,7 @@
                 "source_crs": null
             },
             {
-                "name": "Bedrock topography and/or geothermal heat flux_Antarctica_GOCE",
+                "name": "Bedrock topography and geothermal heat flux_Antarctica_GOCE",
                 "variable_names": [
                     "Ice Thickness"
                 ],
