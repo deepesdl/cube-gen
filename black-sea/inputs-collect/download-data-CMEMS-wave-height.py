@@ -9,7 +9,7 @@ pathOut = "CMEMS-black-sea-wave-height"
 if not os.path.exists(pathOut):
     os.mkdir(pathOut)
 
-FTP_HOST = "my.cmems-du.eu"
+FTP_HOST = "nrt.cmems-du.eu"
 FTP_USER = getpass("Username: ")
 FTP_PASS = getpass("Password: ")
 
