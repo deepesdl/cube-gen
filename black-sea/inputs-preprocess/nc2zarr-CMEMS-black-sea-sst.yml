@@ -18,7 +18,7 @@ process:
       time: 64
 
 output:
-  path: deep-esdl-input/CMEMS-black-sea-sst.zarr
+  path: deep-esdl-input/test/CMEMS-black-sea-sst.zarr
   overwrite: true
   consolidated: true
   

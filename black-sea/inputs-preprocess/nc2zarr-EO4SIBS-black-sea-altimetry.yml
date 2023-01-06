@@ -25,7 +25,7 @@ process:
       time: null
 
 output:
-  path: deep-esdl-input/EO4SIBS-black-sea-altimetry.zarr
+  path: deep-esdl-input/test/EO4SIBS-black-sea-altimetry.zarr
   overwrite: true
   consolidated: true
   

@@ -18,7 +18,7 @@ process:
       time: null
 
 output:
-  path: deep-esdl-input/EO4SIBS-black-sea-sss.zarr
+  path: deep-esdl-input/test/EO4SIBS-black-sea-sss.zarr
   overwrite: true
   consolidated: true
   

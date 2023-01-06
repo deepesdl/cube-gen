@@ -18,7 +18,7 @@ process:
       time: 1024
 
 output:
-  path: deep-esdl-input/CMEMS-black-sea-wave-height.zarr
+  path: deep-esdl-input/test/CMEMS-black-sea-wave-height.zarr
   overwrite: true
   consolidated: true
   
