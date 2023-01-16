@@ -61,6 +61,19 @@
                 "source_crs": "EPSG:3031"
             },
             {
+                "name": "Magnetic anomaly",
+                "variable_names": [
+                    "Magnetic anomaly"
+                ],
+                "download_url": "https://download.pangaea.de/dataset/932452/files/ASE_MagneticCompilation_Dziadeketal_250m.tif",
+                "protocol": "https",
+                "credentials": false,
+                "compressed": false,
+                "compression_format": null,
+                "source_format": "tif",
+                "source_crs": null
+            },
+            {
                 "name": "Curie depth estimates 200x200km xyz data",
                 "variable_names": [
                     "Magnetic proxy for GHF"
