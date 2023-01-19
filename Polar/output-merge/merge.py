@@ -34,6 +34,16 @@ def remove_spatial_ref(da):
 das = [remove_spatial_ref(da) for da in das]
 das = xr.merge(das)
 
+rename_dict = dict(
+    Thw_124="thw_124",
+    Thw_142="thw_142",
+    Thw_170="thw_170",
+    Thw_70="thw_70",
+    mrg="ice_thickness",
+)
+
+das = das.rename(rename_dict)
+
 store_output.write_data(
     das, 'polar-100m-1x2048x2048-v1.0.0.zarr', replace=True
 )
