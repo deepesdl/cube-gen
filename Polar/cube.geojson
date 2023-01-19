@@ -8,11 +8,11 @@
         "recipe": "",
         "changes": "",
         "license": "",
-        "time_range": ["",""],
-        "time_period": "",
-        "spatial_ref": "",
-        "spatial_bbox": [],
-        "spatial_size": [],
+        "time_range": ["2013-01-01","2017-01-01"],
+        "time_period": null,
+        "spatial_ref": "EPSG:3031",
+        "spatial_bbox": [-2602500.0, -1626000.0, -649500.0, 495000.0],
+        "spatial_res": [100.0, 100.0],
         "variables": [
             {
                 "name": "",
