@@ -1,13 +1,13 @@
 {
     "type": "Feature",
     "properties": {
-        "data_id": "",
-        "title": "",
-        "description": "",
-        "version": "",
+        "data_id": "polar-100m-1x2048x2048-v1.0.0.zarr",
+        "title": "Polar Data Cube v1.0.0",
+        "description": "Polar Data Cube of the Amundsen Sea",
+        "version": "1.0.0",
         "recipe": "",
         "changes": "",
-        "license": "",
+        "license": "Terms and conditions of the DeepESDL data distribution",
         "time_range": ["2013-01-01","2017-01-01"],
         "time_period": null,
         "spatial_ref": "EPSG:3031",
@@ -15,12 +15,12 @@
         "spatial_res": [100.0, 100.0],
         "variables": [
             {
-                "name": "",
-                "long_name": "",
-                "dtype": "",
-                "dims": ["",""],
-                "units": "",
-                "fill_value": "",
+                "name": "curie_depth_200km",
+                "long_name": "Curie Depth Estimates 200x200 km",
+                "dtype": "float32",
+                "dims": ["x","y"],
+                "units": "m",
+                "fill_value": "nan",
                 "valid_min": null,
                 "valid_max": null,
                 "time_range": ["", ""],
@@ -29,14 +29,192 @@
                     "color_value_min": null,
                     "color_value_max": null
                 }
+            },
+            {
+                "name": "curie_depth_300km",
+                "long_name": "Curie Depth Estimates 300x300 km",
+                "dtype": "float32",
+                "dims": ["x","y"],
+                "units": "m",
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": null,
+                "time_range": ["", ""],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": null
+                }
+            },
+            {
+                "name": "geothermal_heat_flow_200km",
+                "long_name": "Geothermal Heat Flow 200x200 km",
+                "dtype": "float32",
+                "dims": ["x","y"],
+                "units": "m",
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": null,
+                "time_range": ["", ""],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": null
+                }
+            },
+            {
+                "name": "geothermal_heat_flow_300km",
+                "long_name": "Geothermal Heat Flow 300x300 km",
+                "dtype": "float32",
+                "dims": ["x","y"],
+                "units": "m",
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": null,
+                "time_range": ["", ""],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": null
+                }
+            },
+            {
+                "name": "geothermal_heat_flow_uncertainty_200km",
+                "long_name": "Geothermal Heat Flow Uncertainty 200x200 km",
+                "dtype": "float32",
+                "dims": ["x","y"],
+                "units": "m",
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": null,
+                "time_range": ["", ""],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": null
+                }
+            },
+            {
+                "name": "geothermal_heat_flow_uncertainty_300km",
+                "long_name": "Geothermal Heat Flow Uncertainty 300x300 km",
+                "dtype": "float32",
+                "dims": ["x","y"],
+                "units": "m",
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": null,
+                "time_range": ["", ""],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": null
+                }
+            },
+            {
+                "name": "ice_thicnkess",
+                "long_name": "Ice Thickness",
+                "dtype": "float32",
+                "dims": ["x","y"],
+                "units": "m",
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": null,
+                "time_range": ["", ""],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": null
+                }
+            },
+            {
+                "name": "magnetic_anomaly",
+                "long_name": "Magnetic Anomaly",
+                "dtype": "float32",
+                "dims": ["x","y"],
+                "units": "nT",
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": null,
+                "time_range": ["", ""],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": null
+                }
+            },
+            {
+                "name": "thw_124",
+                "long_name": "Subglacial Lake Thw 124",
+                "dtype": "int",
+                "dims": ["time","x","y"],
+                "units": null,
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": 1,
+                "time_range": ["2013-01-01", "2017-01-01"],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": 1
+                }
+            },
+            {
+                "name": "thw_142",
+                "long_name": "Subglacial Lake Thw 142",
+                "dtype": "int",
+                "dims": ["time","x","y"],
+                "units": null,
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": 1,
+                "time_range": ["2013-01-01", "2017-01-01"],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": 1
+                }
+            },
+            {
+                "name": "thw_170",
+                "long_name": "Subglacial Lake Thw 170",
+                "dtype": "int",
+                "dims": ["time","x","y"],
+                "units": null,
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": 1,
+                "time_range": ["2013-01-01", "2017-01-01"],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": 1
+                }
+            },
+            {
+                "name": "thw_70",
+                "long_name": "Subglacial Lake Thw 70",
+                "dtype": "int",
+                "dims": ["time","x","y"],
+                "units": null,
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": 1,
+                "time_range": ["2013-01-01", "2017-01-01"],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": 1
+                }
             }
         ],
         "sources": [
             {
                 "name": "Repeat Subglacial Lake Drainage and Filling Thwaites Glacier",
                 "variable_names": [
-                    "Ice Sheets",
-                    "Ice Shelves"
+                    "Thw 142",
+                    "Thw 124",
+                    "Thw 170",
+                    "Thw 70"
                 ],
                 "download_url": "https://4d-antarctica.org/wp-content/uploads/2021/01/Malczyk_etal_2020_data_v2.tar",
                 "protocol": "https",
@@ -49,8 +227,7 @@
             {
                 "name": "Supra-glacial lakes West Antarctic Ice Sheet 2017-01",
                 "variable_names": [
-                    "Ice Sheets",
-                    "Ice Shelves"
+                    "Polygons"
                 ],
                 "download_url": "https://zenodo.org/record/5642755/files/WAIS_Max_Extent.zip",
                 "protocol": "https",
@@ -76,7 +253,7 @@
             {
                 "name": "Curie depth estimates 200x200km xyz data",
                 "variable_names": [
-                    "Magnetic proxy for GHF"
+                    "Curie depth estimates 200x200km"
                 ],
                 "download_url": "https://download.pangaea.de/dataset/932452/files/200km_Dziadek_etal_CurieDepth_Results.nc",
                 "protocol": "https",
@@ -89,7 +266,7 @@
             {
                 "name": "Curie depth estimates 300x300km xyz data",
                 "variable_names": [
-                    "Magnetic proxy for GHF"
+                    "Curie depth estimates 300x300km"
                 ],
                 "download_url": "https://download.pangaea.de/dataset/932452/files/300km_Dziadek_etal_CurieDepth_Results.nc",
                 "protocol": "https",
@@ -102,7 +279,7 @@
             {
                 "name": "Geothermal heat flow 200x200km xyz data",
                 "variable_names": [
-                    "Magnetic proxy for GHF"
+                    "Geothermal heat flow 200x200km"
                 ],
                 "download_url": "https://download.pangaea.de/dataset/932452/files/200km_GHF_windowCenters.nc",
                 "protocol": "https",
@@ -115,7 +292,7 @@
             {
                 "name": "Geothermal heat flow 300x300km xyz data",
                 "variable_names": [
-                    "Magnetic proxy for GHF"
+                    "Geothermal heat flow 300x300km"
                 ],
                 "download_url": "https://download.pangaea.de/dataset/932452/files/300km_GHF_windowCenters.nc",
                 "protocol": "https",
@@ -128,7 +305,7 @@
             {
                 "name": "Geothermal heat flow uncertainty 200x200km xyz data",
                 "variable_names": [
-                    "Magnetic proxy for GHF"
+                    "Geothermal heat flow uncertainty 200x200km"
                 ],
                 "download_url": "https://download.pangaea.de/dataset/932452/files/200km_GHF_uncertainty.nc",
                 "protocol": "https",
@@ -141,7 +318,7 @@
             {
                 "name": "Geothermal heat flow uncertainty 300x300km xyz data",
                 "variable_names": [
-                    "Magnetic proxy for GHF"
+                    "Geothermal heat flow uncertainty 300x300km"
                 ],
                 "download_url": "https://download.pangaea.de/dataset/932452/files/300km_GHF_uncertainty.nc",
                 "protocol": "https",
