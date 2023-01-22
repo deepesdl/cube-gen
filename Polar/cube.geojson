@@ -145,7 +145,7 @@
             {
                 "name": "thw_124",
                 "long_name": "Subglacial Lake Thw 124",
-                "dtype": "int",
+                "dtype": "float32",
                 "dims": ["time","x","y"],
                 "units": null,
                 "fill_value": "nan",
@@ -161,7 +161,7 @@
             {
                 "name": "thw_142",
                 "long_name": "Subglacial Lake Thw 142",
-                "dtype": "int",
+                "dtype": "float32",
                 "dims": ["time","x","y"],
                 "units": null,
                 "fill_value": "nan",
@@ -177,7 +177,7 @@
             {
                 "name": "thw_170",
                 "long_name": "Subglacial Lake Thw 170",
-                "dtype": "int",
+                "dtype": "float32",
                 "dims": ["time","x","y"],
                 "units": null,
                 "fill_value": "nan",
@@ -193,7 +193,7 @@
             {
                 "name": "thw_70",
                 "long_name": "Subglacial Lake Thw 70",
-                "dtype": "int",
+                "dtype": "float32",
                 "dims": ["time","x","y"],
                 "units": null,
                 "fill_value": "nan",
