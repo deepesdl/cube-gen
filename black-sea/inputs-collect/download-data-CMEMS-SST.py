@@ -1,5 +1,6 @@
 import ftplib
 import numpy as np
+import os
 from tqdm import tqdm
 from getpass import getpass
 
