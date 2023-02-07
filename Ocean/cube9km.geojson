@@ -1,0 +1,383 @@
+{
+    "type": "Feature",
+    "properties": {
+        "data_id": "polar-100m-1x2048x2048-v1.0.0.zarr",
+        "title": "Polar Data Cube v1.0.0",
+        "description": "Polar Data Cube of the Amundsen Sea",
+        "version": "1.0.0",
+        "recipe": "",
+        "changes": "",
+        "license": "Terms and conditions of the DeepESDL data distribution",
+        "time_range": ["2013-01-01","2017-01-01"],
+        "time_period": null,
+        "spatial_ref": "EPSG:3031",
+        "spatial_bbox": [-2602500.0, -1626000.0, -649500.0, 495000.0],
+        "spatial_res": [100.0, 100.0],
+        "variables": [
+            {
+                "name": "curie_depth_200km",
+                "long_name": "Curie Depth Estimates 200x200 km",
+                "dtype": "float32",
+                "dims": ["x","y"],
+                "units": "m",
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": null,
+                "time_range": ["", ""],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": null
+                }
+            },
+            {
+                "name": "curie_depth_300km",
+                "long_name": "Curie Depth Estimates 300x300 km",
+                "dtype": "float32",
+                "dims": ["x","y"],
+                "units": "m",
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": null,
+                "time_range": ["", ""],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": null
+                }
+            },
+            {
+                "name": "geothermal_heat_flow_200km",
+                "long_name": "Geothermal Heat Flow 200x200 km",
+                "dtype": "float32",
+                "dims": ["x","y"],
+                "units": "m",
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": null,
+                "time_range": ["", ""],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": null
+                }
+            },
+            {
+                "name": "geothermal_heat_flow_300km",
+                "long_name": "Geothermal Heat Flow 300x300 km",
+                "dtype": "float32",
+                "dims": ["x","y"],
+                "units": "m",
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": null,
+                "time_range": ["", ""],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": null
+                }
+            },
+            {
+                "name": "geothermal_heat_flow_uncertainty_200km",
+                "long_name": "Geothermal Heat Flow Uncertainty 200x200 km",
+                "dtype": "float32",
+                "dims": ["x","y"],
+                "units": "m",
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": null,
+                "time_range": ["", ""],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": null
+                }
+            },
+            {
+                "name": "geothermal_heat_flow_uncertainty_300km",
+                "long_name": "Geothermal Heat Flow Uncertainty 300x300 km",
+                "dtype": "float32",
+                "dims": ["x","y"],
+                "units": "m",
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": null,
+                "time_range": ["", ""],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": null
+                }
+            },
+            {
+                "name": "ice_thicnkess",
+                "long_name": "Ice Thickness",
+                "dtype": "float32",
+                "dims": ["x","y"],
+                "units": "m",
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": null,
+                "time_range": ["", ""],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": null
+                }
+            },
+            {
+                "name": "magnetic_anomaly",
+                "long_name": "Magnetic Anomaly",
+                "dtype": "float32",
+                "dims": ["x","y"],
+                "units": "nT",
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": null,
+                "time_range": ["", ""],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": null
+                }
+            },
+            {
+                "name": "thw_124",
+                "long_name": "Subglacial Lake Thw 124",
+                "dtype": "float32",
+                "dims": ["time","x","y"],
+                "units": null,
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": 1,
+                "time_range": ["2013-01-01", "2017-01-01"],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": 1
+                }
+            },
+            {
+                "name": "thw_142",
+                "long_name": "Subglacial Lake Thw 142",
+                "dtype": "float32",
+                "dims": ["time","x","y"],
+                "units": null,
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": 1,
+                "time_range": ["2013-01-01", "2017-01-01"],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": 1
+                }
+            },
+            {
+                "name": "thw_170",
+                "long_name": "Subglacial Lake Thw 170",
+                "dtype": "float32",
+                "dims": ["time","x","y"],
+                "units": null,
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": 1,
+                "time_range": ["2013-01-01", "2017-01-01"],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": 1
+                }
+            },
+            {
+                "name": "thw_70",
+                "long_name": "Subglacial Lake Thw 70",
+                "dtype": "float32",
+                "dims": ["time","x","y"],
+                "units": null,
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": 1,
+                "time_range": ["2013-01-01", "2017-01-01"],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": 1
+                }
+            }
+        ],
+        "sources": [
+            {
+                "name": "Repeat Subglacial Lake Drainage and Filling Thwaites Glacier",
+                "variable_names": [
+                    "Thw 142",
+                    "Thw 124",
+                    "Thw 170",
+                    "Thw 70"
+                ],
+                "download_url": "https://4d-antarctica.org/wp-content/uploads/2021/01/Malczyk_etal_2020_data_v2.tar",
+                "protocol": "https",
+                "credentials": false,
+                "compressed": true,
+                "compression_format": "tar",
+                "source_format": "tiff",
+                "source_crs": null
+            },
+            {
+                "name": "Supra-glacial lakes West Antarctic Ice Sheet 2017-01",
+                "variable_names": [
+                    "Polygons"
+                ],
+                "download_url": "https://zenodo.org/record/5642755/files/WAIS_Max_Extent.zip",
+                "protocol": "https",
+                "credentials": false,
+                "compressed": true,
+                "compression_format": "zip",
+                "source_format": "shp",
+                "source_crs": "EPSG:3031"
+            },
+            {
+                "name": "Magnetic anomaly",
+                "variable_names": [
+                    "Magnetic anomaly"
+                ],
+                "download_url": "https://download.pangaea.de/dataset/932452/files/ASE_MagneticCompilation_Dziadeketal_250m.tif",
+                "protocol": "https",
+                "credentials": false,
+                "compressed": false,
+                "compression_format": null,
+                "source_format": "tif",
+                "source_crs": null
+            },
+            {
+                "name": "Curie depth estimates 200x200km xyz data",
+                "variable_names": [
+                    "Curie depth estimates 200x200km"
+                ],
+                "download_url": "https://download.pangaea.de/dataset/932452/files/200km_Dziadek_etal_CurieDepth_Results.nc",
+                "protocol": "https",
+                "credentials": false,
+                "compressed": false,
+                "compression_format": null,
+                "source_format": "nc",
+                "source_crs": null
+            },
+            {
+                "name": "Curie depth estimates 300x300km xyz data",
+                "variable_names": [
+                    "Curie depth estimates 300x300km"
+                ],
+                "download_url": "https://download.pangaea.de/dataset/932452/files/300km_Dziadek_etal_CurieDepth_Results.nc",
+                "protocol": "https",
+                "credentials": false,
+                "compressed": false,
+                "compression_format": null,
+                "source_format": "nc",
+                "source_crs": null
+            },
+            {
+                "name": "Geothermal heat flow 200x200km xyz data",
+                "variable_names": [
+                    "Geothermal heat flow 200x200km"
+                ],
+                "download_url": "https://download.pangaea.de/dataset/932452/files/200km_GHF_windowCenters.nc",
+                "protocol": "https",
+                "credentials": false,
+                "compressed": false,
+                "compression_format": null,
+                "source_format": "nc",
+                "source_crs": null
+            },
+            {
+                "name": "Geothermal heat flow 300x300km xyz data",
+                "variable_names": [
+                    "Geothermal heat flow 300x300km"
+                ],
+                "download_url": "https://download.pangaea.de/dataset/932452/files/300km_GHF_windowCenters.nc",
+                "protocol": "https",
+                "credentials": false,
+                "compressed": false,
+                "compression_format": null,
+                "source_format": "nc",
+                "source_crs": null
+            },
+            {
+                "name": "Geothermal heat flow uncertainty 200x200km xyz data",
+                "variable_names": [
+                    "Geothermal heat flow uncertainty 200x200km"
+                ],
+                "download_url": "https://download.pangaea.de/dataset/932452/files/200km_GHF_uncertainty.nc",
+                "protocol": "https",
+                "credentials": false,
+                "compressed": false,
+                "compression_format": null,
+                "source_format": "nc",
+                "source_crs": null
+            },
+            {
+                "name": "Geothermal heat flow uncertainty 300x300km xyz data",
+                "variable_names": [
+                    "Geothermal heat flow uncertainty 300x300km"
+                ],
+                "download_url": "https://download.pangaea.de/dataset/932452/files/300km_GHF_uncertainty.nc",
+                "protocol": "https",
+                "credentials": false,
+                "compressed": false,
+                "compression_format": null,
+                "source_format": "nc",
+                "source_crs": null
+            },
+            {
+                "name": "Bedrock topography and geothermal heat flux_Antarctica_GOCE",
+                "variable_names": [
+                    "Ice Thickness"
+                ],
+                "download_url": "http://www.ifac.cnr.it/cryosmos/products/SMOS_IceThickness_2015_300.nc",
+                "protocol": "http",
+                "credentials": false,
+                "compressed": false,
+                "compression_format": null,
+                "source_format": "nc",
+                "source_crs": null
+            }
+        ],
+        "metadata": {
+            "Conventions": "CF-1.10",
+            "acknowledgment": "4D Antarctica, DeepESDL project",
+            "contributor_name": ["University of Leipzig" ,"Brockmann Consult GmbH"],
+            "contributor_url": ["www.uni-leipzig.de" ,"www.brockmann-consult.de"],
+            "creator_email": ["www.uni-leipzig.de" ,"www.brockmann-consult.de"],
+            "creator_name": ["University of Leipzig" ,"Brockmann Consult GmbH"],
+            "creator_url": ["www.uni-leipzig.de" ,"www.brockmann-consult.de"],
+            "institution": ["www.uni-leipzig.de" ,"www.brockmann-consult.de"],
+            "project": "DeepESDL",
+            "publisher_email": "info@brockmann-consult.de",
+            "publisher_name": "Brockmann Consult GmbH",
+            "license_url": null,
+            "source": "4D Antarctica",
+            "date_modified": null,
+            "geospatial_lon_min": null,
+            "geospatial_lon_max": null,
+            "geospatial_lat_min": null,
+            "geospatial_lat_max": null,
+            "geospatial_lon_resolution": null,
+            "geospatial_lat_resolution": null,
+            "temporal_coverage_start": null,
+            "temporal_coverage_end": null,
+            "temporal_resolution": null
+        }
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [-121.99647712843816, -62.288127609530854],
+                [-158.22593498159108, -73.985972288613030],
+                [-52.688079026108510, -82.494386344463100],
+                [-79.230877811995920, -65.962695624424370],
+                [-121.99647712843816, -62.288127609530854]
+            ]
+        ]
+    }
+}
