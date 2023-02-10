@@ -28,7 +28,14 @@ for i in [1,2]:
 print("Merging datasets...")
 ds = xr.merge(das)
 
-ds = ds.chunk(dict(time=64))
+variables = list(ds.variables)
+for dim in ["lat","lon","time"]:
+    variables.remove(dim)
+    
+for variable in variables:
+    del ds[variable].encoding['chunks']
+    
+ds = ds.chunk(dict(time=64,lat=256,lon=256))
 
 additional_attrs = {
     "date_modified": str(datetime.now()),
