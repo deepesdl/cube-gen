@@ -19,6 +19,13 @@ files.sort()
 print("Reading data...")
 ds = xr.concat([xr.open_zarr(file) for file in tqdm(files)],dim="time")
 
+variables = list(ds.variables)
+for dim in ["lat","lon","time"]:
+    variables.remove(dim)
+    
+for variable in variables:
+    del ds[variable].encoding['chunks']
+
 ds = ds.chunk(dict(time=64))
 
 ds['mean_spectral_i_star'] = ds.mean_spectral_i_star.where(lambda x: x < 9.96921e+36,other = np.nan)

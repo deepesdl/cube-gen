@@ -19,7 +19,14 @@ files.sort()
 print("Reading data...")
 ds = xr.concat([xr.open_zarr(file) for file in tqdm(files)],dim="time")
 
-ds = ds.chunk(dict(time=64))
+variables = list(ds.variables)
+for dim in ["lat","lon","time"]:
+    variables.remove(dim)
+    
+for variable in variables:
+    del ds[variable].encoding['chunks']
+
+ds = ds.chunk(dict(time=64,lat=256,lon=256))
 
 print("Writing data...")
 store_output.write_data(ds, "phytoplankton-primary-production-1M-9km-64x256x256.zarr", replace=True)
