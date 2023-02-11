@@ -1,29 +1,205 @@
 {
     "type": "Feature",
     "properties": {
-        "data_id": "polar-100m-1x2048x2048-v1.0.0.zarr",
-        "title": "Polar Data Cube v1.0.0",
-        "description": "Polar Data Cube of the Amundsen Sea",
+        "data_id": "ocean-1M-9km-64x256x256-1.0.0.zarr",
+        "title": "Ocean Data Cube 9km v1.0.0",
+        "description": "Ocean Data Cube for Oceanic Export Production, Phytoplankton Carbon and Primary Production",
         "version": "1.0.0",
         "recipe": "",
         "changes": "",
         "license": "Terms and conditions of the DeepESDL data distribution",
-        "time_range": ["2013-01-01","2017-01-01"],
-        "time_period": null,
-        "spatial_ref": "EPSG:3031",
-        "spatial_bbox": [-2602500.0, -1626000.0, -649500.0, 495000.0],
-        "spatial_res": [100.0, 100.0],
+        "time_range": ["1998-01-01","2020-12-01"],
+        "time_period": "1M",
+        "spatial_ref": "EPSG:4326",
+        "spatial_bbox": [-180, -90, 180, 90],
+        "spatial_res": [0.0833282470703125, 0.0833282470703125],
         "variables": [
             {
-                "name": "curie_depth_200km",
-                "long_name": "Curie Depth Estimates 200x200 km",
+                "name": "pp",
+                "long_name": "Phytoplankton Primary Production",
                 "dtype": "float32",
-                "dims": ["x","y"],
+                "dims": ["time","y","x"],
+                "units": "mg C m^-2 d^-1",
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": null,
+                "time_range": ["1998-01-01", "2020-12-01"],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": null
+                }
+            },
+            {
+                "name": "C_microphyto",
+                "long_name": "Microphytoplankton Carbon",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": "mg C m^-3",
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": null,
+                "time_range": ["1998-01-01", "2020-12-01"],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": null
+                }
+            },
+            {
+                "name": "C_nanophyto",
+                "long_name": "Nanophytoplankton Carbon",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": "mg C m^-3",
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": null,
+                "time_range": ["1998-01-01", "2020-12-01"],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": null
+                }
+            },
+            {
+                "name": "C_phyto",
+                "long_name": "Total Phytoplankton Carbon",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": "mg C m^-3",
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": null,
+                "time_range": ["1998-01-01", "2020-12-01"],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": null
+                }
+            },
+            {
+                "name": "C_picophyto",
+                "long_name": "Picophytoplankton Carbon",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": "mg C m^-3",
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": null,
+                "time_range": ["1998-01-01", "2020-12-01"],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": null
+                }
+            },
+            {
+                "name": "chl_a",
+                "long_name": "Chlorophyll-a",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": "mg C m^-3",
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": null,
+                "time_range": ["1998-01-01", "2020-12-01"],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": null
+                }
+            },
+            {
+                "name": "mean_spectral_i_star",
+                "long_name": "Mean Spectral Nondimensional Irradiance (I*)",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": null,
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": null,
+                "time_range": ["1998-01-01", "2020-12-01"],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": null
+                }
+            },
+            {
+                "name": "mld",
+                "long_name": "Mixed Layer Depth",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
                 "units": "m",
                 "fill_value": "nan",
                 "valid_min": null,
                 "valid_max": null,
-                "time_range": ["", ""],
+                "time_range": ["1998-01-01", "2020-12-01"],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": null
+                }
+            },
+            {
+                "name": "par",
+                "long_name": "Photosynthetically Active Radiation",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": "mol photons m^-2 d^-1",
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": null,
+                "time_range": ["1998-01-01", "2020-12-01"],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": null
+                }
+            },
+            {
+                "name": "EP_Dunne",
+                "long_name": "Export Production based on Dunne et al 2005",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": "mg C m^-2 d^-1",
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": null,
+                "time_range": ["1998-01-01", "2020-12-01"],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": null
+                }
+            },
+            {
+                "name": "EP_Henson",
+                "long_name": "Export Production based on Henson et al 2011",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": "mg C m^-2 d^-1",
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": null,
+                "time_range": ["1998-01-01", "2020-12-01"],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": null
+                }
+            },
+            {
+                "name": "EP_Li",
+                "long_name": "Export Production based on Li et al 2016",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": "mg C m^-2 d^-1",
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": null,
+                "time_range": ["1998-01-01", "2020-12-01"],
                 "metadata": {
                     "color_bar_name": "Blues",
                     "color_value_min": null,
@@ -48,7 +224,14 @@
             {
                 "name": "Monthly global Phytoplankton Carbon",
                 "variable_names": [
-                    "pp"
+                    "C_microphyto",
+                    "C_nanophyto",
+                    "C_phyto",
+                    "C_picophyto",
+                    "chl_a",
+                    "mean_spectral_i_star",
+                    "mld",
+                    "par"
                 ],
                 "download_url": "https://data.ceda.ac.uk/neodc/bicep/data/phytoplankton_carbon/v5.0/monthly/",
                 "protocol": "https",
@@ -61,7 +244,9 @@
             {
                 "name": "Monthly global Oceanic Export Production",
                 "variable_names": [
-                    "pp"
+                    "EP_Dunne",
+                    "EP_Henson",
+                    "EP_Li"
                 ],
                 "download_url": "https://data.ceda.ac.uk/neodc/bicep/data/oceanic_export_production/v1.0/monthly/",
                 "protocol": "https",
@@ -74,7 +259,7 @@
         ],
         "metadata": {
             "Conventions": "CF-1.10",
-            "acknowledgment": "4D Antarctica, DeepESDL project",
+            "acknowledgment": "BICEP/NCEO",
             "contributor_name": ["University of Leipzig" ,"Brockmann Consult GmbH"],
             "contributor_url": ["www.uni-leipzig.de" ,"www.brockmann-consult.de"],
             "creator_email": ["www.uni-leipzig.de" ,"www.brockmann-consult.de"],
@@ -85,28 +270,28 @@
             "publisher_email": "info@brockmann-consult.de",
             "publisher_name": "Brockmann Consult GmbH",
             "license_url": null,
-            "source": "4D Antarctica",
-            "date_modified": null,
-            "geospatial_lon_min": null,
-            "geospatial_lon_max": null,
-            "geospatial_lat_min": null,
-            "geospatial_lat_max": null,
-            "geospatial_lon_resolution": null,
-            "geospatial_lat_resolution": null,
-            "temporal_coverage_start": null,
-            "temporal_coverage_end": null,
-            "temporal_resolution": null
+            "source": "BICEP/NCEO",
+            "date_modified": "2023-02-11 12:43:00.708004",
+            "geospatial_lon_min": -179.95834350585938,
+            "geospatial_lon_max": 179.95834350585938,
+            "geospatial_lat_min": -89.95832824707031,
+            "geospatial_lat_max": 89.95832824707031,
+            "geospatial_lon_resolution": 0.0833282470703125,
+            "geospatial_lat_resolution": 0.0833282470703125,
+            "temporal_coverage_start": "1998-01-01T00:00:00.000000000",
+            "temporal_coverage_end": "2020-12-01T00:00:00.000000000",
+            "temporal_resolution": "1M"
         }
     },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
             [
-                [-121.99647712843816, -62.288127609530854],
-                [-158.22593498159108, -73.985972288613030],
-                [-52.688079026108510, -82.494386344463100],
-                [-79.230877811995920, -65.962695624424370],
-                [-121.99647712843816, -62.288127609530854]
+                [-180, -90],
+                [-180, 90],
+                [180, 90],
+                [180, -90],
+                [-180, -90]
             ]
         ]
     }
