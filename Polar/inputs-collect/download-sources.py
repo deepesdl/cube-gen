@@ -12,7 +12,7 @@ pathOut = os.path.expanduser(pathOut)
 if not os.path.exists(pathOut):
     os.makedirs(pathOut)
     
-with open('../cube.geojson', 'r') as f:
+with open('cube.geojson', 'r') as f:
     cube_specs = json.load(f)
     
 def download_file(source):
