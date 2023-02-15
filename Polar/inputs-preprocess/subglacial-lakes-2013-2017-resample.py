@@ -11,7 +11,7 @@ pathOut = os.path.expanduser(pathOut)
 
 filepath = f"{pathOut}/thwaites_sublacial_lakes_2013_2017.zarr"
 
-with open('../cube.geojson', 'r') as f:
+with open('cube.geojson', 'r') as f:
     cube_specs = json.load(f)
 
 bbox = cube_specs['properties']['spatial_bbox']
