@@ -8,7 +8,7 @@ import numpy as np
 import os
 from glob import glob
 
-store_output = new_data_store("s3", root="deep-esdl-input")
+store_output = new_data_store("s3", root="deep-esdl-input/alicja-testing")
 
 cubes = glob(os.path.expanduser("~/data/polar/cubes/*"))
 cubes.sort()
