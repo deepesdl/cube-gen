@@ -8,7 +8,7 @@ from glob import glob
 from tqdm import tqdm
 import os
 
-store_output = new_data_store("s3", root="deep-esdl-input")
+store_output = new_data_store("s3", root="deep-esdl-input/alicja-test")
 
 pathIn = f"~/data/ocean/source/monthly_global_phytoplankton_carbon/"
 pathIn = os.path.expanduser(pathIn)
