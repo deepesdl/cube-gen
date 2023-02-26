@@ -43,7 +43,7 @@ python inputs-preprocess/subglacial-lakes-2013-2017.py # Convert files to zarr
 python inputs-preprocess/subglacial-lakes-2013-2017-resample.py # Spatial resampling
 
 # Ice Thickness
-inputs-preprocess/bedrock-ice-thickness.py # Convert files to zarr
+python inputs-preprocess/bedrock-ice-thickness.py # Convert files to zarr
 inputs-preprocess/bedrock-ice-thickness-resample.py # Spatial resampling
 ```
 
