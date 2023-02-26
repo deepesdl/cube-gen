@@ -27,7 +27,7 @@ python inputs-preprocess/curie-depth.py # Convert files to zarr
 python inputs-preprocess/curie-depth-resample.py # Spatial resampling
 
 # Geothermal Heat Flow
-inputs-preprocess/geothermal-heat-flow.py # Convert files to zarr
+python inputs-preprocess/geothermal-heat-flow.py # Convert files to zarr
 inputs-preprocess/geothermal-heat-flow-resample.py # Spatial resampling
 
 # Geothermal Heat Flow Uncertainty
