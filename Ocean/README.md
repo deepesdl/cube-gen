@@ -50,7 +50,7 @@ All `.zarr` cubes are loaded and merged by their coordinates and timesteps into 
 ```
 # Merge all datasets
 python output-merge/merge-4km.py
-output-merge/merge-9km.py
+python output-merge/merge-9km.py
 ```
 
 ### 4. Postprocessing
