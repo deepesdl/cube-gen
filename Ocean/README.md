@@ -32,7 +32,7 @@ python inputs-preprocess/oceanic-export-production-to-zarr.py # Convert files to
 python inputs-preprocess/oceanic-export-production-to-s3.py # Upload full cube to the s3 bucket
 
 # Particulate Organic Carbon
-inputs-preprocess/particulate-organic-carbon-to-zarr.py # Convert files to zarr
+python inputs-preprocess/particulate-organic-carbon-to-zarr.py # Convert files to zarr
 
 # Phytoplankton Carbon
 inputs-preprocess/phytoplankton-carbon-to-zarr.py # Convert files to zarr
