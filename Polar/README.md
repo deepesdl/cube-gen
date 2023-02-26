@@ -44,7 +44,7 @@ python inputs-preprocess/subglacial-lakes-2013-2017-resample.py # Spatial resamp
 
 # Ice Thickness
 python inputs-preprocess/bedrock-ice-thickness.py # Convert files to zarr
-inputs-preprocess/bedrock-ice-thickness-resample.py # Spatial resampling
+python inputs-preprocess/bedrock-ice-thickness-resample.py # Spatial resampling
 ```
 
 After preprocessing, all `.zarr` cubes were uploaded to `s3://deep-esdl-input/` by running the following file:
