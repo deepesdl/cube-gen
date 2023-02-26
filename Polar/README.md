@@ -39,7 +39,7 @@ python inputs-preprocess/magnetic-anomaly.py # Convert files to zarr
 python inputs-preprocess/magnetic-anomaly-resample.py # Spatial resampling
 
 # Subglacial Lakes
-inputs-preprocess/subglacial-lakes-2013-2017.py # Convert files to zarr
+python inputs-preprocess/subglacial-lakes-2013-2017.py # Convert files to zarr
 inputs-preprocess/subglacial-lakes-2013-2017-resample.py # Spatial resampling
 
 # Ice Thickness
