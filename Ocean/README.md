@@ -18,7 +18,7 @@ To download the datasets, it is required to run the following files:
 # Download all files
 cd inputs-collect/
 python download-sources-4km.py
-download-sources-9km.py
+python download-sources-9km.py
 ```
 
 ### 2. Preprocessing datasets
