@@ -24,7 +24,7 @@ The raw data is preprocessed in order to create a single input `.zarr` cube per 
 ```
 # Curie Depth Estimates
 python inputs-preprocess/curie-depth.py # Convert files to zarr
-inputs-preprocess/curie-depth-resample.py # Spatial resampling
+python inputs-preprocess/curie-depth-resample.py # Spatial resampling
 
 # Geothermal Heat Flow
 inputs-preprocess/geothermal-heat-flow.py # Convert files to zarr
