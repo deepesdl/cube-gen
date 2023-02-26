@@ -36,7 +36,7 @@ python inputs-preprocess/particulate-organic-carbon-to-zarr.py # Convert files t
 
 # Phytoplankton Carbon
 python inputs-preprocess/phytoplankton-carbon-to-zarr.py # Convert files to zarr
-inputs-preprocess/phytoplankton-carbon-to-s3.py # Upload full cube to the s3 bucket
+python inputs-preprocess/phytoplankton-carbon-to-s3.py # Upload full cube to the s3 bucket
 
 # Primary Production
 inputs-preprocess/primary-production-to-zarr.py # Convert files to zarr
