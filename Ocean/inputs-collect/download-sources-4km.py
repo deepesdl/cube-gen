@@ -33,7 +33,7 @@ def download_file(source):
         if r.status_code == 200:
             files.extend(list_files_nc(f"{url}{year}/","download=1"))
     files = np.unique(files).tolist()
-    print(f"Downloaidng files...")
+    print(f"Downloading files...")
     for file in tqdm(files):
         filename = file.replace("?download=1","").split("/")[-1]
         output = output_source_path + "/" + filename
