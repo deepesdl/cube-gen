@@ -32,7 +32,7 @@ python inputs-preprocess/geothermal-heat-flow-resample.py # Spatial resampling
 
 # Geothermal Heat Flow Uncertainty
 python inputs-preprocess/geothermal-heat-flow-uncertainty.py # Convert files to zarr
-inputs-preprocess/geothermal-heat-flow-uncertainty-resample.py # Spatial resampling
+python inputs-preprocess/geothermal-heat-flow-uncertainty-resample.py # Spatial resampling
 
 # Magnetic Anomaly
 inputs-preprocess/magnetic-anomaly.py # Convert files to zarr
