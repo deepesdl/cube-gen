@@ -29,7 +29,7 @@ The raw data is preprocessed in order to create a single input `.zarr` cube per 
 # Oceanic Export Production
 cd ..
 python inputs-preprocess/oceanic-export-production-to-zarr.py # Convert files to zarr
-inputs-preprocess/oceanic-export-production-to-s3.py # Upload full cube to the s3 bucket
+python inputs-preprocess/oceanic-export-production-to-s3.py # Upload full cube to the s3 bucket
 
 # Particulate Organic Carbon
 inputs-preprocess/particulate-organic-carbon-to-zarr.py # Convert files to zarr
