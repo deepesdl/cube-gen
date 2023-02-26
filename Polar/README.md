@@ -14,7 +14,7 @@ To download the datasets it is required to run the following file:
 
 ```
 # Download all files
-inputs-collect/download-sources.py
+python inputs-collect/download-sources.py
 ```
 
 ### 2. Preprocessing datasets
