@@ -1,6 +1,8 @@
 # Polar Datacube Generation
 
-Information dedicated to the generation of the Ocean Datacubes. In this folder two ocean data cubes were created: 1) The Particulate Organic Carbon (POC) Data Cube at 4 km and 2) the Oceanic Export Production, Phytoplankton Carbon and Primary Production Data Cube at 9 km.
+Information dedicated to the generation of the Ocean Datacubes. In this folder two ocean data cubes were created:   
+1) The Particulate Organic Carbon (POC) Data Cube at 4 km and   
+2) the Oceanic Export Production, Phytoplankton Carbon and Primary Production Data Cube at 9 km.
 
 ## Cubes generation process
 
