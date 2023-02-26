@@ -12,7 +12,12 @@ The cubes generation process is divided in four phases:
 
 Datasets were downloaded via the source information provided in `cube4km.geojson` and `cube9km.geojson`. Datasets were downloaded in `.nc` format.
 
-To download the datasets, it is required to run the following files:
+To download the datasets, it is required to run the following files under the `cube-gen` python environment:
+```
+conda activate cube-gen
+```
+
+The files can be executed using the following commands:
 
 ```
 # Download all files
