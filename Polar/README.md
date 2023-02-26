@@ -60,7 +60,7 @@ All `.zarr` cubes are loaded and merged by their coordinates into a single `.zar
 
 ```
 # Merge all datasets
-output-merge/merge.py
+python output-merge/merge.py
 ```
 
 ### 4. Postprocessing
