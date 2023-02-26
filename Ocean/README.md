@@ -40,7 +40,7 @@ python inputs-preprocess/phytoplankton-carbon-to-s3.py # Upload full cube to the
 
 # Primary Production
 python inputs-preprocess/primary-production-to-zarr.py # Convert files to zarr
-inputs-preprocess/primary-production-to-s3.py # Upload full cube to the s3 bucket
+python inputs-preprocess/primary-production-to-s3.py # Upload full cube to the s3 bucket
 ```
 
 ### 3. Merging all datasets into a single cube
