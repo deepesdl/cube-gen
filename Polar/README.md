@@ -35,7 +35,7 @@ python inputs-preprocess/geothermal-heat-flow-uncertainty.py # Convert files to 
 python inputs-preprocess/geothermal-heat-flow-uncertainty-resample.py # Spatial resampling
 
 # Magnetic Anomaly
-inputs-preprocess/magnetic-anomaly.py # Convert files to zarr
+python inputs-preprocess/magnetic-anomaly.py # Convert files to zarr
 inputs-preprocess/magnetic-anomaly-resample.py # Spatial resampling
 
 # Subglacial Lakes
