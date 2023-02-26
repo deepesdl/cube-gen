@@ -51,7 +51,7 @@ After preprocessing, all `.zarr` cubes were uploaded to `s3://deep-esdl-input/` 
 
 ```
 # Upload all datasets
-inputs-preprocess/upload-to-s3.py
+python inputs-preprocess/upload-to-s3.py
 ```
 
 ### 3. Merging all datasets into a single cube
