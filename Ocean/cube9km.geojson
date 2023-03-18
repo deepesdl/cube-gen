@@ -173,6 +173,38 @@
                     "color_value_min": null,
                     "color_value_max": null
                 }
+            },
+            {
+                "name": "POC",
+                "long_name": "Particulate Organic Carbon",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": "mg C m^-3",
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": null,
+                "time_range": ["1997-09-01", "2020-12-01"],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": null
+                }
+            },
+            {
+                "name": "PIC",
+                "long_name": "Particulate Inorganic Carbon",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": "mg C m^-3",
+                "fill_value": "nan",
+                "valid_min": null,
+                "valid_max": null,
+                "time_range": ["1997-09-01", "2020-12-01"],
+                "metadata": {
+                    "color_bar_name": "Blues",
+                    "color_value_min": null,
+                    "color_value_max": null
+                }
             }
         ],
         "sources": [
@@ -215,6 +247,32 @@
                     "EP_Li"
                 ],
                 "download_url": "https://data.ceda.ac.uk/neodc/bicep/data/oceanic_export_production/v1.0/monthly/",
+                "protocol": "https",
+                "credentials": false,
+                "compressed": false,
+                "compression_format": null,
+                "source_format": "nc",
+                "source_crs": null
+            },
+            {
+                "name": "Particulate Organic Carbon",
+                "variable_names": [
+                    "POC"
+                ],
+                "download_url": "https://rsg.pml.ac.uk/shared_files/gku/ESA_animation/POC_1-month_9km/",
+                "protocol": "https",
+                "credentials": false,
+                "compressed": false,
+                "compression_format": null,
+                "source_format": "nc",
+                "source_crs": null
+            },
+            {
+                "name": "Particulate Inorganic Carbon",
+                "variable_names": [
+                    "PIC"
+                ],
+                "download_url": "https://rsg.pml.ac.uk/shared_files/gku/ESA_animation/PIC_1-month_9km/",
                 "protocol": "https",
                 "credentials": false,
                 "compressed": false,
