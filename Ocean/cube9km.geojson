@@ -2,7 +2,7 @@
     "type": "Feature",
     "properties": {
         "data_id": "ocean-1M-9km-64x256x256-1.0.0.zarr",
-        "title": "Ocean Data Cube 9km v1.0.0",
+        "title": "BICEP Pools and Fluxes of the Ocean Biological Carbon Pump",
         "description": "Ocean Data Cube for Oceanic Export Production, Phytoplankton Carbon and Primary Production",
         "version": "1.0.0",
         "recipe": "",
