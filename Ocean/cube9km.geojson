@@ -229,7 +229,7 @@
                     "C_phyto",
                     "C_picophyto",
                     "chl_a",
-                    "mld",
+                    "mld"
                 ],
                 "download_url": "https://data.ceda.ac.uk/neodc/bicep/data/phytoplankton_carbon/v5.0/monthly/",
                 "protocol": "https",
