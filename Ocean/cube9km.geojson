@@ -111,43 +111,11 @@
                 }
             },
             {
-                "name": "mean_spectral_i_star",
-                "long_name": "Mean Spectral Nondimensional Irradiance (I*)",
-                "dtype": "float32",
-                "dims": ["time","y","x"],
-                "units": null,
-                "fill_value": "nan",
-                "valid_min": null,
-                "valid_max": null,
-                "time_range": ["1998-01-01", "2020-12-01"],
-                "metadata": {
-                    "color_bar_name": "Blues",
-                    "color_value_min": null,
-                    "color_value_max": null
-                }
-            },
-            {
                 "name": "mld",
                 "long_name": "Mixed Layer Depth",
                 "dtype": "float32",
                 "dims": ["time","y","x"],
                 "units": "m",
-                "fill_value": "nan",
-                "valid_min": null,
-                "valid_max": null,
-                "time_range": ["1998-01-01", "2020-12-01"],
-                "metadata": {
-                    "color_bar_name": "Blues",
-                    "color_value_min": null,
-                    "color_value_max": null
-                }
-            },
-            {
-                "name": "par",
-                "long_name": "Photosynthetically Active Radiation",
-                "dtype": "float32",
-                "dims": ["time","y","x"],
-                "units": "mol photons m^-2 d^-1",
                 "fill_value": "nan",
                 "valid_min": null,
                 "valid_max": null,
@@ -229,9 +197,7 @@
                     "C_phyto",
                     "C_picophyto",
                     "chl_a",
-                    "mean_spectral_i_star",
                     "mld",
-                    "par"
                 ],
                 "download_url": "https://data.ceda.ac.uk/neodc/bicep/data/phytoplankton_carbon/v5.0/monthly/",
                 "protocol": "https",
