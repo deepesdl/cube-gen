@@ -4,11 +4,11 @@
         "data_id": "ocean-1M-9km-64x256x256-1.0.0.zarr",
         "title": "BICEP Pools and Fluxes of the Ocean Biological Carbon Pump",
         "description": "Ocean Data Cube for Oceanic Export Production, Phytoplankton Carbon and Primary Production",
-        "version": "1.0.0",
+        "version": "1.1.0",
         "recipe": "",
         "changes": "",
         "license": "Terms and conditions of the DeepESDL data distribution",
-        "time_range": ["1998-01-01","2020-12-01"],
+        "time_range": ["1997-09-01","2020-12-01"],
         "time_period": "1M",
         "spatial_ref": "EPSG:4326",
         "spatial_bbox": [-180, -90, 180, 90],
@@ -21,14 +21,7 @@
                 "dims": ["time","y","x"],
                 "units": "mg C m^-2 d^-1",
                 "fill_value": "nan",
-                "valid_min": null,
-                "valid_max": null,
-                "time_range": ["1998-01-01", "2020-12-01"],
-                "metadata": {
-                    "color_bar_name": "Blues",
-                    "color_value_min": null,
-                    "color_value_max": null
-                }
+                "time_range": ["1998-01-01", "2020-12-01"]
             },
             {
                 "name": "C_microphyto",
@@ -37,14 +30,7 @@
                 "dims": ["time","y","x"],
                 "units": "mg C m^-3",
                 "fill_value": "nan",
-                "valid_min": null,
-                "valid_max": null,
-                "time_range": ["1998-01-01", "2020-12-01"],
-                "metadata": {
-                    "color_bar_name": "Blues",
-                    "color_value_min": null,
-                    "color_value_max": null
-                }
+                "time_range": ["1998-01-01", "2020-12-01"]
             },
             {
                 "name": "C_nanophyto",
@@ -53,14 +39,7 @@
                 "dims": ["time","y","x"],
                 "units": "mg C m^-3",
                 "fill_value": "nan",
-                "valid_min": null,
-                "valid_max": null,
-                "time_range": ["1998-01-01", "2020-12-01"],
-                "metadata": {
-                    "color_bar_name": "Blues",
-                    "color_value_min": null,
-                    "color_value_max": null
-                }
+                "time_range": ["1998-01-01", "2020-12-01"]
             },
             {
                 "name": "C_phyto",
@@ -69,14 +48,7 @@
                 "dims": ["time","y","x"],
                 "units": "mg C m^-3",
                 "fill_value": "nan",
-                "valid_min": null,
-                "valid_max": null,
-                "time_range": ["1998-01-01", "2020-12-01"],
-                "metadata": {
-                    "color_bar_name": "Blues",
-                    "color_value_min": null,
-                    "color_value_max": null
-                }
+                "time_range": ["1998-01-01", "2020-12-01"]
             },
             {
                 "name": "C_picophyto",
@@ -85,14 +57,7 @@
                 "dims": ["time","y","x"],
                 "units": "mg C m^-3",
                 "fill_value": "nan",
-                "valid_min": null,
-                "valid_max": null,
-                "time_range": ["1998-01-01", "2020-12-01"],
-                "metadata": {
-                    "color_bar_name": "Blues",
-                    "color_value_min": null,
-                    "color_value_max": null
-                }
+                "time_range": ["1998-01-01", "2020-12-01"]
             },
             {
                 "name": "chl_a",
@@ -101,14 +66,7 @@
                 "dims": ["time","y","x"],
                 "units": "mg C m^-3",
                 "fill_value": "nan",
-                "valid_min": null,
-                "valid_max": null,
-                "time_range": ["1998-01-01", "2020-12-01"],
-                "metadata": {
-                    "color_bar_name": "Blues",
-                    "color_value_min": null,
-                    "color_value_max": null
-                }
+                "time_range": ["1998-01-01", "2020-12-01"]
             },
             {
                 "name": "mld",
@@ -117,14 +75,7 @@
                 "dims": ["time","y","x"],
                 "units": "m",
                 "fill_value": "nan",
-                "valid_min": null,
-                "valid_max": null,
-                "time_range": ["1998-01-01", "2020-12-01"],
-                "metadata": {
-                    "color_bar_name": "Blues",
-                    "color_value_min": null,
-                    "color_value_max": null
-                }
+                "time_range": ["1998-01-01", "2020-12-01"]
             },
             {
                 "name": "EP_Dunne",
@@ -133,14 +84,7 @@
                 "dims": ["time","y","x"],
                 "units": "mg C m^-2 d^-1",
                 "fill_value": "nan",
-                "valid_min": null,
-                "valid_max": null,
-                "time_range": ["1998-01-01", "2020-12-01"],
-                "metadata": {
-                    "color_bar_name": "Blues",
-                    "color_value_min": null,
-                    "color_value_max": null
-                }
+                "time_range": ["1998-01-01", "2020-12-01"]
             },
             {
                 "name": "EP_Henson",
@@ -149,14 +93,7 @@
                 "dims": ["time","y","x"],
                 "units": "mg C m^-2 d^-1",
                 "fill_value": "nan",
-                "valid_min": null,
-                "valid_max": null,
-                "time_range": ["1998-01-01", "2020-12-01"],
-                "metadata": {
-                    "color_bar_name": "Blues",
-                    "color_value_min": null,
-                    "color_value_max": null
-                }
+                "time_range": ["1998-01-01", "2020-12-01"]
             },
             {
                 "name": "EP_Li",
@@ -165,14 +102,7 @@
                 "dims": ["time","y","x"],
                 "units": "mg C m^-2 d^-1",
                 "fill_value": "nan",
-                "valid_min": null,
-                "valid_max": null,
-                "time_range": ["1998-01-01", "2020-12-01"],
-                "metadata": {
-                    "color_bar_name": "Blues",
-                    "color_value_min": null,
-                    "color_value_max": null
-                }
+                "time_range": ["1998-01-01", "2020-12-01"]
             },
             {
                 "name": "POC",
@@ -181,14 +111,7 @@
                 "dims": ["time","y","x"],
                 "units": "mg C m^-3",
                 "fill_value": "nan",
-                "valid_min": null,
-                "valid_max": null,
-                "time_range": ["1997-09-01", "2020-12-01"],
-                "metadata": {
-                    "color_bar_name": "Blues",
-                    "color_value_min": null,
-                    "color_value_max": null
-                }
+                "time_range": ["1997-09-01", "2020-12-01"]
             },
             {
                 "name": "PIC",
@@ -197,14 +120,7 @@
                 "dims": ["time","y","x"],
                 "units": "mg C m^-3",
                 "fill_value": "nan",
-                "valid_min": null,
-                "valid_max": null,
-                "time_range": ["1997-09-01", "2020-12-01"],
-                "metadata": {
-                    "color_bar_name": "Blues",
-                    "color_value_min": null,
-                    "color_value_max": null
-                }
+                "time_range": ["2018-01-01", "2018-12-01"]
             }
         ],
         "sources": [

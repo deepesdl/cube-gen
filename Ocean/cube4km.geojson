@@ -21,14 +21,7 @@
                 "dims": ["time","y","x"],
                 "units": "mg m^-3",
                 "fill_value": "nan",
-                "valid_min": null,
-                "valid_max": null,
-                "time_range": ["1997-09-01", "2020-03-01"],
-                "metadata": {
-                    "color_bar_name": "Blues",
-                    "color_value_min": null,
-                    "color_value_max": null
-                }
+                "time_range": ["1997-09-01", "2020-03-01"]
             },
             {
                 "name": "POC_bias",
@@ -37,14 +30,7 @@
                 "dims": ["time","y","x"],
                 "units": "mg m^-3",
                 "fill_value": "nan",
-                "valid_min": null,
-                "valid_max": null,
-                "time_range": ["1997-09-01", "2020-03-01"],
-                "metadata": {
-                    "color_bar_name": "Blues",
-                    "color_value_min": null,
-                    "color_value_max": null
-                }
+                "time_range": ["1997-09-01", "2020-03-01"]
             },
             {
                 "name": "POC_rmsd",
@@ -53,14 +39,7 @@
                 "dims": ["time","y","x"],
                 "units": "mg m^-3",
                 "fill_value": "nan",
-                "valid_min": null,
-                "valid_max": null,
-                "time_range": ["1997-09-01", "2020-03-01"],
-                "metadata": {
-                    "color_bar_name": "Blues",
-                    "color_value_min": null,
-                    "color_value_max": null
-                }
+                "time_range": ["1997-09-01", "2020-03-01"]
             },
             {
                 "name": "Rrs_443",
@@ -69,14 +48,7 @@
                 "dims": ["time","y","x"],
                 "units": "sr-1",
                 "fill_value": "nan",
-                "valid_min": null,
-                "valid_max": null,
-                "time_range": ["1997-09-01", "2020-03-01"],
-                "metadata": {
-                    "color_bar_name": "Blues",
-                    "color_value_min": null,
-                    "color_value_max": null
-                }
+                "time_range": ["1997-09-01", "2020-03-01"]
             },
             {
                 "name": "Rrs_555",
@@ -85,14 +57,7 @@
                 "dims": ["time","y","x"],
                 "units": "sr-1",
                 "fill_value": "nan",
-                "valid_min": null,
-                "valid_max": null,
-                "time_range": ["1997-09-01", "2020-03-01"],
-                "metadata": {
-                    "color_bar_name": "Blues",
-                    "color_value_min": null,
-                    "color_value_max": null
-                }
+                "time_range": ["1997-09-01", "2020-03-01"]
             }
         ],
         "sources": [
