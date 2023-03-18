@@ -24,7 +24,7 @@ print("Reading files...")
 
 das = [store.open_data(dataset) for dataset in datasets]
 
-for i in [1,2]:
+for i in [1,2,3,4]:
     das[i]["lat"] = das[0].lat
     das[i]["lon"] = das[0].lon
 
