@@ -98,21 +98,6 @@ metadata:
         original_scale_factor: 1.0
         original_add_offset: 0.0
         source: 'https://data.ceda.ac.uk/neodc/bicep/data/phytoplankton_carbon/v5.0/monthly/'
-    mean_spectral_i_star/.zattrs:
-        long_name: 'Mean Spectral Nondimensional Irradiance (I*)'
-        standard_name: 'mean_spectral_nondimensional_irradiance'
-        description: 'Mean Spectral Nondimensional Irradiance (I*)'
-        units: 1
-        processing_steps:
-            - 'Gridding nc datasets'
-        acknowledgement: "BICEP/NCEO"
-        references:
-            - 'https://doi.org/10.1364/AO.386252'
-            - 'https://catalogue.ceda.ac.uk/uuid/6a6ccbb8ef2645308a60dc47e9b8b5fb'
-        original_name: mean_spectral_i_star
-        original_scale_factor: 1.0
-        original_add_offset: 0.0
-        source: 'https://data.ceda.ac.uk/neodc/bicep/data/phytoplankton_carbon/v5.0/monthly/'
     mld/.zattrs:
         long_name: 'Mixed Layer Depth'
         standard_name: 'mixed_layer_depth'
@@ -125,21 +110,6 @@ metadata:
             - 'https://doi.org/10.1364/AO.386252'
             - 'https://catalogue.ceda.ac.uk/uuid/6a6ccbb8ef2645308a60dc47e9b8b5fb'
         original_name: mld
-        original_scale_factor: 1.0
-        original_add_offset: 0.0
-        source: 'https://data.ceda.ac.uk/neodc/bicep/data/phytoplankton_carbon/v5.0/monthly/'
-    par/.zattrs:
-        long_name: 'Photosynthetically Active Radiation'
-        standard_name: 'surface_downwelling_photosynthetic_photon_flux_in_sea_water'
-        description: 'Photosynthetically Active Radiation'
-        units: "mol photons m^-2 d^-1"
-        processing_steps:
-            - 'Gridding nc datasets'
-        acknowledgement: "BICEP/NCEO"
-        references:
-            - 'https://doi.org/10.1364/AO.386252'
-            - 'https://catalogue.ceda.ac.uk/uuid/6a6ccbb8ef2645308a60dc47e9b8b5fb'
-        original_name: par
         original_scale_factor: 1.0
         original_add_offset: 0.0
         source: 'https://data.ceda.ac.uk/neodc/bicep/data/phytoplankton_carbon/v5.0/monthly/'
@@ -188,6 +158,30 @@ metadata:
         original_scale_factor: 1.0
         original_add_offset: 0.0
         source: 'https://data.ceda.ac.uk/neodc/bicep/data/oceanic_export_production/v1.0/monthly/'
+    PIC/.zattrs:
+        long_name: 'Particulate Inorganic Carbon'
+        standard_name: 'particulate_inorganic_carbon'
+        description: 'Particulate Inorganic Carbon'
+        units: "mg C m^-3"
+        processing_steps:
+            - 'Gridding nc datasets'
+        acknowledgement: "BICEP/NCEO"
+        original_name: PIC
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://rsg.pml.ac.uk/shared_files/gku/ESA_animation/PIC_1-month_9km/'
+    POC/.zattrs:
+        long_name: 'Particulate Organic Carbon'
+        standard_name: 'particulate_organic_carbon'
+        description: 'Particulate Organic Carbon'
+        units: "mg C m^-3"
+        processing_steps:
+            - 'Gridding nc datasets'
+        acknowledgement: "BICEP/NCEO"
+        original_name: POC
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://rsg.pml.ac.uk/shared_files/gku/ESA_animation/POC_1-month_9km/'
     pp/.zattrs:
         long_name: 'Phytoplankton Primary Production'
         standard_name: 'gross_primary_production_of_carbon'

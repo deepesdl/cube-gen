@@ -14,7 +14,7 @@ files.sort()
 for file in tqdm(files):
     filename = file.split("/")[-1].replace(".nc",".zarr")
     if not os.path.exists(f"{pathIn}{filename}"):
-        date = np.datetime64(datetime.strptime(filename.split("-")[-2], '%Y%M'))
+        date = np.datetime64(datetime.strptime(filename.split("-")[-2], '%Y%m'))
         ds = xr.open_dataset(file)
         ds = ds.astype("float32")
         if ("latitude" in ds.variables) and ("longitude" in ds.variables):

@@ -12,12 +12,15 @@ from datetime import datetime
 store = new_data_store("s3", root="deep-esdl-input")
 store_output = new_data_store("s3", root="deep-esdl-output")
 
-print("Reading files...")
 datasets = [
     'phytoplankton-primary-production-1M-9km-64x256x256.zarr',
-    'phytoplankton-carbon-1M-9km-64x256x256.zarr',
-    'oceanic-export-production-1M-9km-64x256x256.zarr'
+    'oceanic-export-production-1M-9km-64x256x256.zarr',
+    'particulate-inorganic-carbon-1M-9km-64x256x256.zarr',
+    'particulate-organic-carbon-1M-9km-64x256x256.zarr',
+    'phytoplankton-carbon-1M-9km-64x256x256.zarr'
 ]
+
+print("Reading files...")
 
 das = [store.open_data(dataset) for dataset in datasets]
 
@@ -27,6 +30,10 @@ for i in [1,2]:
 
 print("Merging datasets...")
 ds = xr.merge(das)
+
+print("Removing unnecessary datasets")
+VARIABLES_TO_REMOVE = ["mean_spectral_i_star", "par", "crs"]
+ds = ds.drop_vars(VARIABLES_TO_REMOVE)
 
 variables = list(ds.variables)
 for dim in ["lat","lon","time"]:
@@ -56,4 +63,4 @@ additional_attrs = {
 ds.attrs = additional_attrs
 
 print("Writing cube...")
-store_output.write_data(ds, "ocean-1M-9km-64x256x256-1.0.0.zarr", replace=True)
+store_output.write_data(ds, "ocean-1M-9km-64x256x256-1.1.0.zarr", replace=True)
