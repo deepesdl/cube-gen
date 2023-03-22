@@ -98,6 +98,18 @@ metadata:
         original_scale_factor: 1.0
         original_add_offset: 0.0
         source: 'https://data.ceda.ac.uk/neodc/bicep/data/phytoplankton_carbon/v5.0/monthly/'
+    DOC/.zattrs:
+        long_name: 'Dissolved Organic Carbon'
+        standard_name: 'dissolved_organic_carbon'
+        description: 'Dissolved organic carbon estimated using EO data and random forest algorithm'
+        units: "µmol kg^-1"
+        processing_steps:
+            - 'Gridding nc datasets'
+        acknowledgement: "BICEP/NCEO"
+        original_name: DOC
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://rsg.pml.ac.uk/shared_files/gku/ESA_animation/DOC_1-month_9km/'
     mld/.zattrs:
         long_name: 'Mixed Layer Depth'
         standard_name: 'mixed_layer_depth'
