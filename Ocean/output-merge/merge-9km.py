@@ -17,7 +17,8 @@ datasets = [
     'oceanic-export-production-1M-9km-64x256x256.zarr',
     'particulate-inorganic-carbon-1M-9km-64x256x256.zarr',
     'particulate-organic-carbon-1M-9km-64x256x256.zarr',
-    'phytoplankton-carbon-1M-9km-64x256x256.zarr'
+    'phytoplankton-carbon-1M-9km-64x256x256.zarr',
+    'dissolved-organic-carbon-1M-9km-64x256x256.zarr'
 ]
 
 print("Reading files...")
@@ -63,4 +64,4 @@ additional_attrs = {
 ds.attrs = additional_attrs
 
 print("Writing cube...")
-store_output.write_data(ds, "ocean-1M-9km-64x256x256-1.1.0.zarr", replace=True)
+store_output.write_data(ds, "ocean-1M-9km-64x256x256-1.2.0.zarr", replace=True)
