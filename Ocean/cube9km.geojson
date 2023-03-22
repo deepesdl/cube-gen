@@ -121,6 +121,15 @@
                 "units": "mg C m^-3",
                 "fill_value": "nan",
                 "time_range": ["2018-01-01", "2018-12-01"]
+            },
+            {
+                "name": "DOC",
+                "long_name": "Dissolved Organic Carbon",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": "mg C m^-3",
+                "fill_value": "nan",
+                "time_range": ["2010-01-01", "2018-12-01"]
             }
         ],
         "sources": [
@@ -189,6 +198,19 @@
                     "PIC"
                 ],
                 "download_url": "https://rsg.pml.ac.uk/shared_files/gku/ESA_animation/PIC_1-month_9km/",
+                "protocol": "https",
+                "credentials": false,
+                "compressed": false,
+                "compression_format": null,
+                "source_format": "nc",
+                "source_crs": null
+            },
+            {
+                "name": "Dissolved Organic Carbon",
+                "variable_names": [
+                    "DOC"
+                ],
+                "download_url": "https://rsg.pml.ac.uk/shared_files/gku/ESA_animation/DOC_1-month_9km/",
                 "protocol": "https",
                 "credentials": false,
                 "compressed": false,
