@@ -38,6 +38,9 @@ metadata:
         original_scale_factor: 1.0
         original_add_offset: 0.0
         source: 'https://data.ceda.ac.uk/neodc/bicep/data/phytoplankton_carbon/v5.0/monthly/'
+        color_bar_name: "YlGnBu_r"
+        color_value_min: 0
+        color_value_max: 200
     C_nanophyto/.zattrs:
         long_name: 'Nanophytoplankton Carbon'
         standard_name: 'mass_concentration_of_nanophytoplankton_expressed_as_carbon_in_sea_water'
@@ -53,6 +56,9 @@ metadata:
         original_scale_factor: 1.0
         original_add_offset: 0.0
         source: 'https://data.ceda.ac.uk/neodc/bicep/data/phytoplankton_carbon/v5.0/monthly/'
+        color_bar_name: "YlGnBu_r"
+        color_value_min: 0
+        color_value_max: 200
     C_phyto/.zattrs:
         long_name: 'Total Phytoplankton Carbon'
         standard_name: 'mass_concentration_of_phytoplankton_expressed_as_carbon_in_sea_water'
@@ -68,6 +74,9 @@ metadata:
         original_scale_factor: 1.0
         original_add_offset: 0.0
         source: 'https://data.ceda.ac.uk/neodc/bicep/data/phytoplankton_carbon/v5.0/monthly/'
+        color_bar_name: "YlGnBu_r"
+        color_value_min: 0
+        color_value_max: 200
     C_picophyto/.zattrs:
         long_name: 'Picophytoplankton Carbon'
         standard_name: 'mass_concentration_of_picophytoplankton_expressed_as_carbon_in_sea_water'
@@ -83,6 +92,9 @@ metadata:
         original_scale_factor: 1.0
         original_add_offset: 0.0
         source: 'https://data.ceda.ac.uk/neodc/bicep/data/phytoplankton_carbon/v5.0/monthly/'
+        color_bar_name: "YlGnBu_r"
+        color_value_min: 0
+        color_value_max: 200
     chl_a/.zattrs:
         long_name: 'Chlorophyll-a'
         standard_name: 'mass_concentration_of_chlorophyll_a_in_sea_water'
@@ -98,6 +110,9 @@ metadata:
         original_scale_factor: 1.0
         original_add_offset: 0.0
         source: 'https://data.ceda.ac.uk/neodc/bicep/data/phytoplankton_carbon/v5.0/monthly/'
+        color_bar_name: "viridis"
+        color_value_min: 0
+        color_value_max: 50
     DOC/.zattrs:
         long_name: 'Dissolved Organic Carbon'
         standard_name: 'dissolved_organic_carbon'
@@ -110,6 +125,9 @@ metadata:
         original_scale_factor: 1.0
         original_add_offset: 0.0
         source: 'https://rsg.pml.ac.uk/shared_files/gku/ESA_animation/DOC_1-month_9km/'
+        color_bar_name: "RdPu_r"
+        color_value_min: 0
+        color_value_max: 150
     mld/.zattrs:
         long_name: 'Mixed Layer Depth'
         standard_name: 'mixed_layer_depth'
@@ -125,6 +143,9 @@ metadata:
         original_scale_factor: 1.0
         original_add_offset: 0.0
         source: 'https://data.ceda.ac.uk/neodc/bicep/data/phytoplankton_carbon/v5.0/monthly/'
+        color_bar_name: "viridis"
+        color_value_min: 0
+        color_value_max: 500
     EP_Dunne/.zattrs:
         long_name: 'Export Production based on Dunne et al 2005'
         standard_name: 'export_production_dunne'
@@ -140,6 +161,9 @@ metadata:
         original_scale_factor: 1.0
         original_add_offset: 0.0
         source: 'https://data.ceda.ac.uk/neodc/bicep/data/oceanic_export_production/v1.0/monthly/'
+        color_bar_name: "Blues"
+        color_value_min: 0
+        color_value_max: 300
     EP_Henson/.zattrs:
         long_name: 'Export Production based on Henson et al 2011'
         standard_name: 'export_production_henson'
@@ -155,6 +179,9 @@ metadata:
         original_scale_factor: 1.0
         original_add_offset: 0.0
         source: 'https://data.ceda.ac.uk/neodc/bicep/data/oceanic_export_production/v1.0/monthly/'
+        color_bar_name: "Blues"
+        color_value_min: 0
+        color_value_max: 300
     EP_Li/.zattrs:
         long_name: 'Export Production based on Li et al 2016'
         standard_name: 'export_production_li'
@@ -170,6 +197,9 @@ metadata:
         original_scale_factor: 1.0
         original_add_offset: 0.0
         source: 'https://data.ceda.ac.uk/neodc/bicep/data/oceanic_export_production/v1.0/monthly/'
+        color_bar_name: "Blues"
+        color_value_min: 0
+        color_value_max: 300
     PIC/.zattrs:
         long_name: 'Particulate Inorganic Carbon'
         standard_name: 'particulate_inorganic_carbon'
@@ -182,6 +212,9 @@ metadata:
         original_scale_factor: 1.0
         original_add_offset: 0.0
         source: 'https://rsg.pml.ac.uk/shared_files/gku/ESA_animation/PIC_1-month_9km/'
+        color_bar_name: "Blues_r"
+        color_value_min: 0
+        color_value_max: 0.001
     POC/.zattrs:
         long_name: 'Particulate Organic Carbon'
         standard_name: 'particulate_organic_carbon'
@@ -194,6 +227,9 @@ metadata:
         original_scale_factor: 1.0
         original_add_offset: 0.0
         source: 'https://rsg.pml.ac.uk/shared_files/gku/ESA_animation/POC_1-month_9km/'
+        color_bar_name: "plasma"
+        color_value_min: 0
+        color_value_max: 600
     pp/.zattrs:
         long_name: 'Phytoplankton Primary Production'
         standard_name: 'gross_primary_production_of_carbon'
@@ -208,3 +244,6 @@ metadata:
         original_scale_factor: 1.0
         original_add_offset: 0.0
         source: 'https://data.ceda.ac.uk/neodc/bicep/data/marine_primary_production/v4.2/monthly/'
+        color_bar_name: "Spectral"
+        color_value_min: 0
+        color_value_max: 1000
