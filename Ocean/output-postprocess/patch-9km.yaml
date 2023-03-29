@@ -244,6 +244,6 @@ metadata:
         original_scale_factor: 1.0
         original_add_offset: 0.0
         source: 'https://data.ceda.ac.uk/neodc/bicep/data/marine_primary_production/v4.2/monthly/'
-        color_bar_name: "Spectral"
+        color_bar_name: "Spectral_r"
         color_value_min: 0
         color_value_max: 1000
