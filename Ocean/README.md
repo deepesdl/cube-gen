@@ -1,6 +1,6 @@
 # Ocean Datacube Generation
 
-Information dedicated to the generation of the Ocean Datacubes. In this folder two ocean data cubes were created:
+Information dedicated to the generation of the Ocean Datacubes. By using the following recipe two ocean data cubes can be reproduced:
 
 1) The Particulate Organic Carbon (POC) Data Cube at 4 km and   
 2) the Oceanic Export Production, Phytoplankton Carbon and Primary Production Data Cube at 9 km.
