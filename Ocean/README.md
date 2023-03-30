@@ -1,4 +1,4 @@
-# Polar Datacube Generation
+# Ocean Datacube Generation
 
 Information dedicated to the generation of the Ocean Datacubes. In this folder two ocean data cubes were created:
 
