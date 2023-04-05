@@ -27,6 +27,11 @@ The files can be executed using the following commands:
 cd inputs-collect/
 python download-sources-4km.py
 python download-sources-9km.py
+
+# Download additional files for 9km cube
+python download-sources-add-9km-DOC.py
+python download-sources-add-9km-Phytoplankton.py
+python download-sources-add-9km.py
 ```
 
 ### 2. Preprocessing datasets
