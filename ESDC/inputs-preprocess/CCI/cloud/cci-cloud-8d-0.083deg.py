@@ -8,6 +8,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 from tqdm import tqdm
 import xarray as xr
+import os
+
+pathOut = "~/data/CCI/cloud/preprocess"
+pathOut = os.path.expanduser(pathOut)
+
+if not os.path.exists(pathOut):
+    os.makedirs(pathOut)
 
 print("Reading")
 store = new_data_store('cciodp')
@@ -39,4 +46,4 @@ dataset_8d = dataset_8d.interp(coords=dict(lat=new_lats,lon=new_lons),method="ne
 dataset_8d = dataset_8d.chunk(dict(time=256,lat=128,lon=128))
 
 print("Saving")
-dataset_8d.to_zarr("/net/scratch/dmontero/CCI/cci-cloud-8d-0.083deg-256x128x128.zarr")
+dataset_8d.to_zarr(f"{pathOut}/cci-cloud-8d-0.083deg-256x128x128.zarr")
