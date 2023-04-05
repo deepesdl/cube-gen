@@ -1,10 +1,8 @@
-from tqdm import tqdm
-from datetime import datetime
-import yaml
-import rioxarray
-import xarray as xr
-import numpy as np
 import os
+from datetime import datetime
+
+import xarray as xr
+import yaml
 
 pathIn = "~/data/CCI/cloud/preprocess"
 pathIn = os.path.expanduser(pathIn)
@@ -24,7 +22,7 @@ datacube = xr.open_zarr(f"{pathIn}/cci-cloud-8d-0.25deg-256x128x128.zarr")
 
 datacube = datacube.rio.write_crs(
     "epsg:4326", grid_mapping_name="crs"
-).reset_coords()    
+).reset_coords()
 del datacube.crs.attrs["spatial_ref"]
 
 datacube.attrs = metadata["global"]

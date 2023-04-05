@@ -1,10 +1,8 @@
-from tqdm import tqdm
-from datetime import datetime
-import yaml
-import rioxarray
-import xarray as xr
-import numpy as np
 import os
+from datetime import datetime
+
+import xarray as xr
+import yaml
 
 pathIn = "~/data/CCI/aerosol/preprocess"
 pathIn = os.path.expanduser(pathIn)
@@ -15,7 +13,8 @@ pathOut = os.path.expanduser(pathOut)
 if not os.path.exists(pathOut):
     os.makedirs(pathOut)
 
-with open("inputs-preprocess/CCI/aerosol/cci-aod550-metadata-0.0833deg.yaml", "r") as stream:
+with open("inputs-preprocess/CCI/aerosol/cci-aod550-metadata-0.0833deg.yaml",
+          "r") as stream:
     try:
         metadata = yaml.safe_load(stream)
     except yaml.YAMLError as exc:
@@ -25,7 +24,7 @@ datacube = xr.open_zarr(f"{pathIn}/cci-aod550-8d-0.083deg-512x128x128.zarr")
 
 datacube = datacube.rio.write_crs(
     "epsg:4326", grid_mapping_name="crs"
-).reset_coords()    
+).reset_coords()
 del datacube.crs.attrs["spatial_ref"]
 
 datacube.attrs = metadata["global"]
