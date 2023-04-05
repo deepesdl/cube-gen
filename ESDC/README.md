@@ -188,8 +188,8 @@ inputs-preprocess/FLUXCOM/fluxcom-data-cube-8d-0.25deg.py # Resample to 0.25 deg
 # GOSIF: Preprocessing
 inputs-preprocess/SIF/GOSIF/sif-gosif-data-cube-part1.py # Convert .tif to .zarr
 inputs-preprocess/SIF/GOSIF/sif-gosif-data-cube-part2.py # Concatenate .zarr files
-inputs-preprocess/SIF/GOSIF/sif-gosif-data-cube-0.25deg.py # Resample to 0.25 degrees
 inputs-preprocess/SIF/GOSIF/sif-gosif-metadata.py # Add initial metadata
+inputs-preprocess/SIF/GOSIF/sif-gosif-data-cube-0.25deg.py # Resample to 0.25 degrees
 
 # GOME-2 JJ Method: Preprocessing
 inputs-preprocess/SIF/GOME2/sif-gome2-JJ-data-cube.py # Concatenate .nc files
