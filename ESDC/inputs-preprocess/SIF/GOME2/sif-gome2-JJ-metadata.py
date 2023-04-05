@@ -4,6 +4,7 @@ import yaml
 import rioxarray
 import xarray as xr
 import numpy as np
+import os
 
 
 pathIn = "~/data/SIF/GOME2-SIF/preprocess"
