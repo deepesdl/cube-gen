@@ -54,4 +54,4 @@ datacube.attrs = dict(
     sorted({**datacube.attrs, **additional_attrs}.items())
 )
 
-datacube.to_zarr(f"{pathOutput}/sif-gome2-JJ-8d-0.05deg-256x256x256.zarr",mode = "w")
+datacube.to_zarr(f"{pathOut}/sif-gome2-JJ-8d-0.05deg-256x256x256.zarr",mode = "w")
