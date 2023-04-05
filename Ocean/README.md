@@ -33,6 +33,8 @@ python download-sources-9km.py
 
 The raw data is preprocessed in order to create a single input `.zarr` cube per dataset. The preprocessing steps might involve time resampling and/or spatial resampling according to the dataset. The preprocessing code for each dataset is found at the `inputs-preprocess` folder. Note that some datasets have multiple parts according to the preprocessing steps that were applied:
 
+**If you wish to execute the below scripts please ensure to adjust the `root` parameter in the scripts to point to a s3 bucket which you have read-write access to.**
+
 ```
 # Oceanic Export Production
 cd ..
@@ -55,6 +57,8 @@ python inputs-preprocess/primary-production-to-s3.py # Upload full cube to the s
 
 All `.zarr` cubes are loaded and merged by their coordinates and timesteps into a single `.zarr` cube.
 
+**If you wish to execute the below scripts please ensure to adjust the `root` parameter in the scripts to point to a s3 bucket which you have read-write access to.**
+
 ```
 # Merge all datasets
 python output-merge/merge-4km.py
@@ -69,3 +73,5 @@ A patch of metadata is added to the final cubes using `xcube patch` and `output-
 # Merge all datasets
 output-postprocess/patch.sh
 ```
+
+**If you wish to execute the above script please ensure to adjust the s3 bucket path to point to the bucket which you have read-write access to.**
