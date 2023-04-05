@@ -4,15 +4,24 @@ import yaml
 import rioxarray
 import xarray as xr
 import numpy as np
+import os
 
+pathIn = "~/data/CCI/aerosol/preprocess"
+pathIn = os.path.expanduser(pathIn)
 
-with open("cci-aod550-metadata-0.0833deg.yaml", "r") as stream:
+pathOut = "~/data/CCI/aerosol/output"
+pathOut = os.path.expanduser(pathOut)
+
+if not os.path.exists(pathOut):
+    os.makedirs(pathOut)
+
+with open("inputs-preprocess/CCI/aerosol/cci-aod550-metadata-0.0833deg.yaml", "r") as stream:
     try:
         metadata = yaml.safe_load(stream)
     except yaml.YAMLError as exc:
         print(exc)
 
-datacube = xr.open_zarr("/home/davemlz/data/cci-aod550-8d-0.083deg-512x128x128.zarr")
+datacube = xr.open_zarr(f"{pathIn}/cci-aod550-8d-0.083deg-512x128x128.zarr")
 
 datacube = datacube.rio.write_crs(
     "epsg:4326", grid_mapping_name="crs"
@@ -44,4 +53,4 @@ datacube.attrs = dict(
     sorted({**datacube.attrs, **additional_attrs}.items())
 )
 
-datacube.to_zarr("/home/davemlz/data/metadata/cci-aod550-8d-0.083deg-512x128x128.zarr")
+datacube.to_zarr(f"{pathOut}/cci-aod550-8d-0.083deg-512x128x128.zarr")

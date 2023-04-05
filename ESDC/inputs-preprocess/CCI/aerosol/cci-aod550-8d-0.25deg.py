@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from tqdm import tqdm
 import xarray as xr
+import os
 
 pathOut = "~/data/CCI/aerosol/preprocess"
 pathOut = os.path.expanduser(pathOut)

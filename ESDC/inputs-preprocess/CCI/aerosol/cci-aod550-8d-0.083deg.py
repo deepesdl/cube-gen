@@ -8,6 +8,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 from tqdm import tqdm
 import xarray as xr
+import os
+
+pathOut = "~/data/CCI/aerosol/preprocess"
+pathOut = os.path.expanduser(pathOut)
 
 print("Reading")
 store = new_data_store('cciodp')
@@ -46,4 +50,4 @@ dataset_8d = dataset_8d.interp(coords=dict(lat=new_lats,lon=new_lons),method="ne
 dataset_8d = dataset_8d.chunk(dict(time=512,lat=128,lon=128))
 
 print("Saving")
-dataset_8d.to_zarr("~/data/cci-aod550-8d-0.083deg-512x128x128.zarr")
+dataset_8d.to_zarr(f"{pathOut}/cci-aod550-8d-0.083deg-512x128x128.zarr")
