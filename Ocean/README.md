@@ -73,3 +73,5 @@ A patch of metadata is added to the final cubes using `xcube patch` and `output-
 # Merge all datasets
 output-postprocess/patch.sh
 ```
+
+**If you wish to execute the above script please ensure to adjust the s3 bucket path to point to the bucket which you have read-write access to.**
