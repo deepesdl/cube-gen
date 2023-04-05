@@ -57,6 +57,8 @@ python inputs-preprocess/primary-production-to-s3.py # Upload full cube to the s
 
 All `.zarr` cubes are loaded and merged by their coordinates and timesteps into a single `.zarr` cube.
 
+**If you wish to execute the below scripts please ensure to adjust the `root` parameter in the scripts to point to a s3 bucket which you have read-write access to.**
+
 ```
 # Merge all datasets
 python output-merge/merge-4km.py
