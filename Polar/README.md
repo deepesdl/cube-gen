@@ -62,6 +62,10 @@ After preprocessing, all `.zarr` cubes were uploaded to `s3://deep-esdl-input/` 
 python inputs-preprocess/upload-to-s3.py
 ```
 
+> **Note**
+>
+> Users not belonging to the DeepESDL cube-gen team must provide a different bucket. This can be changed inside the `inputs-preprocess/upload-to-s3.py` file.
+
 ### 3. Merging all datasets into a single cube
 
 All `.zarr` cubes are loaded and merged by their coordinates into a single `.zarr` cube.
