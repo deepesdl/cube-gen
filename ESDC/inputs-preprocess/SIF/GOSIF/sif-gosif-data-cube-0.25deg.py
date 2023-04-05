@@ -5,7 +5,7 @@ import os
 from tqdm import tqdm
 from datetime import datetime
 
-pathOut = "~/data/SIF/GOSIF/preprocess"
+pathOut = "~/data/SIF/GOSIF/output"
 pathOut = os.path.expanduser(pathOut)
 
 print("Reading")
