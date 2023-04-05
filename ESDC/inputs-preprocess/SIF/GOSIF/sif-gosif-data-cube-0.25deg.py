@@ -1,10 +1,11 @@
 import xarray as xr
 import xesmf as xe
 import numpy as np
+import os
 from tqdm import tqdm
 from datetime import datetime
 
-pathOut = "~/data/SIF/GOSIF/output"
+pathOut = "~/data/SIF/GOSIF/preprocess"
 pathOut = os.path.expanduser(pathOut)
 
 print("Reading")

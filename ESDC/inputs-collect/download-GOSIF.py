@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 from urllib.request import Request, urlopen
 import re
+import os
 from os.path import exists
 
 URL = "http://data.globalecology.unh.edu/data/GOSIF_v2/8day/"

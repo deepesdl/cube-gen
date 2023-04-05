@@ -1,5 +1,6 @@
 import requests
 import numpy as np
+import os
 
 URL = "http://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/ECOCLIM/Downscaled-GOME2-SIF/v2.0/"
 # pathOut = "/net/projects/deep_esdl/data/GOME2-SIF/data/"
