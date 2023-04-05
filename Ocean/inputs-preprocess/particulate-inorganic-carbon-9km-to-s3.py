@@ -16,8 +16,18 @@ pathIn = os.path.expanduser(pathIn)
 files = glob(f"{pathIn}/*.zarr")
 files.sort()
 
+ref_da = xr.open_zarr(files[0])
+ref_lat = ref_da.lat
+ref_lon = ref_da.lon
+
+def open_zarr_with_coords_like(file):
+    da = xr.open_zarr(file)
+    da["lat"] = ref_lat
+    da["lon"] = ref_lon
+    return da    
+
 print("Reading data...")
-ds = xr.concat([xr.open_zarr(file) for file in tqdm(files)],dim="time")
+ds = xr.concat([open_zarr_with_coords_like(file) for file in tqdm(files)],dim="time")
 
 print("Sorting by latitude..")
 ds = ds.sortby("lat")

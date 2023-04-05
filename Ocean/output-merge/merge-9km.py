@@ -64,4 +64,4 @@ additional_attrs = {
 ds.attrs = additional_attrs
 
 print("Writing cube...")
-store_output.write_data(ds, "ocean-1M-9km-64x256x256-1.2.0.zarr", replace=True)
+store_output.write_data(ds, "ocean-1M-9km-64x256x256-1.3.0.zarr", replace=True)

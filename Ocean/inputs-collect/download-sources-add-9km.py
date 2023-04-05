@@ -5,7 +5,8 @@ import numpy as np
 from tqdm import tqdm
 from bs4 import BeautifulSoup
 
-SOURCES_TO_DOWNLOAD = ["Particulate Organic Carbon", "Particulate Inorganic Carbon"]
+# SOURCES_TO_DOWNLOAD = ["Particulate Organic Carbon", "Particulate Inorganic Carbon"]
+SOURCES_TO_DOWNLOAD = ["Particulate Inorganic Carbon"]
 
 pathOut = "~/data/ocean/source/"
 pathOut = os.path.expanduser(pathOut)

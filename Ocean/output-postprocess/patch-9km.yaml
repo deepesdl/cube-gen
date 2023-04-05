@@ -204,7 +204,7 @@ metadata:
         long_name: 'Particulate Inorganic Carbon'
         standard_name: 'particulate_inorganic_carbon'
         description: 'Particulate Inorganic Carbon'
-        units: "mg C m^-3"
+        units: "µmol C m^-3"
         processing_steps:
             - 'Gridding nc datasets'
         acknowledgement: "BICEP/NCEO"

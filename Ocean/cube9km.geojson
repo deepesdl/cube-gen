@@ -118,7 +118,7 @@
                 "long_name": "Particulate Inorganic Carbon",
                 "dtype": "float32",
                 "dims": ["time","y","x"],
-                "units": "mg C m^-3",
+                "units": "µmol C m^-3",
                 "fill_value": "nan",
                 "time_range": ["2018-01-01", "2018-12-01"]
             },
