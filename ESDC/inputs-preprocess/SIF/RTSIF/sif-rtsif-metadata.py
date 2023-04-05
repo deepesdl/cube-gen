@@ -4,7 +4,7 @@ import yaml
 import rioxarray
 import xarray as xr
 import numpy as np
-
+import os
 pathIn = "path-to-RTSIF-cube"
 
 pathOut = "~/data/SIF/RTSIF/preprocess"
@@ -13,7 +13,7 @@ pathOut = os.path.expanduser(pathOut)
 if not os.path.exists(pathOut):
     os.makedirs(pathOut)
 
-with open("sif-rtsif-metadata.yaml", "r") as stream:
+with open("inputs-preprocess/SIF/RTSIF/sif-rtsif-metadata.yaml", "r") as stream:
     try:
         metadata = yaml.safe_load(stream)
     except yaml.YAMLError as exc:

@@ -3,6 +3,7 @@ import xesmf as xe
 import numpy as np
 from tqdm import tqdm
 from datetime import datetime
+import os
 
 pathIn = "~/data/SIF/RTSIF/preprocess"
 pathIn = os.path.expanduser(pathIn)
