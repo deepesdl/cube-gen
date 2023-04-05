@@ -6,7 +6,15 @@ Information dedicated to the generation of the Polar Datacube.
 
 The cube generation process is divided in four phases:
 
+> **Note**
+>
+> Before running the following scripts, you must activate the `cube-gen` conda environment by running `conda activate cube-gen`.
+
 ### 1. Downloading required raw datasets
+
+> **Note**
+>
+> When downloading the datasets, a path `data/ocean/source/` is created in the user home path. All datasets are downloaded into this folder for further preprocessing.
 
 Datasets were downloaded via the source information provided in `cube.geojson`. Datasets were downloaded in different formats: `.nc`, `.tif`, `.shp`. Some datasets were compressed and this step includes the extraction of the data.
 
