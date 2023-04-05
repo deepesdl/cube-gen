@@ -18,193 +18,101 @@
                 "name": "curie_depth_200km",
                 "long_name": "Curie Depth Estimates 200x200 km",
                 "dtype": "float32",
-                "dims": ["x","y"],
+                "dims": ["y","x"],
                 "units": "m",
-                "fill_value": "nan",
-                "valid_min": null,
-                "valid_max": null,
-                "time_range": ["", ""],
-                "metadata": {
-                    "color_bar_name": "Blues",
-                    "color_value_min": null,
-                    "color_value_max": null
-                }
+                "fill_value": "nan"
             },
             {
                 "name": "curie_depth_300km",
                 "long_name": "Curie Depth Estimates 300x300 km",
                 "dtype": "float32",
-                "dims": ["x","y"],
+                "dims": ["y","x"],
                 "units": "m",
-                "fill_value": "nan",
-                "valid_min": null,
-                "valid_max": null,
-                "time_range": ["", ""],
-                "metadata": {
-                    "color_bar_name": "Blues",
-                    "color_value_min": null,
-                    "color_value_max": null
-                }
+                "fill_value": "nan"
             },
             {
                 "name": "geothermal_heat_flow_200km",
                 "long_name": "Geothermal Heat Flow 200x200 km",
                 "dtype": "float32",
-                "dims": ["x","y"],
+                "dims": ["y","x"],
                 "units": "m",
-                "fill_value": "nan",
-                "valid_min": null,
-                "valid_max": null,
-                "time_range": ["", ""],
-                "metadata": {
-                    "color_bar_name": "Blues",
-                    "color_value_min": null,
-                    "color_value_max": null
-                }
+                "fill_value": "nan"
             },
             {
                 "name": "geothermal_heat_flow_300km",
                 "long_name": "Geothermal Heat Flow 300x300 km",
                 "dtype": "float32",
-                "dims": ["x","y"],
+                "dims": ["y","x"],
                 "units": "m",
-                "fill_value": "nan",
-                "valid_min": null,
-                "valid_max": null,
-                "time_range": ["", ""],
-                "metadata": {
-                    "color_bar_name": "Blues",
-                    "color_value_min": null,
-                    "color_value_max": null
-                }
+                "fill_value": "nan"
             },
             {
                 "name": "geothermal_heat_flow_uncertainty_200km",
                 "long_name": "Geothermal Heat Flow Uncertainty 200x200 km",
                 "dtype": "float32",
-                "dims": ["x","y"],
+                "dims": ["y","x"],
                 "units": "m",
-                "fill_value": "nan",
-                "valid_min": null,
-                "valid_max": null,
-                "time_range": ["", ""],
-                "metadata": {
-                    "color_bar_name": "Blues",
-                    "color_value_min": null,
-                    "color_value_max": null
-                }
+                "fill_value": "nan"
             },
             {
                 "name": "geothermal_heat_flow_uncertainty_300km",
                 "long_name": "Geothermal Heat Flow Uncertainty 300x300 km",
                 "dtype": "float32",
-                "dims": ["x","y"],
+                "dims": ["y","x"],
                 "units": "m",
-                "fill_value": "nan",
-                "valid_min": null,
-                "valid_max": null,
-                "time_range": ["", ""],
-                "metadata": {
-                    "color_bar_name": "Blues",
-                    "color_value_min": null,
-                    "color_value_max": null
-                }
+                "fill_value": "nan"
             },
             {
                 "name": "ice_thicnkess",
                 "long_name": "Ice Thickness",
                 "dtype": "float32",
-                "dims": ["x","y"],
+                "dims": ["y","x"],
                 "units": "m",
-                "fill_value": "nan",
-                "valid_min": null,
-                "valid_max": null,
-                "time_range": ["", ""],
-                "metadata": {
-                    "color_bar_name": "Blues",
-                    "color_value_min": null,
-                    "color_value_max": null
-                }
+                "fill_value": "nan"
             },
             {
                 "name": "magnetic_anomaly",
                 "long_name": "Magnetic Anomaly",
                 "dtype": "float32",
-                "dims": ["x","y"],
+                "dims": ["y","x"],
                 "units": "nT",
-                "fill_value": "nan",
-                "valid_min": null,
-                "valid_max": null,
-                "time_range": ["", ""],
-                "metadata": {
-                    "color_bar_name": "Blues",
-                    "color_value_min": null,
-                    "color_value_max": null
-                }
+                "fill_value": "nan"
             },
             {
                 "name": "thw_124",
                 "long_name": "Subglacial Lake Thw 124",
                 "dtype": "float32",
-                "dims": ["time","x","y"],
+                "dims": ["time","y","x"],
                 "units": null,
                 "fill_value": "nan",
-                "valid_min": null,
-                "valid_max": 1,
-                "time_range": ["2013-01-01", "2017-01-01"],
-                "metadata": {
-                    "color_bar_name": "Blues",
-                    "color_value_min": null,
-                    "color_value_max": 1
-                }
+                "time_range": ["2013-01-01", "2017-01-01"]
             },
             {
                 "name": "thw_142",
                 "long_name": "Subglacial Lake Thw 142",
                 "dtype": "float32",
-                "dims": ["time","x","y"],
+                "dims": ["time","y","x"],
                 "units": null,
                 "fill_value": "nan",
-                "valid_min": null,
-                "valid_max": 1,
-                "time_range": ["2013-01-01", "2017-01-01"],
-                "metadata": {
-                    "color_bar_name": "Blues",
-                    "color_value_min": null,
-                    "color_value_max": 1
-                }
+                "time_range": ["2013-01-01", "2017-01-01"]
             },
             {
                 "name": "thw_170",
                 "long_name": "Subglacial Lake Thw 170",
                 "dtype": "float32",
-                "dims": ["time","x","y"],
+                "dims": ["time","y","x"],
                 "units": null,
                 "fill_value": "nan",
-                "valid_min": null,
-                "valid_max": 1,
-                "time_range": ["2013-01-01", "2017-01-01"],
-                "metadata": {
-                    "color_bar_name": "Blues",
-                    "color_value_min": null,
-                    "color_value_max": 1
-                }
+                "time_range": ["2013-01-01", "2017-01-01"]
             },
             {
                 "name": "thw_70",
                 "long_name": "Subglacial Lake Thw 70",
                 "dtype": "float32",
-                "dims": ["time","x","y"],
+                "dims": ["time","y","x"],
                 "units": null,
                 "fill_value": "nan",
-                "valid_min": null,
-                "valid_max": 1,
-                "time_range": ["2013-01-01", "2017-01-01"],
-                "metadata": {
-                    "color_bar_name": "Blues",
-                    "color_value_min": null,
-                    "color_value_max": 1
-                }
+                "time_range": ["2013-01-01", "2017-01-01"]
             }
         ],
         "sources": [
@@ -356,15 +264,13 @@
             "publisher_name": "Brockmann Consult GmbH",
             "license_url": null,
             "source": "4D Antarctica",
-            "date_modified": null,
-            "geospatial_lon_min": null,
-            "geospatial_lon_max": null,
-            "geospatial_lat_min": null,
-            "geospatial_lat_max": null,
-            "geospatial_lon_resolution": null,
-            "geospatial_lat_resolution": null,
-            "temporal_coverage_start": null,
-            "temporal_coverage_end": null,
+            "date_modified": "2023-01-22 00:00:00.000000",
+            "geospatial_lon_min": -158.22593498159108,
+            "geospatial_lon_max": -52.688079026108510,
+            "geospatial_lat_min": -82.494386344463100,
+            "geospatial_lat_max": -62.288127609530854,
+            "temporal_coverage_start": "2013-01-01T00:00:00.000000000",
+            "temporal_coverage_end": "2017-01-01T00:00:00.000000000",
             "temporal_resolution": null
         }
     },
