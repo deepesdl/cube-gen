@@ -156,7 +156,7 @@
                     "chl_a",
                     "mld"
                 ],
-                "download_url": "https://data.ceda.ac.uk/neodc/bicep/data/phytoplankton_carbon/v5.0/monthly/",
+                "download_url": "https://rsg.pml.ac.uk/shared_files/gku/ESA_animation/PC_1-month_9km/",
                 "protocol": "https",
                 "credentials": false,
                 "compressed": false,
