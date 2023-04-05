@@ -4,6 +4,7 @@ import yaml
 import rioxarray
 import xarray as xr
 import numpy as np
+import os
 
 pathIn = "~/data/SIF/GOME2-SIF/preprocess"
 pathIn = os.path.expanduser(pathIn)
@@ -14,7 +15,7 @@ pathOut = os.path.expanduser(pathOut)
 if not os.path.exists(pathOut):
     os.makedirs(pathOut)
 
-with open("sif-gome2-PK-metadata.yaml", "r") as stream:
+with open("inputs-preprocess/SIF/GOME2/sif-gome2-PK-metadata.yaml", "r") as stream:
     try:
         metadata = yaml.safe_load(stream)
     except yaml.YAMLError as exc:
