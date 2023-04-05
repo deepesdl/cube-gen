@@ -18,7 +18,7 @@ metadata:
             - https://www.brockmann-consult.de/
         publisher_name: DeepESDL Team
         publisher_url: "https://www.earthsystemdatalab.net/"
-        id: ocean-1M-9km-64x256x256-v1.2.0.zarr
+        id: ocean-1M-9km-64x256x256-v1.4.0.zarr
         project: DeepESDL
         title: BICEP Pools and Fluxes of the Ocean Biological Carbon Pump
         license: Terms and conditions of the DeepESDL data distribution

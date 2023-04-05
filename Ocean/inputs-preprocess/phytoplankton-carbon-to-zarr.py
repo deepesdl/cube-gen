@@ -20,7 +20,7 @@ for file in tqdm(files):
             ds['lon'] = ds.longitude.values
             if ("latitude" in ds.variables) and ("longitude" in ds.variables):
                 ds = ds.drop(["latitude","longitude"])
-            ds['time'] = ds.time.astype('datetime64[M]')
+            ds['time'] = ds.time.astype('datetime64[M]').astype('datetime64[ns]')
             ds = ds.chunk(dict(time=1,lon=256,lat=256))
             ds.to_zarr(f"{pathIn}{filename}")
         except:
