@@ -33,4 +33,4 @@ for file in tqdm(files):
     
 datasets = xr.concat(datasets,dim = "time")
 
-datasets.to_zarr(f"{pathOut}/sif-gosif-1x1024x1024.zarr")
+datasets.to_zarr(f"{pathOut}/sif-gosif-8d-0.05deg-1x1024x1024.zarr")

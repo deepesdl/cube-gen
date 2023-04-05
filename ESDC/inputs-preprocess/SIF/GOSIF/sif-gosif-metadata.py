@@ -20,7 +20,7 @@ with open("sif-gosif-metadata.yaml", "r") as stream:
     except yaml.YAMLError as exc:
         print(exc)
 
-datacube = xr.open_zarr(f"{pathIn}/sif-gosif-1x1024x1024.zarr")
+datacube = xr.open_zarr(f"{pathIn}/sif-gosif-8d-0.05deg-1x1024x1024.zarr")
 
 datacube = datacube.rio.write_crs(
     "epsg:4326", grid_mapping_name="crs"

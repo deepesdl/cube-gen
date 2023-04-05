@@ -9,7 +9,7 @@ pathOut = "~/data/SIF/GOSIF/preprocess"
 pathOut = os.path.expanduser(pathOut)
 
 print("Reading")
-dataset = xr.open_zarr(f"{pathOut}/sif-gosif-8d-0.05deg-1x1024x1024.zarr")
+dataset = xr.open_zarr(f"{pathOut}/sif-gosif-8d-0.25deg-1x1024x1024.zarr")
 
 print("Fixing time")
 keep_attrs = dataset.time.attrs
