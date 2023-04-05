@@ -1,0 +1,260 @@
+{
+    "type": "Feature",
+    "properties": {
+        "data_id": "ocean-1M-9km-64x256x256-1.0.0.zarr",
+        "title": "BICEP Pools and Fluxes of the Ocean Biological Carbon Pump",
+        "description": "Ocean Data Cube for Oceanic Export Production, Phytoplankton Carbon and Primary Production",
+        "version": "1.1.0",
+        "recipe": "",
+        "changes": "",
+        "license": "Terms and conditions of the DeepESDL data distribution",
+        "time_range": ["1997-09-01","2020-12-01"],
+        "time_period": "1M",
+        "spatial_ref": "EPSG:4326",
+        "spatial_bbox": [-180, -90, 180, 90],
+        "spatial_res": [0.0833282470703125, 0.0833282470703125],
+        "variables": [
+            {
+                "name": "pp",
+                "long_name": "Phytoplankton Primary Production",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": "mg C m^-2 d^-1",
+                "fill_value": "nan",
+                "time_range": ["1998-01-01", "2020-12-01"]
+            },
+            {
+                "name": "C_microphyto",
+                "long_name": "Microphytoplankton Carbon",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": "mg C m^-3",
+                "fill_value": "nan",
+                "time_range": ["1998-01-01", "2020-12-01"]
+            },
+            {
+                "name": "C_nanophyto",
+                "long_name": "Nanophytoplankton Carbon",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": "mg C m^-3",
+                "fill_value": "nan",
+                "time_range": ["1998-01-01", "2020-12-01"]
+            },
+            {
+                "name": "C_phyto",
+                "long_name": "Total Phytoplankton Carbon",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": "mg C m^-3",
+                "fill_value": "nan",
+                "time_range": ["1998-01-01", "2020-12-01"]
+            },
+            {
+                "name": "C_picophyto",
+                "long_name": "Picophytoplankton Carbon",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": "mg C m^-3",
+                "fill_value": "nan",
+                "time_range": ["1998-01-01", "2020-12-01"]
+            },
+            {
+                "name": "chl_a",
+                "long_name": "Chlorophyll-a",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": "mg C m^-3",
+                "fill_value": "nan",
+                "time_range": ["1998-01-01", "2020-12-01"]
+            },
+            {
+                "name": "mld",
+                "long_name": "Mixed Layer Depth",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": "m",
+                "fill_value": "nan",
+                "time_range": ["1998-01-01", "2020-12-01"]
+            },
+            {
+                "name": "EP_Dunne",
+                "long_name": "Export Production based on Dunne et al 2005",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": "mg C m^-2 d^-1",
+                "fill_value": "nan",
+                "time_range": ["1998-01-01", "2020-12-01"]
+            },
+            {
+                "name": "EP_Henson",
+                "long_name": "Export Production based on Henson et al 2011",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": "mg C m^-2 d^-1",
+                "fill_value": "nan",
+                "time_range": ["1998-01-01", "2020-12-01"]
+            },
+            {
+                "name": "EP_Li",
+                "long_name": "Export Production based on Li et al 2016",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": "mg C m^-2 d^-1",
+                "fill_value": "nan",
+                "time_range": ["1998-01-01", "2020-12-01"]
+            },
+            {
+                "name": "POC",
+                "long_name": "Particulate Organic Carbon",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": "mg C m^-3",
+                "fill_value": "nan",
+                "time_range": ["1997-09-01", "2020-12-01"]
+            },
+            {
+                "name": "PIC",
+                "long_name": "Particulate Inorganic Carbon",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": "µmol C m^-3",
+                "fill_value": "nan",
+                "time_range": ["2018-01-01", "2018-12-01"]
+            },
+            {
+                "name": "DOC",
+                "long_name": "Dissolved Organic Carbon",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": "µmol kg^-1",
+                "fill_value": "nan",
+                "time_range": ["2010-01-01", "2018-12-01"]
+            }
+        ],
+        "sources": [
+            {
+                "name": "Monthly global Marine Phytoplankton Primary Production",
+                "variable_names": [
+                    "pp"
+                ],
+                "download_url": "https://data.ceda.ac.uk/neodc/bicep/data/marine_primary_production/v4.2/monthly/",
+                "protocol": "https",
+                "credentials": false,
+                "compressed": false,
+                "compression_format": null,
+                "source_format": "nc",
+                "source_crs": null
+            },
+            {
+                "name": "Monthly global Phytoplankton Carbon",
+                "variable_names": [
+                    "C_microphyto",
+                    "C_nanophyto",
+                    "C_phyto",
+                    "C_picophyto",
+                    "chl_a",
+                    "mld"
+                ],
+                "download_url": "https://rsg.pml.ac.uk/shared_files/gku/ESA_animation/PC_1-month_9km/",
+                "protocol": "https",
+                "credentials": false,
+                "compressed": false,
+                "compression_format": null,
+                "source_format": "nc",
+                "source_crs": null
+            },
+            {
+                "name": "Monthly global Oceanic Export Production",
+                "variable_names": [
+                    "EP_Dunne",
+                    "EP_Henson",
+                    "EP_Li"
+                ],
+                "download_url": "https://data.ceda.ac.uk/neodc/bicep/data/oceanic_export_production/v1.0/monthly/",
+                "protocol": "https",
+                "credentials": false,
+                "compressed": false,
+                "compression_format": null,
+                "source_format": "nc",
+                "source_crs": null
+            },
+            {
+                "name": "Particulate Organic Carbon",
+                "variable_names": [
+                    "POC"
+                ],
+                "download_url": "https://rsg.pml.ac.uk/shared_files/gku/ESA_animation/POC_1-month_9km/",
+                "protocol": "https",
+                "credentials": false,
+                "compressed": false,
+                "compression_format": null,
+                "source_format": "nc",
+                "source_crs": null
+            },
+            {
+                "name": "Particulate Inorganic Carbon",
+                "variable_names": [
+                    "PIC"
+                ],
+                "download_url": "https://rsg.pml.ac.uk/shared_files/gku/ESA_animation/PIC_1-month_9km/",
+                "protocol": "https",
+                "credentials": false,
+                "compressed": false,
+                "compression_format": null,
+                "source_format": "nc",
+                "source_crs": null
+            },
+            {
+                "name": "Dissolved Organic Carbon",
+                "variable_names": [
+                    "DOC"
+                ],
+                "download_url": "https://rsg.pml.ac.uk/shared_files/gku/ESA_animation/DOC_1-month_9km/",
+                "protocol": "https",
+                "credentials": false,
+                "compressed": false,
+                "compression_format": null,
+                "source_format": "nc",
+                "source_crs": null
+            }
+        ],
+        "metadata": {
+            "Conventions": "CF-1.10",
+            "acknowledgment": "BICEP/NCEO",
+            "contributor_name": ["University of Leipzig" ,"Brockmann Consult GmbH"],
+            "contributor_url": ["www.uni-leipzig.de" ,"www.brockmann-consult.de"],
+            "creator_email": ["www.uni-leipzig.de" ,"www.brockmann-consult.de"],
+            "creator_name": ["University of Leipzig" ,"Brockmann Consult GmbH"],
+            "creator_url": ["www.uni-leipzig.de" ,"www.brockmann-consult.de"],
+            "institution": ["www.uni-leipzig.de" ,"www.brockmann-consult.de"],
+            "project": "DeepESDL",
+            "publisher_email": "info@brockmann-consult.de",
+            "publisher_name": "Brockmann Consult GmbH",
+            "license_url": null,
+            "source": "BICEP/NCEO",
+            "date_modified": "2023-02-11 12:43:00.708004",
+            "geospatial_lon_min": -179.95834350585938,
+            "geospatial_lon_max": 179.95834350585938,
+            "geospatial_lat_min": -89.95832824707031,
+            "geospatial_lat_max": 89.95832824707031,
+            "geospatial_lon_resolution": 0.0833282470703125,
+            "geospatial_lat_resolution": 0.0833282470703125,
+            "temporal_coverage_start": "1998-01-01T00:00:00.000000000",
+            "temporal_coverage_end": "2020-12-01T00:00:00.000000000",
+            "temporal_resolution": "1M"
+        }
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [-180, -90],
+                [-180, 90],
+                [180, 90],
+                [180, -90],
+                [-180, -90]
+            ]
+        ]
+    }
+}

@@ -1,0 +1,120 @@
+{
+    "type": "Feature",
+    "properties": {
+        "data_id": "ocean-1M-4km-64x256x256-1.0.0.zarr",
+        "title": "Ocean Data Cube 4km v1.0.0",
+        "description": "Ocean Data Cube for Particulate Organic Carbon (POC)",
+        "version": "1.0.0",
+        "recipe": "",
+        "changes": "",
+        "license": "Terms and conditions of the DeepESDL data distribution",
+        "time_range": ["1997-09-01","2020-03-01"],
+        "time_period": "1M",
+        "spatial_ref": "EPSG:4326",
+        "spatial_bbox": [-180, -90, 180, 90],
+        "spatial_res": [0.04166412353515625, 0.04166412353515625],
+        "variables": [
+            {
+                "name": "POC",
+                "long_name": "Particulate Organic Carbon",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": "mg m^-3",
+                "fill_value": "nan",
+                "time_range": ["1997-09-01", "2020-03-01"]
+            },
+            {
+                "name": "POC_bias",
+                "long_name": "Bias of log10 transformed Particulate Organic Carbon",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": "mg m^-3",
+                "fill_value": "nan",
+                "time_range": ["1997-09-01", "2020-03-01"]
+            },
+            {
+                "name": "POC_rmsd",
+                "long_name": "Root-mean-square-difference of log10 transformed Particulate Organic Carbon",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": "mg m^-3",
+                "fill_value": "nan",
+                "time_range": ["1997-09-01", "2020-03-01"]
+            },
+            {
+                "name": "Rrs_443",
+                "long_name": "Sea surface reflectance defined as the ratio of water-leaving radiance to surface irradiance at 443 nm",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": "sr-1",
+                "fill_value": "nan",
+                "time_range": ["1997-09-01", "2020-03-01"]
+            },
+            {
+                "name": "Rrs_555",
+                "long_name": "Sea surface reflectance defined as the ratio of water-leaving radiance to surface irradiance at 555 nm",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": "sr-1",
+                "fill_value": "nan",
+                "time_range": ["1997-09-01", "2020-03-01"]
+            }
+        ],
+        "sources": [
+            {
+                "name": "Monthly global Particulate Organic Carbon (POC)",
+                "variable_names": [
+                    "POC",
+                    "POC_bias",
+                    "POC_rmsd",
+                    "Rrs_443",
+                    "Rrs_555"
+                ],
+                "download_url": "https://data.ceda.ac.uk/neodc/bicep/data/particulate_organic_carbon/v4.2_update/monthly/GEO/",
+                "protocol": "https",
+                "credentials": false,
+                "compressed": false,
+                "compression_format": null,
+                "source_format": "nc",
+                "source_crs": null
+            }
+        ],
+        "metadata": {
+            "Conventions": "CF-1.10",
+            "acknowledgment": "BICEP/NCEO",
+            "contributor_name": ["University of Leipzig" ,"Brockmann Consult GmbH"],
+            "contributor_url": ["www.uni-leipzig.de" ,"www.brockmann-consult.de"],
+            "creator_email": ["www.uni-leipzig.de" ,"www.brockmann-consult.de"],
+            "creator_name": ["University of Leipzig" ,"Brockmann Consult GmbH"],
+            "creator_url": ["www.uni-leipzig.de" ,"www.brockmann-consult.de"],
+            "institution": ["www.uni-leipzig.de" ,"www.brockmann-consult.de"],
+            "project": "DeepESDL",
+            "publisher_email": "info@brockmann-consult.de",
+            "publisher_name": "Brockmann Consult GmbH",
+            "license_url": null,
+            "source": "BICEP/NCEO",
+            "date_modified": "2023-02-09 17:00:17.202777",
+            "geospatial_lon_min": -179.9791717529297,
+            "geospatial_lon_max": 179.9791717529297,
+            "geospatial_lat_min": -89.97916412353516,
+            "geospatial_lat_max": 89.97916412353516,
+            "geospatial_lon_resolution": 0.04166412353515625,
+            "geospatial_lat_resolution": 0.04166412353515625,
+            "temporal_coverage_start": "1997-09-01T00:00:00.000000000",
+            "temporal_coverage_end": "2020-03-01T00:00:00.000000000",
+            "temporal_resolution": "1M"
+        }
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [-180, -90],
+                [-180, 90],
+                [180, 90],
+                [180, -90],
+                [-180, -90]
+            ]
+        ]
+    }
+}
