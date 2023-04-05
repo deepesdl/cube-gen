@@ -3,6 +3,7 @@ import xesmf as xe
 import numpy as np
 from tqdm import tqdm
 from datetime import datetime
+import os
 
 pathOut = "~/data/SIF/GOME2-SIF/output"
 pathOut = os.path.expanduser(pathOut)
