@@ -6,7 +6,7 @@ import os
 from glob import glob
 import json
 
-with open('../cube.geojson', 'r') as f:
+with open('cube.geojson', 'r') as f:
     cube_specs = json.load(f)
     
 bbox = cube_specs['properties']['spatial_bbox']
