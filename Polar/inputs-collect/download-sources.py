@@ -32,10 +32,10 @@ def download_file(source):
     if source['compressed']:
         if source['compression_format'] == 'tar':
             tar = tarfile.open(output, "r:")
-            tar.extractall()
+            tar.extractall(path=output_source_path)
             tar.close()
         elif source['compression_format'] == 'zip':
             with zipfile.ZipFile(output,"r") as zip_ref:
-                zip_ref.extractall()
+                zip_ref.extractall(path=output_source_path)
                 
 [download_file(source) for source in tqdm(cube_specs['properties']['sources'])]
