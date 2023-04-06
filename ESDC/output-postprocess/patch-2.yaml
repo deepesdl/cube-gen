@@ -1,0 +1,18 @@
+zarr_consolidated_format: 1
+metadata:
+
+    latent_energy/.zattrs:
+        scale_factor: __delete__
+        add_offset: __delete__
+    net_ecosystem_exchange/.zattrs:
+        scale_factor: __delete__
+        add_offset: __delete__
+    net_radiation/.zattrs:
+        scale_factor: __delete__
+        add_offset: __delete__
+    sensible_heat/.zattrs:
+        scale_factor: __delete__
+        add_offset: __delete__
+    terrestrial_ecosystem_respiration/.zattrs:
+        scale_factor: __delete__
+        add_offset: __delete__    

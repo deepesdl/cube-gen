@@ -1,0 +1,105 @@
+zarr_consolidated_format: 1
+metadata:
+
+    .zattrs:
+        Conventions: CF-1.10
+        acknowledgment: All data providers are acknowledged inside each variable
+        contributor_name:
+            - University of Leipzig
+            - Brockmann Consult GmbH
+        contributor_url:
+            - https://www.uni-leipzig.de/
+            - https://www.brockmann-consult.de/
+        creator_name:
+            - University of Leipzig
+            - Brockmann Consult GmbH
+        creator_url:
+            - https://www.uni-leipzig.de/
+            - https://www.brockmann-consult.de/
+        publisher_name: DeepESDL Team
+        publisher_url: "https://www.earthsystemdatalab.net/"
+        id: ocean-1M-4km-64x256x256-v1.0.0.zarr
+        project: DeepESDL
+        title: Ocean Data Cube 4km v1.0.0
+        license: Terms and conditions of the DeepESDL data distribution
+
+    POC/.zattrs:
+        long_name: 'Particulate Organic Carbon'
+        standard_name: 'mass_concentration_of_particulate_organic_carbon_in_sea_water'
+        description: 'Particulate Organic Carbon'
+        units: "mg m^-3"
+        processing_steps:
+            - 'Gridding nc datasets'
+        acknowledgement: "BICEP/NCEO"
+        references:
+            - 'https://bicep-project.org/Deliverables'
+            - 'http://dx.doi.org/10.5285/5006f2c553cd4f26a6af0af2ee6d7c94'
+            - 'https://catalogue.ceda.ac.uk/uuid/299b1bb28eaa440f9a36e9786adfe398'
+        original_name: POC
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://data.ceda.ac.uk/neodc/bicep/data/particulate_organic_carbon/v4.2_update/monthly/GEO/'
+    POC_bias/.zattrs:
+        long_name: 'Bias of log10 transformed Particulate Organic Carbon'
+        standard_name: 'per_pixel_bias_of_log10_particulate_organic_carbon_in_sea_water'
+        description: 'Bias of log10 transformed Particulate Organic Carbon'
+        units: "mg m^-3"
+        processing_steps:
+            - 'Gridding nc datasets'
+        acknowledgement: "BICEP/NCEO"
+        references:
+            - 'https://bicep-project.org/Deliverables'
+            - 'http://dx.doi.org/10.5285/5006f2c553cd4f26a6af0af2ee6d7c94'
+            - 'https://catalogue.ceda.ac.uk/uuid/299b1bb28eaa440f9a36e9786adfe398'
+        original_name: POC_bias
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://data.ceda.ac.uk/neodc/bicep/data/particulate_organic_carbon/v4.2_update/monthly/GEO/'
+    POC_rmsd/.zattrs:
+        long_name: 'Root-mean-square-difference of log10 transformed Particulate Organic Carbon'
+        standard_name: 'per_pixel_root_mean_square_difference_of_log10_particulate_organic_carbon_in_sea_water'
+        description: 'Root-mean-square-difference of log10 transformed Particulate Organic Carbon'
+        units: "mg m^-3"
+        processing_steps:
+            - 'Gridding nc datasets'
+        acknowledgement: "BICEP/NCEO"
+        references:
+            - 'https://bicep-project.org/Deliverables'
+            - 'http://dx.doi.org/10.5285/5006f2c553cd4f26a6af0af2ee6d7c94'
+            - 'https://catalogue.ceda.ac.uk/uuid/299b1bb28eaa440f9a36e9786adfe398'
+        original_name: POC_rmsd
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://data.ceda.ac.uk/neodc/bicep/data/particulate_organic_carbon/v4.2_update/monthly/GEO/'
+    Rrs_443/.zattrs:
+        long_name: 'Sea surface reflectance defined as the ratio of water-leaving radiance to surface irradiance at 443 nm'
+        standard_name: 'remote_sensing_reflectance_443nm_in_sea_water'
+        description: 'Sea surface reflectance defined as the ratio of water-leaving radiance to surface irradiance at 443 nm'
+        units: "sr-1"
+        processing_steps:
+            - 'Gridding nc datasets'
+        acknowledgement: "BICEP/NCEO"
+        references:
+            - 'https://bicep-project.org/Deliverables'
+            - 'http://dx.doi.org/10.5285/5006f2c553cd4f26a6af0af2ee6d7c94'
+            - 'https://catalogue.ceda.ac.uk/uuid/299b1bb28eaa440f9a36e9786adfe398'
+        original_name: Rrs_443
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://data.ceda.ac.uk/neodc/bicep/data/particulate_organic_carbon/v4.2_update/monthly/GEO/'
+    Rrs_555/.zattrs:
+        long_name: 'Sea surface reflectance defined as the ratio of water-leaving radiance to surface irradiance at 555 nm'
+        standard_name: 'remote_sensing_reflectance_555nm_in_sea_water'
+        description: 'Sea surface reflectance defined as the ratio of water-leaving radiance to surface irradiance at 555 nm'
+        units: "sr-1"
+        processing_steps:
+            - 'Gridding nc datasets'
+        acknowledgement: "BICEP/NCEO"
+        references:
+            - 'https://bicep-project.org/Deliverables'
+            - 'http://dx.doi.org/10.5285/5006f2c553cd4f26a6af0af2ee6d7c94'
+            - 'https://catalogue.ceda.ac.uk/uuid/299b1bb28eaa440f9a36e9786adfe398'
+        original_name: Rrs_555
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://data.ceda.ac.uk/neodc/bicep/data/particulate_organic_carbon/v4.2_update/monthly/GEO/'

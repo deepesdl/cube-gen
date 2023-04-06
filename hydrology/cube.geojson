@@ -1,0 +1,80 @@
+{
+    "type": "Feature",
+    "properties": {
+        "data_id": "ocean-1M-9km-64x256x256-1.0.0.zarr",
+        "title": "BICEP Pools and Fluxes of the Ocean Biological Carbon Pump",
+        "description": "Ocean Data Cube for Oceanic Export Production, Phytoplankton Carbon and Primary Production",
+        "version": "1.1.0",
+        "recipe": "",
+        "changes": "",
+        "license": "Terms and conditions of the DeepESDL data distribution",
+        "time_range": ["1997-09-01","2020-12-01"],
+        "time_period": "1M",
+        "spatial_ref": "EPSG:4326",
+        "spatial_bbox": [-180, -90, 180, 90],
+        "spatial_res": [0.0833282470703125, 0.0833282470703125],
+        "variables": [
+            {
+                "name": "pp",
+                "long_name": "Phytoplankton Primary Production",
+                "dtype": "float32",
+                "dims": ["time","y","x"],
+                "units": "mg C m^-2 d^-1",
+                "fill_value": "nan",
+                "time_range": ["1998-01-01", "2020-12-01"]
+            }
+        ],
+        "sources": [
+            {
+                "name": "unknown",
+                "variable_names": [
+                    "unknown"
+                ],
+                "download_url": "sftp://4dmed_data.eodchosting.eu/4dmed_data/precipitation_GPM_CPC_SM2A",
+                "protocol": "sftp",
+                "credentials": true,
+                "compressed": false,
+                "compression_format": null,
+                "source_format": "nc",
+                "source_crs": null
+            }
+        ],
+        "metadata": {
+            "Conventions": "CF-1.10",
+            "acknowledgment": "BICEP/NCEO",
+            "contributor_name": ["University of Leipzig" ,"Brockmann Consult GmbH"],
+            "contributor_url": ["www.uni-leipzig.de" ,"www.brockmann-consult.de"],
+            "creator_email": ["www.uni-leipzig.de" ,"www.brockmann-consult.de"],
+            "creator_name": ["University of Leipzig" ,"Brockmann Consult GmbH"],
+            "creator_url": ["www.uni-leipzig.de" ,"www.brockmann-consult.de"],
+            "institution": ["www.uni-leipzig.de" ,"www.brockmann-consult.de"],
+            "project": "DeepESDL",
+            "publisher_email": "info@brockmann-consult.de",
+            "publisher_name": "Brockmann Consult GmbH",
+            "license_url": null,
+            "source": "BICEP/NCEO",
+            "date_modified": "2023-02-11 12:43:00.708004",
+            "geospatial_lon_min": -179.95834350585938,
+            "geospatial_lon_max": 179.95834350585938,
+            "geospatial_lat_min": -89.95832824707031,
+            "geospatial_lat_max": 89.95832824707031,
+            "geospatial_lon_resolution": 0.0833282470703125,
+            "geospatial_lat_resolution": 0.0833282470703125,
+            "temporal_coverage_start": "1998-01-01T00:00:00.000000000",
+            "temporal_coverage_end": "2020-12-01T00:00:00.000000000",
+            "temporal_resolution": "1M"
+        }
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [-180, -90],
+                [-180, 90],
+                [180, 90],
+                [180, -90],
+                [-180, -90]
+            ]
+        ]
+    }
+}

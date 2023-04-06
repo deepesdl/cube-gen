@@ -1,4 +1,3 @@
-import requests
 import calendar
 import os
 import numpy as np
