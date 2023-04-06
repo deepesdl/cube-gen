@@ -12,7 +12,7 @@ store_output = new_data_store("s3", root="deep-esdl-input")
 
 cubes = glob(os.path.expanduser("~/data/polar/cubes/*"))
 cubes.sort()
-cubes = [glob(f"{cube}/*100m.zarr")[0] for cube in cubes]
+cubes = [glob(f"{cube}/*100m.zarr")[0] for cube in cubes[:-1]]
 
 def upload_cube(cube):
     filename = cube.split("/")[-1]
