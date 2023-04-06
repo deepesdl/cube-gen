@@ -1,0 +1,237 @@
+zarr_consolidated_format: 1
+metadata:
+
+    .zattrs:
+        Conventions: CF-1.10
+        acknowledgment: All data providers are acknowledged inside each variable
+        contributor_name:
+            - University of Leipzig
+            - Brockmann Consult GmbH
+        contributor_url:
+            - https://www.uni-leipzig.de/
+            - https://www.brockmann-consult.de/
+        creator_name:
+            - University of Leipzig
+            - Brockmann Consult GmbH
+        creator_url:
+            - https://www.uni-leipzig.de/
+            - https://www.brockmann-consult.de/
+        publisher_name: DeepESDL Team
+        publisher_url: "https://www.earthsystemdatalab.net/"
+        id: ocean-1M-9km-1x1080x1080-v1.4.0.zarr
+        project: DeepESDL
+        title: BICEP Pools and Fluxes of the Ocean Biological Carbon Pump
+        license: Terms and conditions of the DeepESDL data distribution
+
+    C_microphyto/.zattrs:
+        long_name: 'Microphytoplankton Carbon'
+        standard_name: 'mass_concentration_of_microphytoplankton_expressed_as_carbon_in_sea_water'
+        description: 'Microphytoplankton Carbon in Sea Water'
+        units: "mg C m^-3"
+        processing_steps:
+            - 'Gridding nc datasets'
+        acknowledgement: "BICEP/NCEO"
+        references: __delete__
+        original_name: C_microphyto
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://rsg.pml.ac.uk/shared_files/gku/ESA_animation/PC_1-month_9km/'
+        color_bar_name: "YlGnBu_r"
+        color_value_min: 0
+        color_value_max: 200
+    C_nanophyto/.zattrs:
+        long_name: 'Nanophytoplankton Carbon'
+        standard_name: 'mass_concentration_of_nanophytoplankton_expressed_as_carbon_in_sea_water'
+        description: 'Nanophytoplankton Carbon in Sea Water'
+        units: "mg C m^-3"
+        processing_steps:
+            - 'Gridding nc datasets'
+        acknowledgement: "BICEP/NCEO"
+        references: __delete__
+        original_name: C_nanophyto
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://rsg.pml.ac.uk/shared_files/gku/ESA_animation/PC_1-month_9km/'
+        color_bar_name: "YlGnBu_r"
+        color_value_min: 0
+        color_value_max: 200
+    C_phyto/.zattrs:
+        long_name: 'Total Phytoplankton Carbon'
+        standard_name: 'mass_concentration_of_phytoplankton_expressed_as_carbon_in_sea_water'
+        description: 'Total Phytoplankton Carbon in Sea Water'
+        units: "mg C m^-3"
+        processing_steps:
+            - 'Gridding nc datasets'
+        acknowledgement: "BICEP/NCEO"
+        references: __delete__
+        original_name: C_phyto
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://rsg.pml.ac.uk/shared_files/gku/ESA_animation/PC_1-month_9km/'
+        color_bar_name: "YlGnBu_r"
+        color_value_min: 0
+        color_value_max: 200
+    C_picophyto/.zattrs:
+        long_name: 'Picophytoplankton Carbon'
+        standard_name: 'mass_concentration_of_picophytoplankton_expressed_as_carbon_in_sea_water'
+        description: 'Picophytoplankton Carbon in Sea Water'
+        units: "mg C m^-3"
+        processing_steps:
+            - 'Gridding nc datasets'
+        acknowledgement: "BICEP/NCEO"
+        references: __delete__
+        original_name: C_picophyto
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://rsg.pml.ac.uk/shared_files/gku/ESA_animation/PC_1-month_9km/'
+        color_bar_name: "YlGnBu_r"
+        color_value_min: 0
+        color_value_max: 200
+    chl_a/.zattrs:
+        long_name: 'Chlorophyll-a'
+        standard_name: 'mass_concentration_of_chlorophyll_a_in_sea_water'
+        description: 'Chlorophyll-a'
+        units: "mg C m^-3"
+        processing_steps:
+            - 'Gridding nc datasets'
+        acknowledgement: "BICEP/NCEO"
+        references: __delete__
+        original_name: chl_a
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://rsg.pml.ac.uk/shared_files/gku/ESA_animation/PC_1-month_9km/'
+        color_bar_name: "viridis"
+        color_value_min: 0
+        color_value_max: 50
+    DOC/.zattrs:
+        long_name: 'Dissolved Organic Carbon'
+        standard_name: 'dissolved_organic_carbon'
+        description: 'Dissolved organic carbon estimated using EO data and random forest algorithm'
+        units: "µmol kg^-1"
+        processing_steps:
+            - 'Gridding nc datasets'
+        acknowledgement: "BICEP/NCEO"
+        original_name: DOC
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://rsg.pml.ac.uk/shared_files/gku/ESA_animation/DOC_1-month_9km/'
+        color_bar_name: "RdPu_r"
+        color_value_min: 0
+        color_value_max: 150
+    mld/.zattrs:
+        long_name: 'Mixed Layer Depth'
+        standard_name: 'mixed_layer_depth'
+        description: 'Mixed Layer Depth'
+        units: m
+        processing_steps:
+            - 'Gridding nc datasets'
+        acknowledgement: "BICEP/NCEO"
+        references: __delete__
+        original_name: mld
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://rsg.pml.ac.uk/shared_files/gku/ESA_animation/PC_1-month_9km/'
+        color_bar_name: "viridis"
+        color_value_min: 0
+        color_value_max: 500
+    EP_Dunne/.zattrs:
+        long_name: 'Export Production based on Dunne et al 2005'
+        standard_name: 'export_production_dunne'
+        description: 'Export Production based on Dunne et al 2005'
+        units: "mg C m^-2 d^-1"
+        processing_steps:
+            - 'Gridding nc datasets'
+        acknowledgement: "BICEP/NCEO"
+        references:
+            - 'https://doi.org/10.1029/2004gb002390'
+            - 'https://catalogue.ceda.ac.uk/uuid/a6fc730d88fd4935b59d64903715d891'
+        original_name: EP_Dunne
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://data.ceda.ac.uk/neodc/bicep/data/oceanic_export_production/v1.0/monthly/'
+        color_bar_name: "Blues"
+        color_value_min: 0
+        color_value_max: 300
+    EP_Henson/.zattrs:
+        long_name: 'Export Production based on Henson et al 2011'
+        standard_name: 'export_production_henson'
+        description: 'Export Production based on Henson et al 2011'
+        units: "mg C m^-2 d^-1"
+        processing_steps:
+            - 'Gridding nc datasets'
+        acknowledgement: "BICEP/NCEO"
+        references:
+            - 'https://doi.org/10.1029/2011gl046735'
+            - 'https://catalogue.ceda.ac.uk/uuid/a6fc730d88fd4935b59d64903715d891'
+        original_name: EP_Henson
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://data.ceda.ac.uk/neodc/bicep/data/oceanic_export_production/v1.0/monthly/'
+        color_bar_name: "Blues"
+        color_value_min: 0
+        color_value_max: 300
+    EP_Li/.zattrs:
+        long_name: 'Export Production based on Li et al 2016'
+        standard_name: 'export_production_li'
+        description: 'Export Production based on Li et al 2016'
+        units: "mg C m^-2 d^-1"
+        processing_steps:
+            - 'Gridding nc datasets'
+        acknowledgement: "BICEP/NCEO"
+        references:
+            - 'https://doi.org/10.1002/2015gb005314'
+            - 'https://catalogue.ceda.ac.uk/uuid/a6fc730d88fd4935b59d64903715d891'
+        original_name: EP_Li
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://data.ceda.ac.uk/neodc/bicep/data/oceanic_export_production/v1.0/monthly/'
+        color_bar_name: "Blues"
+        color_value_min: 0
+        color_value_max: 300
+    PIC/.zattrs:
+        long_name: 'Particulate Inorganic Carbon'
+        standard_name: 'particulate_inorganic_carbon'
+        description: 'Particulate Inorganic Carbon'
+        units: "µmol C m^-3"
+        processing_steps:
+            - 'Gridding nc datasets'
+        acknowledgement: "BICEP/NCEO"
+        original_name: PIC
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://rsg.pml.ac.uk/shared_files/gku/ESA_animation/PIC_1-month_9km/'
+        color_bar_name: "Blues_r"
+        color_value_min: 0
+        color_value_max: 0.001
+    POC/.zattrs:
+        long_name: 'Particulate Organic Carbon'
+        standard_name: 'particulate_organic_carbon'
+        description: 'Particulate Organic Carbon'
+        units: "mg C m^-3"
+        processing_steps:
+            - 'Gridding nc datasets'
+        acknowledgement: "BICEP/NCEO"
+        original_name: POC
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://rsg.pml.ac.uk/shared_files/gku/ESA_animation/POC_1-month_9km/'
+        color_bar_name: "plasma"
+        color_value_min: 0
+        color_value_max: 600
+    pp/.zattrs:
+        long_name: 'Phytoplankton Primary Production'
+        standard_name: 'gross_primary_production_of_carbon'
+        description: 'Phytoplankton Primary Production'
+        units: "mg C m^-2 d^-1"
+        processing_steps:
+            - 'Gridding nc datasets'
+        acknowledgement: "BICEP/NCEO"
+        references:
+            - 'https://catalogue.ceda.ac.uk/uuid/69b2c9c6c4714517ba10dab3515e4ee6'
+        original_name: pp
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://data.ceda.ac.uk/neodc/bicep/data/marine_primary_production/v4.2/monthly/'
+        color_bar_name: "Spectral_r"
+        color_value_min: 0
+        color_value_max: 1000
