@@ -14,7 +14,7 @@ The cube generation process is divided in four phases:
 
 > **Note**
 >
-> When downloading the datasets, a path `data/ocean/source/` is created in the user home path. All datasets are downloaded into this folder for further preprocessing.
+> When downloading the datasets, a path `data/polar/source/` is created in the user home path. All datasets are downloaded into this folder for further preprocessing.
 
 Datasets were downloaded via the source information provided in `cube.geojson`. Datasets were downloaded in different formats: `.nc`, `.tif`, `.shp`. Some datasets were compressed and this step includes the extraction of the data.
 
