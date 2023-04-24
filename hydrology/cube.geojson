@@ -1,34 +1,73 @@
 {
     "type": "Feature",
     "properties": {
-        "data_id": "ocean-1M-9km-64x256x256-1.0.0.zarr",
-        "title": "BICEP Pools and Fluxes of the Ocean Biological Carbon Pump",
-        "description": "Ocean Data Cube for Oceanic Export Production, Phytoplankton Carbon and Primary Production",
-        "version": "1.1.0",
+        "data_id": "hydrology-S{site-number}-0.009deg-64x{lat-chunks}x{lon-chunks}-1.0.0.zarr",
+        "title": "Hydrology 4D",
+        "description": "Hydrology 4D",
+        "version": "1.0.0",
         "recipe": "",
         "changes": "",
         "license": "Terms and conditions of the DeepESDL data distribution",
         "time_range": ["1997-09-01","2020-12-01"],
-        "time_period": "1M",
         "spatial_ref": "EPSG:4326",
-        "spatial_bbox": [-180, -90, 180, 90],
-        "spatial_res": [0.0833282470703125, 0.0833282470703125],
+        "spatial_bbox": [-5.69630002975464, 28.344299316406264, 37.773700714111364, 48.1803016662598],
+        "spatial_res": [0.009, 0.009],
         "variables": [
             {
-                "name": "pp",
-                "long_name": "Phytoplankton Primary Production",
-                "dtype": "float32",
-                "dims": ["time","y","x"],
-                "units": "mg C m^-2 d^-1",
+                "name": "E",
+                "long_name": "Evaporation",
+                "dtype": "float64",
+                "dims": ["time","lat","lon"],
+                "units": "mm d^-1",
                 "fill_value": "nan",
-                "time_range": ["1998-01-01", "2020-12-01"]
+                "time_range": ["2015-01-01", "2021-12-31"]
+            },
+            {
+                "name": "precip",
+                "long_name": "Precipitation",
+                "dtype": "float32",
+                "dims": ["time","lat","lon"],
+                "units": "mm d^-1",
+                "fill_value": "nan",
+                "time_range": ["2015-01-01", "2022-02-28"]
+            },
+            {
+                "name": "SM",
+                "long_name": "Soil Moisture",
+                "dtype": "float32",
+                "dims": ["time","lat","lon"],
+                "units": "% Relative Saturation",
+                "fill_value": "nan",
+                "time_range": ["2017-01-10", "2022-10-05"]
+            },
+            {
+                "name": "SWE",
+                "long_name": "Snow Water Equivalent",
+                "dtype": "float64",
+                "dims": ["time","lat","lon"],
+                "units": "1",
+                "fill_value": "nan",
+                "time_range": ["2015-08-01", "2021-12-31"]
             }
         ],
         "sources": [
             {
-                "name": "unknown",
+                "name": "GLEAM_openloop_V1.1",
                 "variable_names": [
-                    "unknown"
+                    "E"
+                ],
+                "download_url": "sftp://4dmed_data.eodchosting.eu/4dmed_data/GLEAM_openloop_V1.1",
+                "protocol": "sftp",
+                "credentials": true,
+                "compressed": false,
+                "compression_format": null,
+                "source_format": "nc",
+                "source_crs": null
+            },
+            {
+                "name": "precipitation_GPM_CPC_SM2A",
+                "variable_names": [
+                    "precip"
                 ],
                 "download_url": "sftp://4dmed_data.eodchosting.eu/4dmed_data/precipitation_GPM_CPC_SM2A",
                 "protocol": "sftp",
@@ -37,11 +76,37 @@
                 "compression_format": null,
                 "source_format": "nc",
                 "source_crs": null
+            },
+            {
+                "name": "TUWien_RT1_SM",
+                "variable_names": [
+                    "SM"
+                ],
+                "download_url": "sftp://4dmed_data.eodchosting.eu/4dmed_data/TUWien_RT1_SM",
+                "protocol": "sftp",
+                "credentials": true,
+                "compressed": false,
+                "compression_format": null,
+                "source_format": "nc",
+                "source_crs": null
+            },
+            {
+                "name": "SWE_CPC_GPM_ERA5downT_RadGhent_filter5mm",
+                "variable_names": [
+                    "SWE"
+                ],
+                "download_url": "sftp://4dmed_data.eodchosting.eu/4dmed_data/SWE_CPC_GPM_ERA5downT_RadGhent_filter5mm",
+                "protocol": "sftp",
+                "credentials": true,
+                "compressed": true,
+                "compression_format": gz,
+                "source_format": "nc",
+                "source_crs": null
             }
         ],
         "metadata": {
             "Conventions": "CF-1.10",
-            "acknowledgment": "BICEP/NCEO",
+            "acknowledgment": "Hydrology 4D",
             "contributor_name": ["University of Leipzig" ,"Brockmann Consult GmbH"],
             "contributor_url": ["www.uni-leipzig.de" ,"www.brockmann-consult.de"],
             "creator_email": ["www.uni-leipzig.de" ,"www.brockmann-consult.de"],
@@ -52,28 +117,27 @@
             "publisher_email": "info@brockmann-consult.de",
             "publisher_name": "Brockmann Consult GmbH",
             "license_url": null,
-            "source": "BICEP/NCEO",
-            "date_modified": "2023-02-11 12:43:00.708004",
-            "geospatial_lon_min": -179.95834350585938,
-            "geospatial_lon_max": 179.95834350585938,
-            "geospatial_lat_min": -89.95832824707031,
-            "geospatial_lat_max": 89.95832824707031,
-            "geospatial_lon_resolution": 0.0833282470703125,
-            "geospatial_lat_resolution": 0.0833282470703125,
-            "temporal_coverage_start": "1998-01-01T00:00:00.000000000",
-            "temporal_coverage_end": "2020-12-01T00:00:00.000000000",
-            "temporal_resolution": "1M"
+            "source": "Hydrology 4D",
+            "date_modified": "2023-04-15 10:34:28.140339",
+            "geospatial_lon_min": -5.69630002975464,
+            "geospatial_lon_max": 37.773700714111364,
+            "geospatial_lat_min": 28.344299316406264,
+            "geospatial_lat_max": 48.1803016662598,
+            "geospatial_lon_resolution": 0.009,
+            "geospatial_lat_resolution": 0.009,
+            "temporal_coverage_start": "2015-01-01T00:00:00.000000000",
+            "temporal_coverage_end": "2022-10-05T00:00:00.000000000"
         }
     },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
             [
-                [-180, -90],
-                [-180, 90],
-                [180, 90],
-                [180, -90],
-                [-180, -90]
+                [-5.69630002975464, 28.344299316406264],
+                [-5.69630002975464, 48.1803016662598],
+                [37.773700714111364, 48.1803016662598],
+                [37.773700714111364, 28.344299316406264],
+                [-5.69630002975464, 28.344299316406264]
             ]
         ]
     }
