@@ -99,7 +99,7 @@
                 "protocol": "sftp",
                 "credentials": true,
                 "compressed": true,
-                "compression_format": gz,
+                "compression_format": "gz",
                 "source_format": "nc",
                 "source_crs": null
             }
