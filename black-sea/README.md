@@ -10,15 +10,6 @@ Source data:
 - [Black Sea - High Resolution and Ultra High Resolution L3S Sea Surface Temperature](https://resources.marine.copernicus.eu/product-detail/SST_BS_SST_L3S_NRT_OBSERVATIONS_010_013/INFORMATION)
 - [Level 3 SSS, 0.25°*0.25°, 9-day averaged produced daily](http://www.eo4sibs.uliege.be/map/map.php?product=Sea%20Surface%20Salinity&is_netcdf=1)
 
-Install the requirements:
-
-```
-git clone https://github.com/deepesdl/cube-gen.git
-cd cube-gen/black-sea
-conda create -n blacksea -c conda-forge --file requirements.txt
-conda activate blacksea
-```
-
 Source data is available from EO4SIBS (3 datasets) and CMEMS (2 datasets). To download data (5 sources):
 
 ```
