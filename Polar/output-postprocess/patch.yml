@@ -24,6 +24,7 @@ metadata:
         license: Terms and conditions of the DeepESDL data distribution
         time_coverage_end: '2017-01-01'
         time_coverage_start: '2013-01-01'
+        spatial_ref: 'EPSG:3031'
 
     curie_depth_200km/.zattrs:
         long_name: 'Curie Depth Estimates 200x200 km'
