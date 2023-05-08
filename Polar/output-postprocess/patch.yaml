@@ -1,0 +1,232 @@
+zarr_consolidated_format: 1
+metadata:
+
+    .zattrs:
+        Conventions: CF-1.10
+        acknowledgment: All ESDC data providers are acknowledged inside each variable
+        contributor_name:
+            - University of Leipzig
+            - Brockmann Consult GmbH
+        contributor_url:
+            - https://www.uni-leipzig.de/
+            - https://www.brockmann-consult.de/
+        creator_name:
+            - University of Leipzig
+            - Brockmann Consult GmbH
+        creator_url:
+            - https://www.uni-leipzig.de/
+            - https://www.brockmann-consult.de/
+        publisher_name: DeepESDL Team
+        publisher_url: "https://www.earthsystemdatalab.net/"
+        id: polar-100m-1x2048x2048-v1.0.0
+        project: DeepESDL
+        title: Polar Data Cube v1.0.0
+        license: Terms and conditions of the DeepESDL data distribution
+        time_coverage_end: '2017-01-01'
+        time_coverage_start: '2013-01-01'
+        spatial_ref: 'EPSG:3031'
+
+    curie_depth_200km/.zattrs:
+        long_name: 'Curie Depth Estimates 200x200 km'
+        standard_name: 'curie_depth_estimates_200km'
+        description: 'Curie depth estimates using a 200x200km window'
+        units: m
+        processing_steps:
+            - 'Gridding nc dataset'
+            - 'Spatial resampling to 100 m using linear interpolation'
+        acknowledgement: 4DAntarctica
+        references:
+            - 'https://doi.org/10.1594/PANGAEA.932452'
+            - 'https://doi.org/10.1038/s43247-021-00242-3'
+        original_name: z
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://download.pangaea.de/dataset/932452/files/200km_Dziadek_etal_CurieDepth_Results.nc'
+    curie_depth_300km/.zattrs:
+        long_name: 'Curie Depth Estimates 300x300 km'
+        standard_name: 'curie_depth_estimates_300km'
+        description: 'Curie depth estimates using a 300x300km window'
+        units: m
+        processing_steps:
+            - 'Gridding nc dataset'
+            - 'Spatial resampling to 100 m using linear interpolation'
+        acknowledgement: 4DAntarctica
+        references:
+            - 'https://doi.org/10.1594/PANGAEA.932452'
+            - 'https://doi.org/10.1038/s43247-021-00242-3'
+        original_name: z
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://download.pangaea.de/dataset/932452/files/300km_Dziadek_etal_CurieDepth_Results.nc'
+    geothermal_heat_flow_200km/.zattrs:
+        long_name: 'Geothermal Heat Flow 200x200 km'
+        standard_name: 'geothermal_heat_flow_200km'
+        description: 'Geothermal Heat Flow from a 200x200km window'
+        units: m
+        processing_steps:
+            - 'Gridding nc dataset'
+            - 'Spatial resampling to 100 m using linear interpolation'
+        acknowledgement: 4DAntarctica
+        references:
+            - 'https://doi.org/10.1594/PANGAEA.932452'
+            - 'https://doi.org/10.1038/s43247-021-00242-3'
+        original_name: z
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://download.pangaea.de/dataset/932452/files/200km_GHF_windowCenters.nc'
+    geothermal_heat_flow_300km/.zattrs:
+        long_name: 'Geothermal Heat Flow 300x300 km'
+        standard_name: 'geothermal_heat_flow_300km'
+        description: 'Geothermal Heat Flow from a 300x300km window'
+        units: m
+        processing_steps:
+            - 'Gridding nc dataset'
+            - 'Spatial resampling to 100 m using linear interpolation'
+        acknowledgement: 4DAntarctica
+        references:
+            - 'https://doi.org/10.1594/PANGAEA.932452'
+            - 'https://doi.org/10.1038/s43247-021-00242-3'
+        original_name: z
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://download.pangaea.de/dataset/932452/files/300km_GHF_windowCenters.nc'
+    geothermal_heat_flow_uncertainty_200km/.zattrs:
+        long_name: 'Geothermal Heat Flow Uncertainty 200x200 km'
+        standard_name: 'geothermal_heat_flow_uncertainty_200km'
+        description: 'Geothermal Heat Flow Uncertainty from a 200x200km window'
+        units: m
+        processing_steps:
+            - 'Gridding nc dataset'
+            - 'Spatial resampling to 100 m using linear interpolation'
+        acknowledgement: 4DAntarctica
+        references:
+            - 'https://doi.org/10.1594/PANGAEA.932452'
+            - 'https://doi.org/10.1038/s43247-021-00242-3'
+        original_name: z
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://download.pangaea.de/dataset/932452/files/200km_GHF_uncertainty.nc'
+    geothermal_heat_flow_uncertainty_300km/.zattrs:
+        long_name: 'Geothermal Heat Flow Uncertainty 300x300 km'
+        standard_name: 'geothermal_heat_flow_uncertainty_300km'
+        description: 'Geothermal Heat Flow Uncertainty from a 300x300km window'
+        units: m
+        processing_steps:
+            - 'Gridding nc dataset'
+            - 'Spatial resampling to 100 m using linear interpolation'
+        acknowledgement: 4DAntarctica
+        references:
+            - 'https://doi.org/10.1594/PANGAEA.932452'
+            - 'https://doi.org/10.1038/s43247-021-00242-3'
+        original_name: z
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://download.pangaea.de/dataset/932452/files/300km_GHF_uncertainty.nc'
+    ice_thickness/.zattrs:
+        long_name: 'Ice Thickness'
+        standard_name: 'ice_thickness'
+        description: 'Ice Thickness'
+        units: m
+        processing_steps:
+            - 'Masking out no-data values'
+            - 'Slicing dataset to the polar region (< -60 degrees)'
+            - 'Reprojecting to EPSG:3031'
+            - 'Spatial resampling to 100 m using linear interpolation'
+        acknowledgement: CryoSMOS
+        references:
+            - 'https://opensciencedata.esa.int/products/bedrock-topography-antarctica-cryosmos'
+            - 'http://www.ifac.cnr.it/cryosmos/products/CryoSMOS_D8_EDUM_V2.0.pdf'
+        original_name: est
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'http://www.ifac.cnr.it/cryosmos/products/SMOS_IceThickness_2015_300.nc'
+        grid_mapping: __delete__
+    magnetic_anomaly/.zattrs:
+        long_name: 'Magnetic Anomaly'
+        standard_name: 'magnetic_anomaly'
+        description: 'Magnetic Anomaly'
+        units: nT
+        processing_steps:
+            - 'Spatial resampling to 100 m using linear interpolation'
+        acknowledgement: 4DAntarctica
+        references:
+            - 'https://doi.org/10.1594/PANGAEA.932452'
+            - 'https://doi.org/10.1038/s43247-021-00242-3'
+        original_name: ''
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://download.pangaea.de/dataset/932452/files/ASE_MagneticCompilation_Dziadeketal_250m.tif'
+        grid_mapping: __delete__
+    thw_124/.zattrs:
+        long_name: 'Subglacial Lake Thw 124'
+        standard_name: 'thw_124'
+        description: 'Subglacial Lake Thw 124'
+        units: 1
+        processing_steps:
+            - 'Spatial resampling to 100 m using nearest neighbor'
+        acknowledgement: 4DAntarctica
+        references:
+            - 'https://doi.org/10.1029/2020GL089658'
+        original_name: ''
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://4d-antarctica.org/wp-content/uploads/2021/01/Malczyk_etal_2020_data_v2.tar'
+        time_coverage_end: '2017-01-01'
+        time_coverage_start: '2013-01-01'
+        color_bar_name: GnBu
+        coordinates: __delete__
+    thw_142/.zattrs:
+        long_name: 'Subglacial Lake Thw 142'
+        standard_name: 'thw_142'
+        description: 'Subglacial Lake Thw 142'
+        units: 1
+        processing_steps:
+            - 'Spatial resampling to 100 m using nearest neighbor'
+        acknowledgement: 4DAntarctica
+        references:
+            - 'https://doi.org/10.1029/2020GL089658'
+        original_name: ''
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://4d-antarctica.org/wp-content/uploads/2021/01/Malczyk_etal_2020_data_v2.tar'
+        time_coverage_end: '2017-01-01'
+        time_coverage_start: '2013-01-01'
+        color_bar_name: GnBu
+        coordinates: __delete__
+    thw_170/.zattrs:
+        long_name: 'Subglacial Lake Thw 170'
+        standard_name: 'thw_170'
+        description: 'Subglacial Lake Thw 170'
+        units: 1
+        processing_steps:
+            - 'Spatial resampling to 100 m using nearest neighbor'
+        acknowledgement: 4DAntarctica
+        references:
+            - 'https://doi.org/10.1029/2020GL089658'
+        original_name: ''
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://4d-antarctica.org/wp-content/uploads/2021/01/Malczyk_etal_2020_data_v2.tar'
+        time_coverage_end: '2017-01-01'
+        time_coverage_start: '2013-01-01'
+        color_bar_name: GnBu       
+        coordinates: __delete__
+    thw_70/.zattrs:
+        long_name: 'Subglacial Lake Thw 70'
+        standard_name: 'thw_70'
+        description: 'Subglacial Lake Thw 70'
+        units: 1
+        processing_steps:
+            - 'Spatial resampling to 100 m using nearest neighbor'
+        acknowledgement: 4DAntarctica
+        references:
+            - 'https://doi.org/10.1029/2020GL089658'
+        original_name: ''
+        original_scale_factor: 1.0
+        original_add_offset: 0.0
+        source: 'https://4d-antarctica.org/wp-content/uploads/2021/01/Malczyk_etal_2020_data_v2.tar'
+        time_coverage_end: '2017-01-01'
+        time_coverage_start: '2013-01-01'
+        color_bar_name: GnBu
+        coordinates: __delete__
+    

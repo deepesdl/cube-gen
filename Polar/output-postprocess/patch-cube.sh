@@ -1,0 +1,1 @@
+xcube patch s3://deep-esdl-output/polar-100m-1x2048x2048-v1.0.0.zarr --metadata patch.yaml -v
