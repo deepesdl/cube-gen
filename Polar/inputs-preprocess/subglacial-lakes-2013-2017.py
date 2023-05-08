@@ -8,7 +8,7 @@ from glob import glob
 pathIn = "~/data/polar/source/repeat_subglacial_lake_drainage_and_filling_thwaites_glacier"
 pathIn = os.path.expanduser(pathIn)
 
-pathOut = "~/data/polar/cubes_test/repeat_subglacial_lake_drainage_and_filling_thwaites_glacier"
+pathOut = "~/data/polar/cubes/repeat_subglacial_lake_drainage_and_filling_thwaites_glacier"
 pathOut = os.path.expanduser(pathOut)
 
 if not os.path.exists(pathOut):
