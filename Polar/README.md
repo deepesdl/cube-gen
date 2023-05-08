@@ -81,5 +81,6 @@ A patch of metadata is added to the final cube using `xcube patch` and `output-p
 
 ```
 # Merge all datasets
-output-postprocess/patch-cube.sh
+cd output-postprocess
+patch-cube.sh
 ```
