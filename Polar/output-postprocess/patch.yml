@@ -227,5 +227,6 @@ metadata:
         source: 'https://4d-antarctica.org/wp-content/uploads/2021/01/Malczyk_etal_2020_data_v2.tar'
         time_coverage_end: '2017-01-01'
         time_coverage_start: '2013-01-01'
+        color_bar_name: GnBu
         coordinates: __delete__
     
