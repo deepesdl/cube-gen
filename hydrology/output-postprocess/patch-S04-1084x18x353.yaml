@@ -14,12 +14,12 @@ metadata:
     creator_url:
     - https://www.uni-leipzig.de/
     - https://www.brockmann-consult.de/
-    id: hydrology-S07-0.009deg-64x337x689-1.0.0.zarr
+    id: hydrology-S04-0.009deg-1084x18x353-1.0.1.zarr
     license: Terms and conditions of the DeepESDL data distribution
     project: DeepESDL
     publisher_name: DeepESDL Team
     publisher_url: https://www.earthsystemdatalab.net/
-    title: BICEP Pools and Fluxes of the Ocean Biological Carbon Pump
+    title: Hydrology S04 Time optimized
   E/.zattrs:
     acknowledgement: Hydrology 4D
     description: Evaporation
@@ -32,6 +32,9 @@ metadata:
     source: 4dmed_data.eodchosting.eu/4dmed_data/GLEAM_openloop_V1.1
     standard_name: evaporation
     units: mm d^-1
+    color_bar_name: "plasma"
+    color_value_min: 0
+    color_value_max: 4
   SM/.zattrs:
     acknowledgement: Hydrology 4D
     description: Soil Moisture
@@ -44,6 +47,9 @@ metadata:
     source: 4dmed_data.eodchosting.eu/4dmed_data/TUWien_RT1_SM
     standard_name: soil_moisture
     units: '% Relative Saturation'
+    color_bar_name: "plasma_r"
+    color_value_min: 0
+    color_value_max: 1
   SWE/.zattrs:
     acknowledgement: Hydrology 4D
     description: Snow Water Equivalent
@@ -56,6 +62,9 @@ metadata:
     source: 4dmed_data.eodchosting.eu/4dmed_data/SWE/SWE_CPC_GPM_ERA5downT_RadGhent_filter5mm
     standard_name: snow_water_equivalent
     units: 1
+    color_bar_name: "Blues_alpha"
+    color_value_min: 0
+    color_value_max: 750
   lat/.zattrs:
     long_name: latitude
     standard_name: latitude
@@ -76,6 +85,9 @@ metadata:
     source: 4dmed_data.eodchosting.eu/4dmed_data/precipitation_GPM_CPC_SM2A
     standard_name: precipitation
     units: mm d^-1
+    color_bar_name: "viridis_alpha"
+    color_value_min: 0
+    color_value_max: 20
   time/.zattrs:
     long_name: time
     standard_name: time
