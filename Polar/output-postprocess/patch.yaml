@@ -18,9 +18,9 @@ metadata:
             - https://www.brockmann-consult.de/
         publisher_name: DeepESDL Team
         publisher_url: "https://www.earthsystemdatalab.net/"
-        id: polar-100m-1x2048x2048-v1.0.0
+        id: polar-100m-1x2048x2048-1.0.1
         project: DeepESDL
-        title: Polar Data Cube v1.0.0
+        title: Polar Data Cube v1.0.1
         license: Terms and conditions of the DeepESDL data distribution
         time_coverage_end: '2017-01-01'
         time_coverage_start: '2013-01-01'

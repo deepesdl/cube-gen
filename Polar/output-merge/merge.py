@@ -45,5 +45,5 @@ rename_dict = dict(
 das = das.rename(rename_dict)
 
 store_output.write_data(
-    das, 'polar-100m-1x2048x2048-v1.0.0.zarr', replace=True
+    das, 'polar-100m-1x2048x2048-1.0.0.zarr', replace=True
 )
