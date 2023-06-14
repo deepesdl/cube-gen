@@ -153,7 +153,7 @@ The cube generation process is divided in four phases:
 
 ### 1. Downloading required raw datasets
 
-These datasets are the input data. Each dataset can be a set of `.nc`, `.hdf`, or `.tif` files. These files contains data with its original configuration. The downloading code for each dataset is found at the `inputs-collect` folder. Note that some datasets can be acquired via `xcube-cci` and don't require to be downloaded. Additional datasets were acquired va ftp (e.g. GLEAM) or sftp (e.g. GFED4) and don't have a download program. Other datasets were provided by their original providers (e.g. FLUXCOM) and don't have a download program neither.
+These datasets are the input data. Each dataset can be a set of `.nc`, `.hdf`, or `.tif` files. These files contains data with its original configuration. The downloading code for each dataset is found at the `inputs-collect` folder. Note that some datasets can be acquired via `xcube-cci` and don't require to be downloaded. Additional datasets were acquired va ftp (e.g. GLEAM) or sftp (e.g. GFED4) and don't have a download program. Other datasets were provided by their original providers (e.g. FLUXCOM) and don't have a download program neither. For some datasets, user accounts are necessary. Please follow the instructions on their websites. For ERA5, refer to the [Copernicus Climate Data Store (CDS) API How-To](https://cds.climate.copernicus.eu/api-how-to) for more information.
 
 ```
 # MODIS: Download daily .hdf files
@@ -168,6 +168,9 @@ inputs-collect/extract-gz-gosif.py
 
 # CCI-SM: Download daily .nc files
 inputs-collect/download-cci-sm.py
+
+# ERA5: Download hourly .nc files
+inpits-collect/download-ERA5.py
 ```
 
 ### 2. Preprocessing datasets
