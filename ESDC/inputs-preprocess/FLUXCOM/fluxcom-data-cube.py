@@ -1,7 +1,7 @@
 import xarray as xr
 import numpy as np
 import glob
-
+import os
 from tqdm import tqdm
 
 pathOut = "~/data/FLUXCOM/preprocess"
