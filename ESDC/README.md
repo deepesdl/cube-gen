@@ -171,6 +171,9 @@ inputs-collect/download-cci-sm.py
 
 # ERA5: Download hourly .nc files
 inpits-collect/download-ERA5.py
+
+# GLEAM: Download daily .nc files
+inpits-collect/download-GLEAM.py
 ```
 
 ### 2. Preprocessing datasets
