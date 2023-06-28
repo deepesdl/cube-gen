@@ -62,7 +62,7 @@ def main():
     if not os.path.exists(pathOut):
         os.makedirs(pathOut)
 
-    years = [str(year) for year in range(1971, 2022)]
+    years = [str(year) for year in range(1971, 2023)]
     months = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
     variables = ['2m_temperature', 'evaporation', 'maximum_2m_temperature_since_previous_post_processing', 'minimum_2m_temperature_since_previous_post_processing', 'total_precipitation', 'surface_solar_radiation_downwards']
 

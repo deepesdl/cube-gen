@@ -23,8 +23,7 @@ def download_files(host, port, username, password, remote_dir, local_dir):
 
     tasks = []
     
-    # v3.7a also has data for 2022
-    for year in range(1980, 2022):
+    for year in range(1980, 2023):
         str_year = str(year)
         if str_year in remote_years:
             remote_year_dir = os.path.join(remote_dir, str_year)
