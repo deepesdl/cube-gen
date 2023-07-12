@@ -166,6 +166,9 @@ inputs-collect/download-GOME2-SIF.py
 inputs-collect/download-GOSIF.py
 inputs-collect/extract-gz-gosif.py
 
+# RTSIF: Download 8-days .tif files
+inputs-collect/download-RTSIF.py
+
 # CCI-SM: Download daily .nc files
 inputs-collect/download-cci-sm.py
 
