@@ -80,7 +80,14 @@ python output-merge/merge.py
 A patch of metadata is added to the final cube using `xcube patch` and `output-postprocess/patch.yaml` by running:
 
 ```
-# Merge all datasets
+# Add the metadata patch
 cd output-postprocess
 patch-cube.sh
+```
+
+The corresponidng CRS is added to the cube by running:
+
+```
+# Add CRS
+python add_grid_mapping.py
 ```
