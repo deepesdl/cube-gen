@@ -7,7 +7,7 @@ import yaml
 store_output = new_data_store("s3", root="deep-esdl-output")
 datasets = list(store_output.get_data_ids())
 
-hydro_datasets = [s for s in datasets if "hydrology" in s]
+hydro_datasets = [s for s in datasets if "hydrology-S" in s]
 
 xcube_patches = []
 
@@ -66,7 +66,7 @@ for cube_id in hydro_datasets:
                 "original_name": "precip",
                 "original_scale_factor": 1.0,
                 "original_add_offset": 0.0,
-                "source": '4dmed_data.eodchosting.eu/4dmed_data/precipitation_GPM_CPC_SM2A',
+                "source": '4dmed_data.eodchosting.eu/4dmed_data/CNR_products/precipitation_GPM_CPC_SM2RAIN-ASCAT',
             },
             "SM/.zattrs": {
                 "long_name": 'Soil Moisture',

@@ -14,7 +14,7 @@ metadata:
     creator_url:
     - https://www.uni-leipzig.de/
     - https://www.brockmann-consult.de/
-    id: hydrology-S07-0.009deg-64x337x689-1.0.0.zarr
+    id: hydrology-S07-0.009deg-64x337x689-2.0.0.zarr
     license: Terms and conditions of the DeepESDL data distribution
     project: DeepESDL
     publisher_name: DeepESDL Team
@@ -73,7 +73,7 @@ metadata:
     original_scale_factor: 1.0
     processing_steps:
     - Gridding nc datasets
-    source: 4dmed_data.eodchosting.eu/4dmed_data/precipitation_GPM_CPC_SM2A
+    source: 4dmed_data.eodchosting.eu/4dmed_data/CNR_products/precipitation_GPM_CPC_SM2RAIN-ASCAT
     standard_name: precipitation
     units: mm d^-1
   time/.zattrs:
