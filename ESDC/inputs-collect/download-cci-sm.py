@@ -45,9 +45,9 @@ def download_file(url):
     else:
         print(f"File {filename} already exists!")
 
-years = np.arange(1979,2021)
+years = np.arange(1979,2022)
 
 for year in tqdm(years):
-    urls = get_url_paths(f"https://dap.ceda.ac.uk/neodc/esacci/soil_moisture/data/daily_files/COMBINED/v06.1/{year}/","nc")
+    urls = get_url_paths(f"https://dap.ceda.ac.uk/neodc/esacci/soil_moisture/data/daily_files/COMBINED/v07.1/{year}/","nc")
     for url in urls:
         download_file(url)

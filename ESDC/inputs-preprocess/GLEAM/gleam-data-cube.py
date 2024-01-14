@@ -10,7 +10,7 @@ from tqdm import tqdm
 # if not os.path.exists(pathOut):
 #     os.mkdir(pathOut)
 
-pathIn = "path-to-GLEAM-folder"
+pathIn = "~/data/GLEAM/source"
 
 pathOut = "~/data/GLEAM/preprocess"
 pathOut = os.path.expanduser(pathOut)
@@ -24,7 +24,7 @@ yearly_datasets = []
 
 for year in tqdm(years):
 
-    files = glob.glob(f"{pathIn}/data/v3.6a/daily/{year}/*.nc")
+    files = glob.glob(f"{pathIn}/v3.7a/daily/{year}/*.nc")
     files.sort()
 
     datasets = [xr.open_dataset(file,chunks = {'time':512,'lat':128,'lon':128}) for file in files]
