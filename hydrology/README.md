@@ -1,8 +1,10 @@
 # Hydrology Datacubes Generation
 
-Information dedicated to the generation of the Hydrology Datacubes. By using the following recipe, 28 hydrology data cubes can be reproduced (One cube per region)
+Information dedicated to the generation of the 4DMED Hydrology Datacubes. 
+By using the following recipe, 28 hydrology data cubes can be reproduced - one cube per region.
+The recipe also contains steps for merging all 28 regions into a single data cube.
 
-The total storage required for the generation of these cube is 490 GB.
+The total storage required for the generation of these cube is about 490 GB.
 
 ## Cubes generation process
 
