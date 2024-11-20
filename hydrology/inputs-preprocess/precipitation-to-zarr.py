@@ -8,7 +8,7 @@ import pandas as pd
 from functools import partial
 
 
-pathIn = f"~/data/hydrology/source/precipitation_GPM_CPC_SM2A/"
+pathIn = f"~/data/hydrology/source/precipitation_GPM_CPC_SM2RAIN-ASCAT/"
 pathIn = os.path.expanduser(pathIn)
 
 files = glob(f"{pathIn}/*.nc")

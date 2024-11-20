@@ -12,7 +12,7 @@ import pandas as pd
 
 store_output = new_data_store("s3", root="deep-esdl-input")
 
-pathIn = f"~/data/hydrology/source/precipitation_GPM_CPC_SM2A/"
+pathIn = f"~/data/hydrology/source/precipitation_GPM_CPC_SM2RAIN-ASCAT/"
 pathIn = os.path.expanduser(pathIn)
 
 sites = [(f"0{x}")[-2:] for x in np.arange(1,29)]
