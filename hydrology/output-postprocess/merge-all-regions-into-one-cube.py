@@ -249,3 +249,30 @@ super_cube = super_cube_template.map_blocks(
           region_ij_bboxes],
     template=super_cube_template
 )
+
+super_cube.attrs["title"] = "Hydrology Cube"
+super_cube.SM.attrs["processing_steps"] = ['Gridding nc datasets', 'daily aggregates']
+encoding_dict = dict()
+
+coords_encoding = {k: dict(chunks=None) for k, v in super_cube.coords.items()}
+vars_encoding = {k: dict(write_empty_chunks=False,
+                         chunks=(1,1102,966),
+                         dtype=np.dtype('float32'))
+                 for k, v in super_cube.data_vars.items()}
+
+encoding_dict.update(coords_encoding)
+encoding_dict.update(vars_encoding)
+
+dask.config.set({'logging.distributed': 'error'})
+
+start_run_time = datetime.now()
+print(f'{start_run_time} Starting to persist final cube. This will take some time.')
+
+data_store.write_data(super_cube,
+                      super_cube_fn,
+                      encoding=encoding_dict,
+                      replace=True,
+                      num_levels=5,
+                      use_saved_levels=True)
+print(f'Took:  {datetime.now() - start_run_time}')
+print(f'Final cube persisted.')
