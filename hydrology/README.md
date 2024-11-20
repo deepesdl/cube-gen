@@ -91,6 +91,6 @@ Update metadata of the final cube, containing all subregions:
 
 ```
 # Update metadata of final cube:
-xcube patch s3://deep-esdl-output/hydrology-1D-0.009deg-1x1102x966-1.0.0.levels --metadata patch-hydrology-1D-0.009deg-1x1102x2415.yaml -v
+xcube patch s3://deep-esdl-output/hydrology-1D-0.009deg-1x1102x966-1.0.0.levels --metadata output-postprocess/patch-hydrology-1D-0.009deg-1x1102x2415.yaml -v
 ```
 **If you wish to execute the above script please ensure to adjust the s3 bucket path to point to the bucket which you have read-write access to.**
