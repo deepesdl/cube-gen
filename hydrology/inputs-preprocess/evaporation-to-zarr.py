@@ -18,9 +18,9 @@ except:
 try:
     end_date = sys.argv[2]
 except:
-    start_date = None
+    end_date = None
 
-pathIn = f"~/data/hydrology/source/GLEAM_openloop_V1.1/"
+pathIn = f"~/data/hydrology/source/GLEAM_openloop_V1.1"
 pathIn = os.path.expanduser(pathIn)
 
 def to_datetime(date):
@@ -46,12 +46,14 @@ def check_if_ds_needs_subsetting(ds, start_date, end_date):
     if end_date > to_datetime(time_values[0]) and end_date < to_datetime(
             time_values[-1]):
         time_slice_end = end_date
+    print(time_slice_start, time_slice_end)
     if time_slice_start or time_slice_end:
         if not time_slice_start:
             time_slice_start = to_datetime(time_values[0])
         if not time_slice_end:
             time_slice_end = to_datetime(time_values[-1])
         time_slice = slice(time_slice_start, time_slice_end)
+        print(time_slice)
         ds = ds.sel(time=time_slice)
     return ds
 
