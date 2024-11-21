@@ -46,37 +46,31 @@ def check_if_ds_needs_subsetting(ds, start_date, end_date):
     if end_date > to_datetime(time_values[0]) and end_date < to_datetime(
             time_values[-1]):
         time_slice_end = end_date
-    print(time_slice_start, time_slice_end)
     if time_slice_start or time_slice_end:
         if not time_slice_start:
             time_slice_start = to_datetime(time_values[0])
         if not time_slice_end:
             time_slice_end = to_datetime(time_values[-1])
         time_slice = slice(time_slice_start, time_slice_end)
-        print(time_slice)
         ds = ds.sel(time=time_slice)
     return ds
 
 
 if start_date:
     start_date = datetime.strptime(start_date, '%Y-%m-%d')
-    print(start_date)
     if end_date:
         end_date = datetime.strptime(end_date, '%Y-%m-%d')
-        print(end_date)
     else:
         print("You provided a start date, please also provide an end date.")
     if end_date < start_date:
         print("The end date must be later than the start date.")
 
     dates = [dt for dt in rrule(YEARLY, dtstart=start_date, until=end_date)]
-    print(dates)
     files = []
     for date in dates:
         date_files = glob(f"{pathIn}/{date.year}/*{date.year}*.nc")
         files.extend(date_files)
     files.sort()
-    print(files)
 
 else:
     files = glob(f"{pathIn}/*/*.nc")
