@@ -10,8 +10,15 @@ import sys
 from dateutil.rrule import rrule, MONTHLY
 
 print ('argument list', sys.argv)
-start_date = sys.argv[1]
-end_date = sys.argv[2]
+try:
+    start_date = sys.argv[1]
+except:
+    start_date = None
+
+try:
+    end_date = sys.argv[2]
+except:
+    start_date = None
 
 pathIn = f"~/data/hydrology/source/GLEAM_openloop_V1.1/"
 pathIn = os.path.expanduser(pathIn)
@@ -51,20 +58,23 @@ def check_if_ds_needs_subsetting(ds, start_date, end_date):
 
 if start_date:
     start_date = datetime.strptime(start_date, '%Y-%m-%d')
-
+    print(start_date)
     if end_date:
         end_date = datetime.strptime(end_date, '%Y-%m-%d')
+        print(end_date)
     else:
         print("You provided a start date, please also provide an end date.")
     if end_date < start_date:
         print("The end date must be later than the start date.")
 
     dates = [dt for dt in rrule(MONTHLY, dtstart=start_date, until=end_date)]
+    print(dates)
     files = []
     for date in dates:
-        date_files = glob(f"{pathIn}/{date.year}/*{date.year}_{date.month}.nc")
+        date_files = glob(f"{pathIn}/{date.year}/*{date.year}_{date.strftime('%m')}.nc")
         files.extend(date_files)
     files.sort()
+    print(files)
 
 else:
     files = glob(f"{pathIn}/*/*.nc")
