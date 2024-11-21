@@ -63,7 +63,7 @@ if start_date:
     files = []
     for date in dates:
         date_files = glob(f"{pathIn}/{date.year}/*{date.year}_{date.month}.nc")
-        files.append(date_files)
+        files.extend(date_files)
     files.sort()
 
 else:
