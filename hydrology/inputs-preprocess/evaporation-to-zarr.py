@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 import pandas as pd
 from functools import partial
 import sys
-from dateutil.rrule import rrule, MONTHLY
+from dateutil.rrule import rrule, MONTHLY, YEARLY
 
 print ('argument list', sys.argv)
 try:
@@ -69,11 +69,11 @@ if start_date:
     if end_date < start_date:
         print("The end date must be later than the start date.")
 
-    dates = [dt for dt in rrule(MONTHLY, dtstart=start_date, until=end_date)]
+    dates = [dt for dt in rrule(YEARLY, dtstart=start_date, until=end_date)]
     print(dates)
     files = []
     for date in dates:
-        date_files = glob(f"{pathIn}/{date.year}/*{date.year}_{date.strftime('%m')}.nc")
+        date_files = glob(f"{pathIn}/{date.year}/*{date.year}*.nc")
         files.extend(date_files)
     files.sort()
     print(files)
