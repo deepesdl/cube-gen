@@ -16,7 +16,7 @@ from xcube.core.store import new_data_store
 warnings.filterwarnings('ignore', r'All-NaN (slice|axis) encountered')
 
 super_cube_fn = 'hydrology-1D-0.009deg-1x1102x966-1.0.0.levels'
-root = "deep-esdl-output/alicja_test_2"
+root = "deep-esdl-output"
 res = 0.009
 data_store = new_data_store("s3", root=root)
 base_datasets = list(data_store.get_data_ids())
