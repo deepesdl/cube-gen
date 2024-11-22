@@ -9,39 +9,6 @@ import pandas as pd
 from functools import partial
 from dateutil.rrule import rrule, MONTHLY, YEARLY, DAILY
 
-
-def to_datetime(date):
-    """
-    Converts a numpy datetime64 object to a python datetime object
-    Input:
-      date - a np.datetime64 object
-    Output:
-      DATE - a python datetime object
-    """
-    timestamp = ((date - np.datetime64('1970-01-01T00:00:00'))
-                 / np.timedelta64(1, 's'))
-    return datetime.utcfromtimestamp(timestamp)
-
-def check_if_ds_needs_subsetting(ds, start_date, end_date):
-    # check if the start and end date should make a subset of the dataset
-    time_values = ds.time.values
-    time_slice_start = None
-    time_slice_end = None
-    if start_date > to_datetime(time_values[0]) and start_date < to_datetime(
-            time_values[-1]):
-        time_slice_start = start_date
-    if end_date > to_datetime(time_values[0]) and end_date < to_datetime(
-            time_values[-1]):
-        time_slice_end = end_date
-    if time_slice_start or time_slice_end:
-        if not time_slice_start:
-            time_slice_start = to_datetime(time_values[0])
-        if not time_slice_end:
-            time_slice_end = to_datetime(time_values[-1])
-        time_slice = slice(time_slice_start, time_slice_end)
-        ds = ds.sel(time=time_slice)
-    return ds
-
 print ('argument list', sys.argv)
 try:
     start_date = sys.argv[1]
@@ -71,7 +38,7 @@ if start_date:
     dates = [dt for dt in rrule(DAILY, dtstart=start_date, until=end_date)]
     files = []
     for date in dates:
-        date_files = glob(f"{pathIn}/*/{date.year}{date.strftime('%m')}*.nc")
+        date_files = glob(f"{pathIn}/*/{date.year}{date.strftime('%m')}{date.strftime('%d')}.nc")
         files.extend(date_files)
     files.sort()
 
@@ -87,7 +54,5 @@ for file in tqdm(files):
         ds = xr.open_dataset(file)
         ds = ds.rename(dict(date="time"))
         ds = ds.drop(["n_neighbours","orbit","sat_track"])
-        if start_date:
-            ds = check_if_ds_needs_subsetting(ds, start_date, end_date)
         ds = ds.chunk(dict(time=-1,lon=-1,lat=-1))
         ds.to_zarr(f"{pathIn}/{folder}/{filename}")
