@@ -81,7 +81,9 @@ else:
     files.sort()
 
 for file in tqdm(files):
+    print(file)
     filename = file.split("/")[-1].replace(".nc",".zarr")
+    print(filename)
     if not os.path.exists(f"{pathIn}/{filename}"):
         ds = xr.open_dataset(file)
         ds = ds.rename(dict(t="time",Y="lat",X="lon"))
