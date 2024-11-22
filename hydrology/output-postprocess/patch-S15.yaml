@@ -1,0 +1,82 @@
+metadata:
+  .zattrs:
+    Conventions: CF-1.10
+    acknowledgment: All data providers are acknowledged inside each variable
+    contributor_name:
+    - University of Leipzig
+    - Brockmann Consult GmbH
+    contributor_url:
+    - https://www.uni-leipzig.de/
+    - https://www.brockmann-consult.de/
+    creator_name:
+    - University of Leipzig
+    - Brockmann Consult GmbH
+    creator_url:
+    - https://www.uni-leipzig.de/
+    - https://www.brockmann-consult.de/
+    id: hydrology-S15-0.009deg-64x447x543-2.0.0.zarr
+    license: Terms and conditions of the DeepESDL data distribution
+    project: DeepESDL
+    publisher_name: DeepESDL Team
+    publisher_url: https://www.earthsystemdatalab.net/
+    title: BICEP Pools and Fluxes of the Ocean Biological Carbon Pump
+  E/.zattrs:
+    acknowledgement: Hydrology 4D
+    description: Evaporation
+    long_name: Evaporation
+    original_add_offset: 0.0
+    original_name: E
+    original_scale_factor: 1.0
+    processing_steps:
+    - Gridding nc datasets
+    source: 4dmed_data.eodchosting.eu/4dmed_data/GLEAM_openloop_V1.1
+    standard_name: evaporation
+    units: mm d^-1
+  SM/.zattrs:
+    acknowledgement: Hydrology 4D
+    description: Soil Moisture
+    long_name: Soil Moisture
+    original_add_offset: 0.0
+    original_name: SM
+    original_scale_factor: 1.0
+    processing_steps:
+    - Gridding nc datasets
+    source: 4dmed_data.eodchosting.eu/4dmed_data/TUWien_RT1_SM
+    standard_name: soil_moisture
+    units: '% Relative Saturation'
+  SWE/.zattrs:
+    acknowledgement: Hydrology 4D
+    description: Snow Water Equivalent
+    long_name: Snow Water Equivalent
+    original_add_offset: 0.0
+    original_name: SWE
+    original_scale_factor: 1.0
+    processing_steps:
+    - Gridding nc datasets
+    source: 4dmed_data.eodchosting.eu/4dmed_data/SWE/SWE_CPC_GPM_ERA5downT_RadGhent_filter5mm
+    standard_name: snow_water_equivalent
+    units: 1
+  lat/.zattrs:
+    long_name: latitude
+    standard_name: latitude
+    units: degrees_north
+  lon/.zattrs:
+    long_name: longitude
+    standard_name: longitude
+    units: degrees_east
+  precip/.zattrs:
+    acknowledgement: Hydrology 4D
+    description: Precipitation
+    long_name: Precipitation
+    original_add_offset: 0.0
+    original_name: precip
+    original_scale_factor: 1.0
+    processing_steps:
+    - Gridding nc datasets
+    source: 4dmed_data.eodchosting.eu/4dmed_data/CNR_products/precipitation_GPM_CPC_SM2RAIN-ASCAT
+    standard_name: precipitation
+    units: mm d^-1
+  time/.zattrs:
+    long_name: time
+    standard_name: time
+zarr_consolidated_format: 1
