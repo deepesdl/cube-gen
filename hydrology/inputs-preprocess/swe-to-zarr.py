@@ -82,7 +82,7 @@ else:
 
 for file in tqdm(files):
     filename = file.split("/")[-1].replace(".nc",".zarr")
-    if not os.path.exists(f"{pathIn}{filename}"):
+    if not os.path.exists(f"{pathIn}/{filename}"):
         ds = xr.open_dataset(file)
         ds = ds.rename(dict(t="time",Y="lat",X="lon"))
         ds["time"] = pd.to_datetime(ds.Time.values-719529, unit='d').values
