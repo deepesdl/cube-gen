@@ -9,7 +9,6 @@ from functools import partial
 import sys
 from dateutil.rrule import rrule, MONTHLY, YEARLY
 
-print ('argument list', sys.argv)
 try:
     start_date = sys.argv[1]
 except:

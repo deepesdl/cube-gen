@@ -7,9 +7,8 @@ import sys
 from datetime import datetime, timedelta
 import pandas as pd
 from functools import partial
-from dateutil.rrule import rrule, MONTHLY, YEARLY, DAILY
+from dateutil.rrule import rrule, DAILY
 
-print ('argument list', sys.argv)
 try:
     start_date = sys.argv[1]
 except:

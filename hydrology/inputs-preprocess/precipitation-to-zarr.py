@@ -8,7 +8,6 @@ import pandas as pd
 from functools import partial
 import sys
 
-print ('argument list', sys.argv)
 try:
     start_date = sys.argv[1]
 except:

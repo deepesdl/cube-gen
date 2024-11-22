@@ -44,7 +44,6 @@ def check_if_ds_needs_subsetting(ds, start_date, end_date):
         ds = ds.sel(time=time_slice)
     return ds
 
-print ('argument list', sys.argv)
 try:
     start_date = sys.argv[1]
 except:
