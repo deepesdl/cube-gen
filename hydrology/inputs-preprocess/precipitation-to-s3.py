@@ -10,7 +10,7 @@ import os
 from datetime import datetime, timedelta
 import pandas as pd
 
-store_output = new_data_store("s3", root="deep-esdl-input")
+store_output = new_data_store("s3", root="deep-esdl-input/alicja_test_2")
 
 pathIn = f"~/data/hydrology/source/precipitation_GPM_CPC_SM2RAIN-ASCAT/"
 pathIn = os.path.expanduser(pathIn)

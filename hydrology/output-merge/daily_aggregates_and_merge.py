@@ -9,8 +9,8 @@ from tqdm import tqdm
 import os
 from datetime import datetime
 
-store = new_data_store("s3", root="deep-esdl-input")
-store_output = new_data_store("s3", root="deep-esdl-output")
+store = new_data_store("s3", root="deep-esdl-input/alicja_test_2")
+store_output = new_data_store("s3", root="deep-esdl-output/alicja_test_2")
 
 sites = [(f"0{x}")[-2:] for x in np.arange(1,29)]
 

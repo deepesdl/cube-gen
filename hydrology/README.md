@@ -44,18 +44,33 @@ The raw data is preprocessed in order to create a single input `.zarr` cube per 
 ```
 # Evaporation
 python inputs-preprocess/evaporation-to-zarr.py # Convert files to zarr
+## Process data only for a time subset:
+# python inputs-preprocess/evaporation-to-zarr.py "2018-06-01" "2018-06-30"
+## Upload to s3
 python inputs-preprocess/evaporation-to-s3.py # Upload full cube to the s3 bucket
+
 
 # Precipitation
 python inputs-preprocess/precipitation-to-zarr.py # Convert files to zarr
+## Process data only for a time subset:
+# python inputs-preprocess/precipitation-to-zarr.py "2018-06-01" "2018-06-30"
+## Upload to s3
 python inputs-preprocess/precipitation-to-s3.py # Upload full cube to the s3 bucket
+
 
 # Soil Moisture
 python inputs-preprocess/sm-to-zarr.py # Convert files to zarr
+## Process data only for a time subset:
+# python inputs-preprocess/sm-to-zarr.py "2018-06-01" "2018-06-30"
+## Upload to s3
 python inputs-preprocess/sm-to-s3.py # Upload full cube to the s3 bucket
+
 
 # Snow Water Equivalent
 python inputs-preprocess/swe-to-zarr.py # Convert files to zarr
+## Process data only for a time subset:
+# python inputs-preprocess/swe-to-zarr.py "2018-06-01" "2018-06-30"
+## Upload to s3
 python inputs-preprocess/swe-to-s3.py # Upload full cube to the s3 bucket
 ```
 

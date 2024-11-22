@@ -16,7 +16,7 @@ from xcube.core.store import new_data_store
 warnings.filterwarnings('ignore', r'All-NaN (slice|axis) encountered')
 
 super_cube_fn = 'hydrology-1D-0.009deg-1x1102x966-1.0.0.levels'
-root = "deep-esdl-output"
+root = "deep-esdl-output/alicja_test_2"
 res = 0.009
 data_store = new_data_store("s3", root=root)
 base_datasets = list(data_store.get_data_ids())
@@ -202,7 +202,7 @@ def block_mapper(block_ds: xr.Dataset,
     target_arrays = {var_name: block_var.values
                      for var_name, block_var in block_ds.data_vars.items()}
     data_store = new_data_store("s3",
-                                root="deep-esdl-output/alicja-hydro-testing")
+                                root=root)
     for region_path, region_ij_bbox in zip(region_paths, region_ij_bboxes):
         # print(f'Processing {region_path}, region {region_ij_bbox}, time={time}', flush=True)
         i1, j1, _, _ = region_ij_bbox
