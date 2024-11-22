@@ -81,9 +81,7 @@ else:
     files.sort()
 
 for file in tqdm(files):
-    print(file)
     filename = file.split("/")[-1].replace(".nc",".zarr")
-    print(filename)
     if not os.path.exists(f"{pathIn}/{filename}"):
         ds = xr.open_dataset(file)
         ds = ds.rename(dict(t="time",Y="lat",X="lon"))
@@ -94,4 +92,4 @@ for file in tqdm(files):
         if start_date:
             ds = check_if_ds_needs_subsetting(ds, start_date, end_date)
         ds = ds.chunk(dict(time=-1,lon=64,lat=64))
-        ds.to_zarr(f"{pathIn}{filename}")
+        ds.to_zarr(f"{pathIn}/{filename}")
