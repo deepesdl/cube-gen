@@ -62,8 +62,10 @@ if start_date:
         end_date = datetime.strptime(end_date, '%Y-%m-%d')
     else:
         print("You provided a start date, please also provide an end date.")
+        exit()
     if end_date < start_date:
         print("The end date must be later than the start date.")
+        exit()
 
     dates = [dt for dt in rrule(YEARLY, dtstart=start_date, until=end_date)]
     files = []

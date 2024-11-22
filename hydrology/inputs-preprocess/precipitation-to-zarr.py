@@ -19,6 +19,8 @@ try:
 except:
     end_date = None
 
+
+
 if start_date:
     start_date = datetime.strptime(start_date, '%Y-%m-%d')
     if end_date:
