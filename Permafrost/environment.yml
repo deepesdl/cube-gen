@@ -1,0 +1,30 @@
+channels:
+- conda-forge
+dependencies:
+- python
+- xcube=1.8.3
+- xcube-cds
+- xcube-sh
+- xcube-cmems
+- xcube-smos
+- xcube-zenodo
+- xcube_geodb
+- xrlint
+- boto3
+- cartopy
+- ipykernel
+- h5netcdf
+- rechunker
+- zappend
+- gcsfs
+- pip
+- plotly
+- coiled
+- xcube-clms
+- xcube-stac
+- pyopenssl >= 23.2.0
+- pip:
+  - xcube-cci==0.11.5.dev2
+description: ''
+name: xcube-1.8.3-xcube-cci-dev
+prefix: null
