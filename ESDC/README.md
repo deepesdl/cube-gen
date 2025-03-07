@@ -153,7 +153,7 @@ The cube generation process is divided in four phases:
 
 ### 1. Downloading required raw datasets
 
-These datasets are the input data. Each dataset can be a set of `.nc`, `.hdf`, or `.tif` files. These files contains data with its original configuration. The downloading code for each dataset is found at the `inputs-collect` folder. Note that some datasets can be acquired via `xcube-cci` and don't require to be downloaded. Additional datasets were acquired va ftp (e.g. GLEAM) or sftp (e.g. GFED4) and don't have a download program. Other datasets were provided by their original providers (e.g. FLUXCOM) and don't have a download program neither.
+These datasets are the input data. Each dataset can be a set of `.nc`, `.hdf`, or `.tif` files. These files contains data with its original configuration. The downloading code for each dataset is found at the `inputs-collect` folder. Note that some datasets can be acquired via `xcube-cci` and don't require to be downloaded. Additional datasets were acquired va ftp (e.g. GLEAM) or sftp (e.g. GFED4) and don't have a download program. Other datasets were provided by their original providers (e.g. FLUXCOM) and don't have a download program neither. For some datasets, user accounts are necessary. Please follow the instructions on their websites. On the Homepage of [GLEAM](https://www.gleam.eu/) you can register for downloading under Downloads. For ERA5, refer to the [Copernicus Climate Data Store (CDS) API How-To](https://cds.climate.copernicus.eu/api-how-to) for more information. For GFED4, use the EOSDIS [Earthdata Login](https://urs.earthdata.nasa.gov/oauth/authorize?client_id=YQOhivHfMTau88rjbMOVyg&response_type=code&redirect_uri=https://daac.ornl.gov/cgi-bin/urs/urs_logon_proc.pl&state=https%3A%2F%2Fdaac.ornl.gov%2F) for registration.
 
 ```
 # MODIS: Download daily .hdf files
@@ -166,8 +166,20 @@ inputs-collect/download-GOME2-SIF.py
 inputs-collect/download-GOSIF.py
 inputs-collect/extract-gz-gosif.py
 
+# RTSIF: Download 8-days .tif files
+inputs-collect/download-RTSIF.py
+
 # CCI-SM: Download daily .nc files
 inputs-collect/download-cci-sm.py
+
+# ERA5: Download hourly .nc files
+inputs-collect/download-ERA5.py
+
+# GLEAM: Download daily .nc files
+inputs-collect/download-GLEAM.py
+
+# GFED4: Download monthly .hdf files
+inputs-collect/download-GFED4.py
 ```
 
 ### 2. Preprocessing datasets
