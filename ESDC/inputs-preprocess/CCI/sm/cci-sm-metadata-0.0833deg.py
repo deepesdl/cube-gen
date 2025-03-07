@@ -1,22 +1,24 @@
-from tqdm import tqdm
+import os
 from datetime import datetime
-import yaml
-import rioxarray
+
 import xarray as xr
-import numpy as np
+import yaml
 
+pathOut = "~/data/CCI/sm/output"
+pathOut = os.path.expanduser(pathOut)
 
-with open("cci-sm-metadata-0.0833deg.yaml", "r") as stream:
+with open("inputs-preprocess/CCI/sm/cci-sm-metadata-0.0833deg.yaml",
+          "r") as stream:
     try:
         metadata = yaml.safe_load(stream)
     except yaml.YAMLError as exc:
         print(exc)
 
-datacube = xr.open_zarr("/net/scratch/dmontero/CCI/cci-sm-8d-0.083deg-256x128x128.zarr")
+datacube = xr.open_zarr(f"{pathOut}/cci-sm-8d-0.083deg-256x128x128.zarr")
 
 datacube = datacube.rio.write_crs(
     "epsg:4326", grid_mapping_name="crs"
-).reset_coords()    
+).reset_coords()
 del datacube.crs.attrs["spatial_ref"]
 
 datacube.attrs = metadata["global"]
@@ -44,4 +46,4 @@ datacube.attrs = dict(
     sorted({**datacube.attrs, **additional_attrs}.items())
 )
 
-datacube.to_zarr("/net/scratch/dmontero/CCI/metadata/cci-sm-8d-0.083deg-256x128x128.zarr")
+datacube.to_zarr(f"{pathOut}/cci-sm-8d-0.083deg-256x128x128.zarr")

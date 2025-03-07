@@ -1,5 +1,6 @@
 import requests
 import numpy as np
+import os
 
 URL = "http://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/ECOCLIM/Downscaled-GOME2-SIF/v2.0/"
 # pathOut = "/net/projects/deep_esdl/data/GOME2-SIF/data/"
@@ -18,4 +19,5 @@ for rm in retrieval_methods:
         file_to_download = f"GOME_{rm}_dcSIF_005deg_8day_{year}.nc"
         print(f"Downloading {file_to_download}")
         response = requests.get(URL + file_to_download)
-        open(pathOut + file_to_download, "wb").write(response.content)
+        file_path = os.path.join(pathOut, file_to_download)
+        open(file_path, "wb").write(response.content)
